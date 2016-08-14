@@ -1,0 +1,4 @@
+mixin portfolio(name, data)
+    h2 #{data.label}
+    p
+        a(target='_blank', href='#{data.content.url}') #{data.content.label}

@@ -1,0 +1,44 @@
+/* =========================| Personal skills |========================= */
+
+
+
+.section-skills {
+
+  .skills {
+    padding: 0;
+    margin: 0;
+  }
+
+  .skill {
+    padding: 0  3%;
+    margin:  0 -3%;
+    list-style: none;
+
+    .meta { white-space: nowrap; }
+
+    &:nth-child(2n+1) { background-color: $col-marked; }
+
+    &:not(:last-child) { margin-bottom: 1.2%; }
+
+    &::before { @include bullet(); }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .section-skills {
+
+    .skill {
+      padding: 0  16px;
+      margin:  0 -16px;
+
+      .meta {
+        display: block;
+        white-space: normal;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,129 @@
+/* =========================| Education & Training |========================= */
+
+
+
+.section-education {
+
+  header { position: relative; }
+
+  .name {
+    float: left;
+    color: $gray-666;
+  }
+
+  .institution { float: right; }
+
+  .period,
+  .location {
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  .period {
+    @include accelerate-gpu();
+
+    $period-width: 18%;
+
+    top: 11%;
+    left: -($period-width + 1);
+    width: $period-width;
+    text-align: right;
+  }
+
+  .location {
+    $location-width: 18%;
+
+    top: 11%;
+    right: -($location-width + 1);
+    width: $location-width;
+    text-align: left;
+  }
+
+  .item {
+    &:not(:last-child) .details::after {
+      display: block;
+      margin-bottom: 6.6%;
+      content: '';
+    }
+  }
+
+  .description { margin-top: 1.32%; }
+
+  footer {
+    margin-top: 1.32%;
+
+    $label-width: 24%;
+
+    label {
+      float: left;
+      width: $label-width;
+    }
+
+    p {
+      padding-left: $label-width + 1.6%;
+      margin-bottom: 0;
+      word-wrap: break-word;
+    }
+
+    span {
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1005px) {
+
+  .section-education {
+
+    .location {
+      $location-width: 10%;
+
+      right: -($location-width + 1);
+      width: $location-width;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .section-education {
+
+    .name {
+      float: none;
+      text-transform: none;
+    }
+
+    .institution {
+      display: block;
+      float: left;
+      font-size: 13px;
+    }
+
+    .period::after {
+      padding: 0 5px;
+      content: '|';
+    }
+
+    .period,
+    .location {
+      position: static;
+      float: right;
+      width: auto;
+    }
+
+    footer {
+      label {
+        float: none;
+        width: auto;
+      }
+
+      p { padding-left: 0; }
+    }
+
+  }
+
+}

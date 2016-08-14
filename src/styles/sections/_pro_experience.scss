@@ -1,0 +1,79 @@
+/* =========================| Professional experience |========================= */
+
+
+
+[class*="section-pro_experience"] {
+
+  .label {
+    margin-bottom: 1.97%;
+  }
+
+  .category {
+    width: 45%;
+
+    &:nth-child(1) { float: left; }
+    &:nth-child(2) { float: right; }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    padding: 0  6.666%;
+    margin:  0 -6.666%;
+    list-style: none;
+
+    .meta { white-space: nowrap; }
+
+    &:nth-child(2n+1) { background-color: $col-marked; }
+
+    &:not(:last-child) { margin-bottom: 1.2%; }
+
+    &::before { @include bullet(); }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  [class*="section-pro_experience"] {
+
+    li {
+      padding: 0  16px;
+      margin:  0 -16px;
+
+      .meta {
+        display: block;
+        white-space: normal;
+      }
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+
+  [class*="section-pro_experience"] {
+
+    .category {
+      width: auto;
+
+      &:not(:last-child) {
+        &::after {
+          display: block;
+          margin-bottom: 6%;
+          content: '';
+        }
+      }
+
+      &:nth-child(1n+1) {
+        float: none;
+      }
+    }
+
+  }
+
+}

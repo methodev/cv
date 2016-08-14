@@ -1,0 +1,210 @@
+/* =========================| Technical experience |========================= */
+
+
+
+@mixin tech-experience-category($count: 3, $width: 20%) {
+  $gap: ((100% - ($width * $count)) / ($count - 1));
+
+  .category {
+    display: block;
+    float: left;
+    width: $width;
+
+    &:not(:nth-child(#{$count}n+#{$count})) { margin-right: $gap; }
+
+    &:nth-child(#{$count}n+1) { clear: left; }
+
+    h3 { display: block; }
+
+    &::before {
+      display: block;
+      content: '';
+    }
+  }
+}
+
+[class*="section-tech_experience"] {
+
+  $lvl-bgr: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQIW2M8c+bMfxMTE0ZGBgYGBhAHAEPkB2YrGeGBAAAAAElFTkSuQmCC');
+  $lvl-selected: #aaa;
+
+  @include tech-experience-category();
+
+  .categories {
+    margin-top: -5.5%;
+  }
+
+
+  .category::before {
+    margin-top: 27.5%;
+  }
+
+  .label {
+    margin-bottom: 4.43%;
+    color: $gray-666;
+    white-space: nowrap;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      position: relative;
+      display: block;
+      padding: 0 15%;
+      margin: 0 -15% 6%;
+      list-style: none;
+
+      &:nth-child(2n+1) { background-color: $col-marked; }
+
+      > * {
+        display: inline-block;
+      }
+
+      .name {
+        white-space: nowrap;
+      }
+
+      .period {
+        position: absolute;
+        top: 8%;
+        right: 104%;
+        white-space: nowrap;
+      }
+
+      .level {
+        position: absolute;
+        top: 50%;
+        right: 15%;
+        width: 20%;
+        height: 5px;
+        margin-top: -2.5px;
+        overflow: hidden;
+        background: $lvl-bgr;
+
+        &,
+        &::after {
+          @include border-radius(5px);
+
+          display: block;
+        }
+
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 100%;
+          background: $lvl-selected;
+          content: '';
+        }
+
+        &.level-beginner::after {
+          width: 33%;
+        }
+
+        &.level-intermediate::after {
+          width: 66%;
+        }
+
+        &.level-expert::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
+
+html:not(.firefox) [class*="section-tech_experience"] {
+  ul {
+    li {
+      .level {
+        background-attachment: fixed;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  [class*="section-tech_experience"] {
+    .categories {
+      margin-top: -8%;
+    }
+
+    .category:not(:nth-child(3n + 3)) {
+      margin-right: 0;
+    }
+
+    .category:nth-child(3n + 1) {
+      clear: none;
+    }
+
+    .category::before {
+      margin-top: 17.78%;
+    }
+
+    .label { margin-bottom: 1.78%; }
+
+    ul {
+      li {
+        padding: 0 7.94%;
+        margin: 0 -7.94% 2.67%;
+
+        .period {
+          display: none;
+        }
+
+        .level {
+          right: 7.94%;
+        }
+      }
+    }
+  }
+
+  [class*="section-tech_experience"] {
+    @include tech-experience-category(2, 45%);
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+
+  [class*="section-tech_experience"] {
+
+    .categories {
+      margin-top: -6%;
+    }
+
+    .category {
+      float: none;
+      width: auto;
+
+      &::before {
+        margin-top: 6%;
+      }
+
+      &:not(:nth-child(2n + 2)) {
+        margin-right: 0;
+      }
+
+      &:nth-child(2n + 1) {
+        clear: none;
+      }
+    }
+
+    ul {
+      li {
+        padding: 0 16px;
+        margin: 0 -16px 1.32%;
+
+        .level {
+          right: 16px;
+        }
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,129 @@
+/* =========================| Body |========================= */
+
+
+
+.cv {
+  @include accelerate-gpu();
+  @include transition(top .3s ease-in-out);
+
+  height: 100%;
+  background-color: $body-bg;
+
+  &.active { top: 0; }
+
+  &.inactive {
+    left: -100%;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &.static { position: static; }
+
+  article {
+    width: 1660px;
+    max-width: none;
+    padding: 6.6298342541% 273.37301587px 0 375.88789682px;
+    margin: 0 auto;
+    font-size: 26.25px;
+  }
+
+}
+
+@media screen and (min-width: 1420px) and (max-width: 1659px) {
+
+  .cv {
+
+    article {
+      width: 1420px;
+      padding-right: 233.84920635px; // 16.468253968%;
+      padding-left: 321.54265873px; // 22.643849206%;
+      font-size: 22.5px;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1346px) and (max-width: 1419px) {
+
+  .cv {
+
+    article {
+      width: 1346px;
+      padding-right: 221.66269841px; // 16.468253968%;
+      padding-left: 304.78621031px; // 22.643849206%;
+      font-size: 21.34375px;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1260px) and (max-width: 1345px) {
+
+  .cv {
+
+    article {
+      width: 1260px;
+      padding-right: 207.5px; // 16.468253968%;
+      padding-left: 285.3125px; // 22.643849206%;
+      font-size: 20px;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1006px) and (max-width: 1259px) {
+
+  .cv {
+
+    article {
+      width: 1006px;
+      padding-right: 165.34126984px; // 16.468253968%;
+      padding-left: 227.34424603px; // 22.643849206%;
+      font-size: 16px;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1005px) {
+
+  .cv {
+
+    article {
+      width: 708px;
+      padding: 60px 66.08px 0 108.256px;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 1005px) {
+
+  .cv {
+
+    article { font-size: 15px; }
+
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .cv {
+
+    article {
+      width: 100%;
+      max-width: 480px;
+      padding: 10px 16px 0;
+      font-size: 14px;
+    }
+
+  }
+
+}

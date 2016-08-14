@@ -1,0 +1,38 @@
+/* =========================| Mixins |========================= */
+
+
+
+//--------------------------| Bullet
+
+@mixin bullet() {
+  position: relative;
+  top: 2px;
+  display: block;
+  float: left;
+  margin-left: -12px;
+  color: $gray-999;
+  content: '‣';
+}
+
+
+//--------------------------| Clearfix
+
+@mixin cf() {
+  &::before,
+  &::after {
+    display: table;
+    content: ' ';
+  }
+
+  &::after { clear: both; }
+}
+
+
+//--------------------------| GPU acceleration
+
+@mixin accelerate-gpu() {
+  @include transform(translate3d(0, 0, 0));
+  @include backface-visibility();
+  @include perspective(1000);
+  // @include scale();
+}

@@ -1,0 +1,128 @@
+/* =========================| Header |========================= */
+
+
+
+.cv {
+
+  header.title {
+    position: relative;
+    padding: 0 3%;
+    margin: 0 -3% 6%;
+
+    h1 {
+      margin: 0;
+      font-size: 150%;
+    }
+
+    .meta { font-style: normal; }
+
+    .contacts {
+      float: left;
+      width: 60%;
+
+      .contact {
+        white-space: nowrap;
+
+        &.phone,
+        &.email { display: none; }
+
+        &:not(:last-child) { margin-right: 3%; }
+      }
+
+    }
+
+    .tools {
+      position: relative;
+      float: right;
+      width: 40%;
+
+      .tool {
+        position: relative;
+        float: right;
+        cursor: pointer;
+
+        &:not(:last-of-type) { margin-left: 5%; }
+
+        .icon {
+          @include border-radius();
+
+          $square-side: 20.812%;
+
+          position: absolute;
+          left: 0;
+          display: inline-block;
+          padding: 0 $square-side $square-side 0;
+          margin-top: 4%;
+          background-color: $col-blue;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: auto 70%;
+        }
+
+        &.download .icon {
+          background-image: inline-image('icons/download.svg');
+        }
+
+        &:hover  .icon { background-color: $col-green; }
+        &:active .icon { background-color: $col-red;   }
+
+        .text::after {
+          display: inline-block;
+          padding-left: 30%;
+          margin-top: 3%;
+          text-decoration: underline;
+          white-space: nowrap;
+        }
+
+        &:hover .text::after { text-decoration: none; }
+      }
+
+      .tool { width: 35%; }
+    }
+  }
+
+  .download {
+    .text::after { content: 'Download'; }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .cv {
+
+    header.title {
+      width: auto;
+      padding: 0 16px;
+      margin: 0 -16px 6%;
+
+      .contacts { width: 100%; }
+
+      .tools {
+        position: absolute;
+        top: 4px;
+        right: 16px;
+        width: auto;
+
+        .tool {
+          width: 24px;
+          height: 24px;
+          padding-left: 0;
+
+          &:not(:last-of-type) { margin-left: 15px; }
+
+          .icon {
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+          }
+        }
+
+        .tool .text::after,
+        .expanded .tool .text::after { content: ''; }
+      }
+    }
+
+  }
+
+}

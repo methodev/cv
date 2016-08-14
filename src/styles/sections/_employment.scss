@@ -1,0 +1,134 @@
+/* =========================| Employment |========================= */
+
+
+
+.section-employment {
+
+  header { position: relative; }
+
+  .position {
+    float: left;
+    color: $gray-666;
+  }
+
+  .company { float: right; }
+
+  .period,
+  .location {
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  .period {
+    @include accelerate-gpu();
+
+    $period-width: 18%;
+
+    top: 11%;
+    left: -($period-width + 1);
+    width: $period-width;
+    text-align: right;
+  }
+
+  .location {
+    $location-width: 18%;
+
+    top: 11%;
+    right: -($location-width + 1);
+    width: $location-width;
+    text-align: left;
+  }
+
+  .item {
+    &:not(:last-child) .details::after {
+      display: block;
+      margin-bottom: 6.6%;
+      content: '';
+    }
+  }
+
+  .description { margin-top: 1.32%; }
+
+  footer {
+    margin-top: 1.32%;
+
+    $label-width: 27%;
+
+    label {
+      float: left;
+      width: $label-width;
+    }
+
+    p {
+      padding-left: $label-width + 1.6%;
+      margin-bottom: 0;
+      word-wrap: break-word;
+    }
+
+    span {
+      display: inline-block;
+      white-space: nowrap;
+    }
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1005px) {
+
+  .section-employment {
+
+    .location {
+      $location-width: 10%;
+
+      right: -($location-width + 1);
+      width: $location-width;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .section-employment {
+
+    .position {
+      clear: left;
+      text-transform: none;
+    }
+
+    .company {
+      clear: right;
+      font-size: 13px;
+    }
+
+    .period,
+    .location {
+      position: static;
+      width: auto;
+    }
+
+    .period {
+      float: left;
+      clear: left;
+    }
+
+    .location {
+      float: right;
+      clear: right;
+      text-align: right;
+    }
+
+    footer {
+      label {
+        float: none;
+        width: auto;
+      }
+
+      p { padding-left: 0; }
+
+    }
+
+  }
+
+}

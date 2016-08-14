@@ -1,0 +1,87 @@
+/* =========================| Scaffolding |========================= */
+
+
+
+//====================> 1. Box-sizing
+
+*,
+*::before,
+*::after {
+  @include box-sizing(border-box);
+}
+
+
+
+//====================> 2. Document reset
+
+html {
+  font-size: 10px;
+
+  -webkit-tap-highlight-color: rgba($gray-base, 0);
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: $line-height-base;
+  color: $text-color;
+  background: $body-bg;
+
+}
+
+
+
+//====================> 3. Document dimensions
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+}
+
+
+
+//====================> 4. Links
+
+a {
+  color: $link-normal-color;
+  text-decoration: underline;
+
+  &:active { color: $link-active-color !important; }
+
+  &:focus { outline: none; }
+}
+
+html:not(.mobile) a:hover {
+  color: $link-hover-color;
+  text-decoration: none;
+}
+
+
+
+//====================> 5. Screen cases
+
+@media screen and (max-width: 1280px), screen and (max-height: 800px) {
+
+  body { font-size: $font-size-normal; }
+
+}
+
+@media screen and (max-height: 639px) and (min-width: 900px),
+       screen and (max-width: 1023px) {
+
+  body { font-size: $font-size-small; }
+
+}
+
+@media screen and (max-width:  767px),
+       screen and (max-width:  829px) and (max-height: 549px),
+       screen and (max-height: 569px) {
+
+  html,
+  body { height: auto; }
+
+}
