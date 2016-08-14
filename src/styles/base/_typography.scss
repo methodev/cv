@@ -1,0 +1,66 @@
+/* =========================| Typography |========================= */
+
+
+
+//====================> 1. Headings
+
+h1.page,
+h2.page {
+  font-family: $font-family-sans-serif;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1.page { font-size: $font-size-h1; }
+h2.page { font-size: $font-size-h2; }
+
+h2.page {
+  padding: 5px 0;
+  margin: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid $gray-999;
+}
+
+
+
+//====================> 2. Meta
+
+.meta-n { font: normal 16px $font-family-sans-serif; }
+
+
+
+//====================> 3. Utilities
+
+.tal { text-align: left;   }
+.tac { text-align: center; }
+.tar { text-align: right;  }
+
+
+
+//====================> 4. Screen cases
+
+@media screen and (max-width: 1280px), screen and (max-height: 800px) {
+
+  h1.page { font-size: $font-size-h1 / 1.2; }
+  h2.page { font-size: $font-size-h2 / 1.2; }
+
+  .meta-n { font-size: 14px; }
+
+}
+
+@media screen and (max-height: 640px) and (min-width: 900px),
+       screen and (max-width: 1024px) {
+
+  h1.page { font-size: $font-size-h1 / 1.5; }
+  h2.page { font-size: $font-size-h2 / 1.5; }
+
+  .meta-n { font-size: 12px; }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  h1.page { font-size: $font-size-h1 / 1.9; }
+  h2.page { font-size: $font-size-h2 / 1.9; }
+
+}

@@ -1,0 +1,551 @@
+{
+  "summary": {
+    "label": "Summary",
+    "content": [
+      "I was one of those kids who couldn’t tell with confidence what they wanted to become when grow up. My answer hit me in my early teens, when I got finished my first web page, developed for Netscape. I felt mighty. I made something out of my hands that was digital and it had value for me back then.",
+      "Being in the university I had a great time learning all about graphic designs and digital interfaces. I’ve earned extensive knowledge of visual arts and gained an eye for beautiful things.",
+      "More than 8 years now, I’ve been professionally involved in building web user interfaces and using contemporary client-side technologies. And my interest increases with every new released UI technology.",
+      "As said, by connecting the dots now I realize that getting satisfaction from creating beautiful and friendly web UIs wouldn’t be that powerful if it weren’t for all those design things I’ve learned back in the years."
+    ]
+  },
+
+  "employment": {
+    "label": "Employment",
+    "content": [
+      {
+        "title": "Senior Front-end Developer",
+        "company": {
+          "name": "Komfo, INC.",
+          "website": "http://komfo.com"
+        },
+        "period": {
+          "start": "12/2013",
+          "end": "present"
+        },
+        "location": "Sofia, BG",
+        "description": "Take active part in the development and maintenance of the company’s Social Media Management platform by developing in-house UI framework and UI components.",
+        "meta": [
+          "HTML5",
+          "CSS3",
+          "Less",
+          "Sass",
+          "Compass",
+          "Bootstrap",
+          "JavaScript",
+          "jQuery",
+          "RequireJS",
+          "Underscore.js",
+          "AngularJS",
+          "Grunt",
+          "Bower",
+          "Git",
+          "GitLab",
+          "Jenkins",
+          "JIRA",
+          "JetBrains WebStorm",
+          "Sublime Text",
+          "Ghostlab 2",
+          "Tower 2",
+          "Adobe CC"
+        ]
+      },
+      {
+        "title": "Lead Front-end Developer",
+        "company": {
+          "name": "Edamam, LLC",
+          "website": "https://www.edamam.com"
+        },
+        "period": {
+          "start": "01/2012",
+          "end": "11/2013"
+        },
+        "location": "Sofia, BG",
+        "description": "Taken lead role in the development of the company product’s web UI by building it up completely and by making substantive decisions regarding the front-end architecture.",
+        "meta": [
+          "JSP",
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "jQuery",
+          "Git",
+          "JIRA",
+          "Panic Coda",
+          "Adobe Photoshop"
+        ]
+      },
+      {
+        "title": "Web Technologist",
+        "company": {
+          "name": "BSH, LTD.",
+          "website": "http://bsh.bg"
+        },
+        "period": {
+          "start": "12/2009",
+          "end": "10/2011"
+        },
+        "location": "Sofia, BG",
+        "description": "Taken main role in the front-end development of variety of web projects for clients like Armeec, ATrend, Balkan Holidays, BNR, Boyanov & Co., SuperHosting and more.",
+        "meta": [
+          "(X)HTML",
+          "CSS",
+          "JavaScript",
+          "jQuery",
+          "WordPress",
+          "Adobe Dreamweaver / Illustrator / Photoshop"
+        ]
+      },
+      {
+        "title": "HTML Developer",
+        "company": {
+          "name": "Mag Studio, LTD.",
+          "website": "http://www.themags.com/en"
+        },
+        "period": {
+          "start": "11/2008",
+          "end": "09/2009"
+        },
+        "location": "Sofia, BG",
+        "description": "Taken active part in the front-end development of variety of web projects for clients like Bulgarian National Bank, bTV Media Group, Coca-Cola, Kamenitza, Sofica Group and more.",
+        "meta": [
+          "(X)HTML",
+          "CSS",
+          "SVN",
+          "Adobe Dreamweaver / Fireworks / Photoshop"
+        ]
+      },
+      {
+        "title": "Web Designer & HTML Developer",
+        "company": {
+          "name": "eDynamo, LLC"
+        },
+        "period": {
+          "start": "02/2008",
+          "end": "09/2008"
+        },
+        "location": "Sofia, BG",
+        "description": "Handled duties ranging from creative design to code implementation for variety of microsites addressed for the U.S. market.",
+        "meta": [
+          "(X)HTML",
+          "CSS",
+          "WordPress",
+          "Adobe Dreamweaver / Photoshop"
+        ]
+      }
+    ]
+  },
+
+  "education": {
+    "label": "Education & training",
+    "content": [
+      {
+        "title": "Training: How to make easy to use websites",
+        "institution": {
+          "name": "Lucrat Courses",
+          "website": "http://www.lucrat.net/eng"
+        },
+        "period": {
+          "end": "2011"
+        },
+        "location": "Sofia, BG",
+        "description": "A two-day practical training program in approaches and methods for developing usable software products and websites.",
+        "meta": [
+          "Usability",
+          "User needs and requirements",
+          "Contextual observation",
+          "User profiles",
+          "Comparative analysis of competitive products",
+          "Information architecture",
+          "Free categorization",
+          "Interation design",
+          "Usability testing",
+          "Usability testing of mobile devices"
+        ]
+      },
+      {
+        "title": "Graphic Design",
+        "institution": {
+          "name": "New Bulgarian University",
+          "website": "http://www.nbu.bg/en"
+        },
+        "period": {
+          "start": "2007",
+          "end": "2009"
+        },
+        "location": "Sofia, BG",
+        "description": "A two-year minor program that specializes in the study of graphic design, computer creating and image processing.",
+        "meta": [
+          "Theory and practice of Graphic design",
+          "Computer animation (Flash)",
+          "Graphical page layout",
+          "Visual communication graphics"
+        ]
+      },
+      {
+        "title": "Multimedia, Computer Graphics & Animation",
+        "institution": {
+          "name": "New Bulgarian University",
+          "website": "http://www.nbu.bg/en"
+        },
+        "period": {
+          "start": "2005",
+          "end": "2009"
+        },
+        "location": "Sofia, BG",
+        "description": "A four-year bachelor's program that specializes in the study of multimedia, computer graphics and animation techniques.",
+        "meta": [
+          "Structures in Programming and Information Technologies",
+          "General History of Fine Arts",
+          "Raster Graphics",
+          "Vector Graphics",
+          "Project in Computer Networks",
+          "Object-Oriented Programming of User Interface",
+          "Web Server Management",
+          "Creative Web Design",
+          "Corporate Design",
+          "Animation Techniques"
+        ]
+      },
+      {
+        "title": "Maths & Informatics",
+        "institution": {
+          "name": "Mathematical High School"
+        },
+        "period": {
+          "start": "2000",
+          "end": "2005"
+        },
+        "location": "Pernik, BG",
+        "description": "A five-year high school class of Mathematics and Computer Science with English language."
+      },
+      {
+        "title": "HTML & JavaScript",
+        "institution": {
+          "name": "Europe Schools"
+        },
+        "period": {
+          "start": "2000",
+          "end": "2001"
+        },
+        "location": "Pernik, BG",
+        "description": "An extracurricular course in HTML4 and JavaScript."
+      },
+      {
+        "title": "English Language",
+        "institution": {
+          "name": "Europe Schools"
+        },
+        "period": {
+          "start": "1997",
+          "end": "2003"
+        },
+        "location": "Pernik, BG",
+        "description": "An extracurricular course in English language (level B2)."
+      }
+    ]
+  },
+
+  "pro_experience": {
+    "label": "Professional experience",
+    "content": {
+      "development": {
+        "label": "Development",
+        "list": [
+          "Building-up advanced UI frameworks",
+          "Writing jQuery plugins",
+          "Handling responsive web designs",
+          "Creating fluid grid systems",
+          "Preparing adaptive images",
+          "Developing for mobile devices",
+          "Optimizing styles for print"
+        ]
+      },
+      "quality": {
+        "label": "Quality features",
+        "list": [
+          "Developing adaptive architectures",
+          "Testing for cross-browser compatibility",
+          "Complying with standards",
+          "Optimizing for search engines",
+          "Delivering compiled distributions"
+        ]
+      }
+    }
+  },
+
+  "tech_experience": {
+    "label": "Technical experience",
+    "content": {
+      "major_techs": {
+        "label": "Major techs",
+        "list": [
+          {
+            "title": "(X)HTML(5)",
+            "period": "since 2005",
+            "level": "Expert"
+          },
+          {
+            "title": "CSS(3)",
+            "period": "since 2005",
+            "level": "Expert"
+          },
+          {
+            "title": "JavaScript",
+            "period": "since 2009",
+            "level": "Expert"
+          }
+        ]
+      },
+      "frameworks_and_libs": {
+        "label": "Frameworks & libs",
+        "list": [
+          {
+            "title": "jQuery (UI)",
+            "period": "since 2009",
+            "level": "Expert"
+          },
+          {
+            "title": "Bootstrap",
+            "period": "since 2013",
+            "level": "Expert"
+          },
+          {
+            "title": "RequireJS",
+            "period": "2014 – 2015",
+            "level": "Intermediate"
+          },
+          {
+            "title": "Handlebars",
+            "period": "2014 – 2015",
+            "level": "Intermediate"
+          },
+          {
+            "title": "Underscore",
+            "period": "2014 – 2015",
+            "level": "Intermediate"
+          },
+          {
+            "title": "AngularJS",
+            "period": "since 2015",
+            "level": "Beginner"
+          },
+          {
+            "title": "ReactJS",
+            "period": "since 2016",
+            "level": "Beginner"
+          }
+        ]
+      },
+      "preprocess_tools": {
+        "label": "Preprocess tools",
+        "list": [
+          {
+            "title": "Less",
+            "period": "since 2013",
+            "level": "Expert"
+          },
+          {
+            "title": "Sass",
+            "period": "since 2014",
+            "level": "Expert"
+          },
+          {
+            "title": "Compass",
+            "period": "since 2014",
+            "level": "Expert"
+          },
+          {
+            "title": "Jade / Pug",
+            "period": "since 2015",
+            "level": "Intermediate"
+          }
+        ]
+      },
+      "cms_products": {
+        "label": "CMS products",
+        "list": [
+          {
+            "title": "WordPress",
+            "period": "since 2008"
+          },
+          {
+            "title": "osCommerce",
+            "period": "2008 – 2009"
+          }
+        ]
+      },
+      "dev_packages": {
+        "label": "Dev packages",
+        "list": [
+          {
+            "title": "npm",
+            "period": "since 2013"
+          },
+          {
+            "title": "Grunt",
+            "period": "since 2013"
+          },
+          {
+            "title": "Bower",
+            "period": "since 2013"
+          },
+          {
+            "title": "Yeoman",
+            "period": "since 2014"
+          }
+        ]
+      },
+      "vcs_packages": {
+        "label": "VCS packages",
+        "list": [
+          {
+            "title": "Git",
+            "period": "since 2012"
+          },
+          {
+            "title": "Subversion",
+            "period": "2008 – 2011"
+          }
+        ]
+      },
+      "dev_environment": {
+        "label": "Dev environment",
+        "list": [
+          {
+            "title": "WebStorm",
+            "period": "since 2015"
+          },
+          {
+            "title": "Sublime Text",
+            "period": "2014 – 2015"
+          },
+          {
+            "title": "Coda",
+            "period": "2012 – 2014"
+          },
+          {
+            "title": "Tower",
+            "period": "since 2014"
+          },
+          {
+            "title": "Ghostlab",
+            "period": "since 2014"
+          }
+        ]
+      },
+      "docs_environment": {
+        "label": "Docs environment",
+        "list": [
+          {
+            "title": "Hologram",
+            "period": "since 2015"
+          },
+          {
+            "title": "SassDoc",
+            "period": "since 2016"
+          },
+          {
+            "title": "Atomic Docs",
+            "period": "since 2016"
+          },
+          {
+            "title": "Markdown syntax",
+            "period": "since 2013"
+          }
+        ]
+      },
+      "adobe_software": {
+        "label": "Adobe software",
+        "list": [
+          {
+            "title": "Photoshop",
+            "period": "since 2005"
+          },
+          {
+            "title": "Illustrator",
+            "period": "since 2009"
+          },
+          {
+            "title": "Dreamweaver",
+            "period": "2008 – 2011"
+          }
+        ]
+      }
+    }
+  },
+
+  "skills": {
+    "label": "Personal skills",
+    "content": [
+      {
+        "skill": "Administrative experience",
+        "meta": "working with colleagues, using administrative software packages"
+      },
+      {
+        "skill": "Teamworking skills",
+        "meta": "following and/or issuing instructions and contributing to everyday tasks"
+      },
+      {
+        "skill": "Communication and interpersonal skills",
+        "meta": "working with new people, understanding my assignment"
+      },
+      {
+        "skill": "Attention to detail through taking accurate messages, researching documents or maintaining records"
+      },
+      {
+        "skill": "Ability to learn quickly and absorb information quickly"
+      },
+      {
+        "skill": "Ability to work under pressure and meet deadlines"
+      }
+    ]
+  },
+
+  "references": {
+    "label": "References",
+    "content": [
+      {
+        "person": "Victor Penev",
+        "url": "https://www.linkedin.com/in/victorpenev",
+        "phone": "+1 (646) 378-8317",
+        "relation": "former employer",
+        "position": "Founder of Netinfo & Edamam"
+      },
+      {
+        "person": "Boril Karaivanov",
+        "url": "http://www.redesign.bg/en",
+        "phone": "+359 (88) 7564951",
+        "relation": "former employer",
+        "position": "Founder of Redesign.bg"
+      },
+      {
+        "person": "Kalinka Nikiforova",
+        "url": "https://bg.linkedin.com/in/kalinkanikiforova",
+        "phone": "+359 (88) 9532319",
+        "relation": "present colleague",
+        "position": "UI Designer at Komfo, INC."
+      },
+      {
+        "person": "Lily Grozeva",
+        "url": "https://bg.linkedin.com/in/liligrozeva",
+        "phone": "+359 (89) 4871020",
+        "relation": "former colleague",
+        "position": "SEO consultant at Allviaweb.com"
+      },
+      {
+        "person": "Sia Alexieva",
+        "url": "https://bg.linkedin.com/pub/sia-aleksieva/57/824/604",
+        "phone": "+359 (88) 8984200",
+        "relation": "former team lead",
+        "position": "HTML department at Mag Studio, LTD."
+      }
+    ]
+  },
+
+  "portfolio": {
+    "label": "Portfolio",
+    "content": {
+      "label": "portfolio.martinmetodiev.com",
+      "url": "http://portfolio.martinmetodiev.com"
+    }
+  }
+}

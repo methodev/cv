@@ -1,0 +1,23 @@
+/* =========================| Utilities |========================= */
+
+
+
+//====================> 1. Floats
+
+.cf { @include cf(); }
+.fr { float: right !important; }
+.fl { float: left  !important; }
+
+
+
+//====================> 2. Toggling content
+
+.hide { display: none  !important; }
+.show { display: block !important; }
+
+.invisible { visibility: hidden; }
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}

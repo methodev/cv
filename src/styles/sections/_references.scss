@@ -1,0 +1,77 @@
+/* =========================| References |========================= */
+
+
+
+.section-references {
+
+  .contacts {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact {
+    padding: 0  3%;
+    margin:  0 -3%;
+    list-style: none;
+
+    &:nth-child(2n+1) { background-color: $col-marked; }
+
+    &:not(:last-child) { margin-bottom: 1.2%; }
+
+    &::before { @include bullet(); }
+  }
+
+  $person-width: 80%;
+
+  .person {
+    float: left;
+    width: $person-width;
+
+    br { display: none; }
+
+    .info::before { content: ' — '; }
+  }
+
+  .phone {
+    display: none;
+    padding: .6% 0 0 $person-width + 2%;
+    font-style: normal;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .section-references {
+
+    .contact {
+      position: relative;
+      padding: 0  16px;
+      margin:  0 -16px;
+    }
+
+    .person {
+      float: none;
+      width: auto;
+
+      br {display: block;}
+
+      .info {
+        display: block;
+
+        &::before { content: ''; }
+      }
+    }
+
+    .phone {
+      position: absolute;
+      top: 3px;
+      right: 5%;
+      padding: 0;
+    }
+
+  }
+
+}

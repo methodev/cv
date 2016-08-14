@@ -1,0 +1,32 @@
+mixin employment(name, data)
+    h2
+        a.mode-switcher
+            span.icon
+        | #{data.label}
+
+    each item in data.content
+        .item
+            header.cf
+                h3.position #{item.title}
+                span.company
+                    if item.company.website
+                        a(href='#{item.company.website}', target='_blank') #{item.company.name}
+                    else
+                        | #{item.company.name}
+                span.period.meta.light
+                    if item.period.start
+                        | #{item.period.start} –&nbsp;
+                    | #{item.period.end}
+                if item.location
+                    span.location.meta.light #{item.location}
+            .details
+                if item.description
+                    p.description
+                        | #{item.description}
+                if item.meta
+                    footer.cf.meta
+                        label.light technologies & environment:
+                        p.dark
+                            each meta in item.meta
+                                span #{meta};
+                                | &nbsp;
