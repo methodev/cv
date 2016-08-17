@@ -5,8 +5,8 @@ module.exports = {
     },
 
     markup: {
-        files: ['src/markup/**/*.jade', 'src/model/**/*.json'],
-        tasks: ['clean:markup', 'jade']
+        files: ['src/markup/**/*.pug', 'src/model/**/*.json'],
+        tasks: ['clean:markup', 'pug']
     },
 
     styles: {

@@ -12,7 +12,7 @@ module.exports = {
             }
         },
         files: {
-            'dist/index.html': 'src/markup/<%= pkg.name %>.jade'
+            'dist/index.html': 'src/markup/<%= pkg.name %>.pug'
         }
     }
 };
