@@ -5,7 +5,7 @@ module.exports = {
         ['realFavicon'],
 
         // markup
-        ['jade'],
+        ['pug'],
 
         // styles
         ['compass'],

@@ -53,7 +53,7 @@ html(lang="en")
 
                 each val, index in content
                     = '\n'
-                    section(id='section-#{index}', class='section-#{index}')
+                    section(id='section-' + index, class='section-' + index)
                         +#{index}(index, val)
 
                 = '\n'
