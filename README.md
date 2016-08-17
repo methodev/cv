@@ -1,6 +1,6 @@
-[![Build Status](https://api.travis-ci.org/martinmethod/cv.svg)](https://travis-ci.org/martinmethod/cv) [![devDependencies](https://david-dm.org/martinmethod/cv/dev-status.svg)](https://david-dm.org/martinmethod/cv?type=dev) [![GitHub version](https://badge.fury.io/gh/martinmethod%2Fcv.svg)](https://badge.fury.io/gh/martinmethod%2Fcv)
-
-# Martin Metodiev's CV
+# Martin Metodiev's CV [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+                      
+[![Travis](https://img.shields.io/travis/martinmethod/cv.svg)](https://travis-ci.org/martinmethod/cv) [![David](https://img.shields.io/david/dev/martinmethod/cv.svg)](https://david-dm.org/martinmethod/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/martinmethod/cv.svg)](https://github.com/martinmethod/cv/releases/latest)
 
 I was one of those kids who couldn't tell with confidence what they wanted to become when grow up. My answer hit me in my early teens, when I got finished my first web page, developed for Netscape. I felt mighty. I made something out of my hands that was digital and it had value for me back then.
 
