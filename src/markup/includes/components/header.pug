@@ -1,22 +1,22 @@
 header.title.cf
-    if base.title
-        h1 #{base.title}
+  if base.title
+    h1 #{base.title}
 
-    .subline.cf
-        if base.contacts
-            .contacts
-                if base.contacts.data
-                    each val, index in base.contacts.data
-                        span.contact.meta.dark(class=index) #{val}
+  .subline.cf
+    if base.contacts
+      .contacts
+        if base.contacts.data
+          each val, index in base.contacts.data
+            span.contact.meta.dark(class=index) #{val}
 
-                if base.contacts.profiles
-                    each val, index in base.contacts.profiles
-                        span.contact.meta.dark(class=index)
-                            a(class=index, href=val.url, target='_blank', title='Go to my ' + val.label + ' profile') #{val.label} profile
+        if base.contacts.profiles
+          each val, index in base.contacts.profiles
+            span.contact.meta.dark(class=index)
+              a(class=index, href=val.url, target='_blank', title='Go to my ' + val.label + ' profile') #{val.label} profile
 
-        if base.addons
-            .tools
-                if base.addons.pdf
-                    a.tool.meta.download(target='_blank', href=base.addons.pdf.url, download=base.addons.pdf.filename)
-                        span.icon
-                        span.text
+    if base.addons
+      .tools
+        if base.addons.pdf
+          a.tool.meta.download(target='_blank', href=base.addons.pdf.url, download=base.addons.pdf.filename)
+            span.icon
+            span.text

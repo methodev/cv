@@ -1,3 +1,21 @@
+<a name="1.1.0"></a>
+# 1.1.0 (2016-08-29)
+
+
+### Bug Fixes
+
+* **Dependencies' banners:** Removed with stripCssComments ([e44d575](https://github.com/martinmethod/cv/commit/e44d575))
+
+
+### Features
+
+* **devDependencies:** Updated jQuery to v2.2.4 ([791c8d0](https://github.com/martinmethod/cv/commit/791c8d0))
+* **devDependencies:** Updated normalize.css to v4.2.0 ([1ed02b5](https://github.com/martinmethod/cv/commit/1ed02b5))
+* **Pug lint:** Added linter for Pug markup ([ff03c8e](https://github.com/martinmethod/cv/commit/ff03c8e))
+* **Travis:** NodeJS set as an environment ([187b5e6](https://github.com/martinmethod/cv/commit/187b5e6))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2016-08-17)
 
