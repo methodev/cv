@@ -1,9 +1,9 @@
 mixin pro_experience(name, data)
-    h2 #{data.label}
-    .categories.cf
-        each val, index in data.content
-            .category(data-experience=index)
-                h3.label #{val.label}
-                ul
-                    each item in val.list
-                        li #{item}
+  h2 #{data.label}
+  .categories.cf
+    each val, index in data.content
+      .category(data-experience=index)
+        h3.label #{val.label}
+        ul
+          each item in val.list
+            li #{item}
