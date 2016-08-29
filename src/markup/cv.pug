@@ -7,8 +7,6 @@ include includes/sections/skills
 include includes/sections/references
 include includes/sections/portfolio
 
-
-
 doctype html
 
 = '\n\n'
@@ -18,48 +16,48 @@ doctype html
 
 = '\n'
 
-html(lang="en")
-    head
-        title #{pkg.title}
+html(lang='en')
+  head
+    title #{pkg.title}
 
-        = '\n\n'
+    = '\n\n'
 
-        | <!--[if lte IE 8]><meta http-equiv="refresh" content="0;URL='http://bg.linkedin.com/in/martinmetodiev'" /><![endif]-->
-
-        = '\n'
-
-        include includes/head/meta
-
-        include includes/head/webapp
-
-        include includes/head/social/google
-        include includes/head/social/facebook
-        include includes/head/social/twitter
-
-        include includes/head/robots
-
-        include includes/head/favicons
-
-        include includes/head/styles
-
-        include includes/head/fonts
+    | <!--[if lte IE 8]><meta http-equiv="refresh" content="0;URL='http://bg.linkedin.com/in/martinmetodiev'" /><![endif]-->
 
     = '\n'
 
-    body(ontouchstart='')
-        section.cv
-            article
-                include includes/components/header
+    include includes/head/meta
 
-                each val, index in content
-                    = '\n'
-                    section(id='section-' + index, class='section-' + index)
-                        +#{index}(index, val)
+    include includes/head/webapp
 
-                = '\n'
+    include includes/head/social/google
+    include includes/head/social/facebook
+    include includes/head/social/twitter
 
-                include includes/components/footer
+    include includes/head/robots
 
-        include includes/foot/scripts
+    include includes/head/favicons
 
-        include includes/foot/analytics
+    include includes/head/styles
+
+    include includes/head/fonts
+
+  = '\n'
+
+  body(ontouchstart='')
+    section.cv
+      article
+        include includes/components/header
+
+        each val, index in content
+          = '\n'
+          section(id='section-' + index, class='section-' + index)
+            +#{index}(index, val)
+
+        = '\n'
+
+        include includes/components/footer
+
+    include includes/foot/scripts
+
+    include includes/foot/analytics
