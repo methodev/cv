@@ -1,3 +1,18 @@
+<a name="1.1.1"></a>
+## 1.1.1 (2016-09-02)
+
+
+### Bug Fixes
+
+* **Print.css:** Changed class selectors ([357b3b7](https://github.com/martinmethod/cv/commit/357b3b7))
+
+
+### Features
+
+* **Pug lint:** Removed "disallowIdLiteralsBeforeAttributes" ([3d43e9a](https://github.com/martinmethod/cv/commit/3d43e9a))
+
+
+
 <a name="1.1.0"></a>
 # 1.1.0 (2016-08-29)
 

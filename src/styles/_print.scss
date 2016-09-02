@@ -47,7 +47,7 @@
 
     .item:not(:last-child),
     .section-references .contact:not(:last-child),
-    .section-tech_experience .label { margin-bottom: 5px; }
+    [class='section-tech_experience'] .label { margin-bottom: 5px; }
 
     .section-employment .item:not(:last-child) .details::after,
     .section-education .item:not(:last-child) .details::after { margin-bottom: 20px; }
@@ -55,8 +55,8 @@
     .section-employment.expanded ~ .section-education,
     .section-employment.expanded ~ .section-education:not(.expanded) ~ .section-skills,
     .section-employment:not(.expanded) ~ .section-education.expanded ~ .section-skills,
-    .section-employment.expanded ~ .section-education.expanded ~ .section-tech_experience,
-    .section-employment:not(.expanded) ~ .section-education:not(.expanded) ~ .section-tech_experience {
+    .section-employment.expanded ~ .section-education.expanded ~ [class='section-tech_experience'],
+    .section-employment:not(.expanded) ~ .section-education:not(.expanded) ~ [class='section-tech_experience'] {
       page-break-before: always;
     }
 
@@ -64,12 +64,12 @@
       .phone { display: block; }
     }
 
-    .section-tech_experience .category,
-    .section-pro_experience .category {
+    [class='section-tech_experience'] .category,
+    [class='section-pro_experience'] .category {
       page-break-inside: avoid;
     }
 
-    .section-tech_experience {
+    [class='section-tech_experience'] {
       ul li .level {
         background: none;
       }
