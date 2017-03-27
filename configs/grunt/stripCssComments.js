@@ -1,11 +1,11 @@
 module.exports = {
-    options: {
-        preserve: false
-    },
+  options: {
+    preserve: false
+  },
 
-    task: {
-        files: {
-            'bower_components/normalize-css/normalize.css': 'bower_components/normalize-css/normalize.css'
-        }
+  task: {
+    files: {
+      'bower_components/normalize-css/normalize.css': 'bower_components/normalize-css/normalize.css'
     }
+  }
 };

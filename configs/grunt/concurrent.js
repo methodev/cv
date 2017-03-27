@@ -1,28 +1,28 @@
 module.exports = {
 
-    build: [
-        // favicons
-        ['realFavicon'],
+  build: [
+    // favicons
+    ['realFavicon'],
 
-        // markup
-        ['pug'],
+    // markup
+    ['pug'],
 
-        // styles
-        ['stripCssComments', 'compass'],
+    // styles
+    ['stripCssComments', 'compass'],
 
-        // scripts
-        ['concat', 'uglify']
-    ],
+    // scripts
+    ['concat', 'uglify']
+  ],
 
-    prod: [
-        'htmlmin',
-        'copy:pdf'
-    ],
+  prod: [
+    'htmlmin',
+    'copy:pdf'
+  ],
 
-    review: [
-        'open:build',
-        'open:repo',
-        'open:prod'
-    ]
+  review: [
+    'open:build',
+    'open:repo',
+    'open:prod'
+  ]
 
 };
