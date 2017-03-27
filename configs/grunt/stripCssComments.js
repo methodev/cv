@@ -5,7 +5,7 @@ module.exports = {
 
   task: {
     files: {
-      'bower_components/normalize-css/normalize.css': 'bower_components/normalize-css/normalize.css'
+      'node_modules/normalize.css/normalize.css': 'node_modules/normalize.css/normalize.css'
     }
   }
 };
