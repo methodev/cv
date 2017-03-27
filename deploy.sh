@@ -8,7 +8,6 @@ OUTPUT_DIR="dist"
 function build {
   npm install -g grunt-cli
   npm install
-  bundle install
   grunt build --target=prod
 }
 
