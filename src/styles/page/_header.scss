@@ -14,7 +14,9 @@
       font-size: 150%;
     }
 
-    .meta { font-style: normal; }
+    .meta {
+      font-style: normal;
+    }
 
     .contacts {
       float: left;
@@ -24,9 +26,13 @@
         white-space: nowrap;
 
         &.phone,
-        &.email { display: none; }
+        &.email {
+          display: none;
+        }
 
-        &:not(:last-child) { margin-right: 3%; }
+        &:not(:last-child) {
+          margin-right: 3%;
+        }
       }
 
     }
@@ -41,7 +47,9 @@
         float: right;
         cursor: pointer;
 
-        &:not(:last-of-type) { margin-left: 5%; }
+        &:not(:last-of-type) {
+          margin-left: 5%;
+        }
 
         .icon {
           @include border-radius();
@@ -74,15 +82,21 @@
           white-space: nowrap;
         }
 
-        &:hover .text::after { text-decoration: none; }
+        &:hover .text::after {
+          text-decoration: none;
+        }
       }
 
-      .tool { width: 35%; }
+      .tool {
+        width: 35%;
+      }
     }
   }
 
   .download {
-    .text::after { content: 'Download'; }
+    .text::after {
+      content: 'Download';
+    }
   }
 
 }
@@ -96,7 +110,9 @@
       padding: 0 16px;
       margin: 0 -16px 6%;
 
-      .contacts { width: 100%; }
+      .contacts {
+        width: 100%;
+      }
 
       .tools {
         position: absolute;
@@ -109,7 +125,9 @@
           height: 24px;
           padding-left: 0;
 
-          &:not(:last-of-type) { margin-left: 15px; }
+          &:not(:last-of-type) {
+            margin-left: 15px;
+          }
 
           .icon {
             width: 100%;
@@ -119,7 +137,9 @@
         }
 
         .tool .text::after,
-        .expanded .tool .text::after { content: ''; }
+        .expanded .tool .text::after {
+          content: '';
+        }
       }
     }
 

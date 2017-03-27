@@ -25,7 +25,9 @@ h2.page {
 
 //====================> 2. Meta
 
-.meta-n { font: normal 16px $font-family-sans-serif; }
+.meta-n {
+  font: normal 16px $font-family-sans-serif;
+}
 
 
 
@@ -44,7 +46,9 @@ h2.page {
   h1.page { font-size: $font-size-h1 / 1.2; }
   h2.page { font-size: $font-size-h2 / 1.2; }
 
-  .meta-n { font-size: 14px; }
+  .meta-n {
+    font-size: 14px;
+  }
 
 }
 
@@ -54,7 +58,9 @@ h2.page {
   h1.page { font-size: $font-size-h1 / 1.5; }
   h2.page { font-size: $font-size-h2 / 1.5; }
 
-  .meta-n { font-size: 12px; }
+  .meta-n {
+    font-size: 12px;
+  }
 
 }
 

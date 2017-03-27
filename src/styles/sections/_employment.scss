@@ -4,14 +4,18 @@
 
 .section-employment {
 
-  header { position: relative; }
+  header {
+    position: relative;
+  }
 
   .position {
     float: left;
     color: $gray-666;
   }
 
-  .company { float: right; }
+  .company {
+    float: right;
+  }
 
   .period,
   .location {
@@ -47,7 +51,9 @@
     }
   }
 
-  .description { margin-top: 1.32%; }
+  .description {
+    margin-top: 1.32%;
+  }
 
   footer {
     margin-top: 1.32%;
@@ -125,7 +131,9 @@
         width: auto;
       }
 
-      p { padding-left: 0; }
+      p {
+        padding-left: 0;
+      }
 
     }
 

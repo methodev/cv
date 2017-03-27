@@ -9,7 +9,9 @@
   height: 100%;
   background-color: $body-bg;
 
-  &.active { top: 0; }
+  &.active {
+    top: 0;
+  }
 
   &.inactive {
     left: -100%;
@@ -18,7 +20,9 @@
     overflow: hidden;
   }
 
-  &.static { position: static; }
+  &.static {
+    position: static;
+  }
 
   article {
     width: 1660px;
@@ -107,7 +111,9 @@
 
   .cv {
 
-    article { font-size: 15px; }
+    article {
+      font-size: 15px;
+    }
 
   }
 

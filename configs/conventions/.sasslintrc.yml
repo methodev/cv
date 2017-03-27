@@ -120,7 +120,7 @@ rules:
   brace-style:
     - 1
     - style: 'stroustrup'
-    - allow-single-line: true
+      allow-single-line: true
   clean-import-paths:
     - 1
     - filename-extension: false
