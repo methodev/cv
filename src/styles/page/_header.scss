@@ -60,7 +60,7 @@
         }
 
         &.download .icon {
-          background-image: inline-image('icons/download.svg');
+          background-image: url(data-uri('src/images/icons/download.svg'));
         }
 
         &:hover  .icon { background-color: $col-green; }

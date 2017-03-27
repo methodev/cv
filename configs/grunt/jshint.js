@@ -1,10 +1,10 @@
 module.exports = {
-    options: {
-        jshintrc: 'configs/conventions/.jshintrc',
-        debug: false
-    },
+  options: {
+    jshintrc: 'configs/conventions/.jshintrc',
+    debug: false
+  },
 
-    target: {
-        src: ['src/scripts/**/*.js']
-    }
+  target: {
+    src: ['src/scripts/**/*.js']
+  }
 };

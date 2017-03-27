@@ -1,3 +1,14 @@
+<a name="1.2.0"></a>
+# 1.2.0 (2017-03-27)
+
+
+### Features
+
+* **LibSass:** Replaced Ruby Sass with Node Sass ([2ad07a7](https://github.com/martinmethod/cv/commit/2ad07a7))
+* **Packages:** Replaced Bower with NPM ([b1b0863](https://github.com/martinmethod/cv/commit/b1b0863))
+
+
+
 <a name="1.1.1"></a>
 ## 1.1.1 (2016-09-02)
 

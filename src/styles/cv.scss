@@ -4,12 +4,12 @@
 
 //--------------------------| Compass
 
-@import 'compass';
+@import '../../node_modules/compass-mixins/lib/compass';
 
 
 //--------------------------| Dependencies
 
-@import 'CSS:../../bower_components/normalize-css/normalize';
+@import '../../node_modules/normalize.css/normalize';
 
 
 //--------------------------| Libraries
@@ -28,12 +28,20 @@
 
 //--------------------------| Page
 
-@import 'page/*';
+@import 'page/header';
+@import 'page/body';
+@import 'page/footer';
 
 
 //--------------------------| Sections
 
-@import 'sections/*';
+@import 'sections/education';
+@import 'sections/employment';
+@import 'sections/pro_experience';
+@import 'sections/references';
+@import 'sections/skills';
+@import 'sections/summary';
+@import 'sections/tech_experience';
 
 
 //--------------------------| Print styles
