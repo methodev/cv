@@ -3,11 +3,13 @@ var grunt = require('grunt'),
     fs = require('fs'),
     path = require('path'),
     mime = require('mime-types'),
-    sassDataURI = require('lib-sass-data-uri');
+    sassDataURI = require('lib-sass-data-uri'),
+    nodeSassGlobbing = require('node-sass-globbing');
 
 module.exports = {
 
   options: {
+    importer: nodeSassGlobbing,
     sourceMap: grunt.option('target') !== 'prod',
     outputStyle: 'compressed',
     functions: Object.assign({}, sassDataURI)
