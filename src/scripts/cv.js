@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 
         cv.element.find('.mode-switcher').each(function() {
           var trigger = $(this),
-            section = trigger.closest('section');
+              section = trigger.closest('section');
 
           trigger.bind('click', function() {
             section.toggleClass('expanded');

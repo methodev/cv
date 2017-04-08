@@ -4,14 +4,18 @@
 
 .section-education {
 
-  header { position: relative; }
+  header {
+    position: relative;
+  }
 
   .name {
     float: left;
     color: $gray-666;
   }
 
-  .institution { float: right; }
+  .institution {
+    float: right;
+  }
 
   .period,
   .location {
@@ -47,7 +51,9 @@
     }
   }
 
-  .description { margin-top: 1.32%; }
+  .description {
+    margin-top: 1.32%;
+  }
 
   footer {
     margin-top: 1.32%;
@@ -121,7 +127,9 @@
         width: auto;
       }
 
-      p { padding-left: 0; }
+      p {
+        padding-left: 0;
+      }
     }
 
   }

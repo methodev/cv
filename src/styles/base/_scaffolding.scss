@@ -29,7 +29,6 @@ body {
   line-height: $line-height-base;
   color: $text-color;
   background: $body-bg;
-
 }
 
 
@@ -51,9 +50,13 @@ a {
   color: $link-normal-color;
   text-decoration: underline;
 
-  &:active { color: $link-active-color !important; }
+  &:active {
+    color: $link-active-color !important;
+  }
 
-  &:focus { outline: none; }
+  &:focus {
+    outline: none;
+  }
 }
 
 html:not(.mobile) a:hover {
@@ -67,14 +70,18 @@ html:not(.mobile) a:hover {
 
 @media screen and (max-width: 1280px), screen and (max-height: 800px) {
 
-  body { font-size: $font-size-normal; }
+  body {
+    font-size: $font-size-normal;
+  }
 
 }
 
 @media screen and (max-height: 639px) and (min-width: 900px),
        screen and (max-width: 1023px) {
 
-  body { font-size: $font-size-small; }
+  body {
+    font-size: $font-size-small;
+  }
 
 }
 
@@ -83,6 +90,8 @@ html:not(.mobile) a:hover {
        screen and (max-height: 569px) {
 
   html,
-  body { height: auto; }
+  body {
+    height: auto;
+  }
 
 }

@@ -4,22 +4,30 @@
 
 @media print {
 
-  body { -webkit-print-color-adjust: exact; }
+  body {
+    -webkit-print-color-adjust: exact;
+  }
 
   .cv {
 
     .tools,
     .ext-link,
-    .mode-switcher { display: none; }
+    .mode-switcher {
+      display: none;
+    }
 
     a {
       color: $gray-dark;
       text-decoration: none;
     }
 
-    p:not(:last-of-type) { margin-bottom: 12px; }
+    p:not(:last-of-type) {
+      margin-bottom: 12px;
+    }
 
-    h2 { margin-bottom: 15px; }
+    h2 {
+      margin-bottom: 15px;
+    }
 
     article {
       width: 600px;
@@ -27,30 +35,44 @@
       font-size: 14px;
     }
 
-    section { line-height: 1.4; }
+    section {
+      line-height: 1.4;
+    }
 
     header.title {
 
-      h1 { margin-bottom: -6px; }
+      h1 {
+        margin-bottom: -6px;
+      }
 
       .contacts .contact {
         &.linkedin,
-        &.twitter { display: none; }
+        &.twitter {
+          display: none;
+        }
 
         &.phone,
-        &.email { display: inline; }
+        &.email {
+          display: inline;
+        }
       }
     }
 
     header.title,
-    section { margin-bottom: 30px; }
+    section {
+      margin-bottom: 30px;
+    }
 
     .item:not(:last-child),
     .section-references .contact:not(:last-child),
-    [class='section-tech_experience'] .label { margin-bottom: 5px; }
+    [class='section-tech_experience'] .label {
+      margin-bottom: 5px;
+    }
 
     .section-employment .item:not(:last-child) .details::after,
-    .section-education .item:not(:last-child) .details::after { margin-bottom: 20px; }
+    .section-education .item:not(:last-child) .details::after {
+      margin-bottom: 20px;
+    }
 
     .section-employment.expanded ~ .section-education,
     .section-employment.expanded ~ .section-education:not(.expanded) ~ .section-skills,
@@ -61,7 +83,9 @@
     }
 
     .section-references {
-      .phone { display: block; }
+      .phone {
+        display: block;
+      }
     }
 
     [class='section-tech_experience'] .category,
