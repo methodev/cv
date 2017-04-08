@@ -10,11 +10,17 @@
     float: left;
     width: $width;
 
-    &:not(:nth-child(#{$count}n+#{$count})) { margin-right: $gap; }
+    &:not(:nth-child(#{$count}n+#{$count})) {
+      margin-right: $gap;
+    }
 
-    &:nth-child(#{$count}n+1) { clear: left; }
+    &:nth-child(#{$count}n+1) {
+      clear: left;
+    }
 
-    h3 { display: block; }
+    h3 {
+      display: block;
+    }
 
     &::before {
       display: block;
@@ -23,7 +29,7 @@
   }
 }
 
-[class*="section-tech_experience"] {
+[class*='section-tech_experience'] {
 
   $lvl-bgr: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGElEQVQIW2M8c+bMfxMTE0ZGBgYGBhAHAEPkB2YrGeGBAAAAAElFTkSuQmCC');
   $lvl-selected: #aaa;
@@ -56,7 +62,9 @@
       margin: 0 -15% 6%;
       list-style: none;
 
-      &:nth-child(2n+1) { background-color: $col-marked; }
+      &:nth-child(2n+1) {
+        background-color: $col-marked;
+      }
 
       > * {
         display: inline-block;
@@ -116,7 +124,7 @@
 
 }
 
-html:not(.firefox) [class*="section-tech_experience"] {
+html:not(.firefox) [class*='section-tech_experience'] {
   ul {
     li {
       .level {
@@ -128,7 +136,7 @@ html:not(.firefox) [class*="section-tech_experience"] {
 
 @media screen and (max-width: 767px) {
 
-  [class*="section-tech_experience"] {
+  [class*='section-tech_experience'] {
     .categories {
       margin-top: -8%;
     }
@@ -145,7 +153,9 @@ html:not(.firefox) [class*="section-tech_experience"] {
       margin-top: 17.78%;
     }
 
-    .label { margin-bottom: 1.78%; }
+    .label {
+      margin-bottom: 1.78%;
+    }
 
     ul {
       li {
@@ -163,7 +173,7 @@ html:not(.firefox) [class*="section-tech_experience"] {
     }
   }
 
-  [class*="section-tech_experience"] {
+  [class*='section-tech_experience'] {
     @include tech-experience-category(2, 45%);
   }
 
@@ -171,7 +181,7 @@ html:not(.firefox) [class*="section-tech_experience"] {
 
 @media screen and (max-width: 479px) {
 
-  [class*="section-tech_experience"] {
+  [class*='section-tech_experience'] {
 
     .categories {
       margin-top: -6%;

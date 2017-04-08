@@ -14,11 +14,17 @@
     margin:  0 -3%;
     list-style: none;
 
-    &:nth-child(2n+1) { background-color: $col-marked; }
+    &:nth-child(2n+1) {
+      background-color: $col-marked;
+    }
 
-    &:not(:last-child) { margin-bottom: 1.2%; }
+    &:not(:last-child) {
+      margin-bottom: 1.2%;
+    }
 
-    &::before { @include bullet(); }
+    &::before {
+      @include bullet();
+    }
   }
 
   $person-width: 80%;
@@ -27,9 +33,13 @@
     float: left;
     width: $person-width;
 
-    br { display: none; }
+    br {
+      display: none;
+    }
 
-    .info::before { content: ' — '; }
+    .info::before {
+      content: ' — ';
+    }
   }
 
   .phone {
@@ -56,12 +66,16 @@
       float: none;
       width: auto;
 
-      br {display: block;}
+      br {
+        display: block;
+      }
 
       .info {
         display: block;
 
-        &::before { content: ''; }
+        &::before {
+          content: '';
+        }
       }
     }
 

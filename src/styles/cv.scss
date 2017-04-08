@@ -20,28 +20,17 @@
 
 //--------------------------| Base
 
-@import 'base/scaffolding';
-@import 'base/utilities';
-@import 'base/typography';
-@import 'base/common';
+@import 'base/**/*.*';
 
 
 //--------------------------| Page
 
-@import 'page/header';
-@import 'page/body';
-@import 'page/footer';
+@import 'page/**/*.*';
 
 
 //--------------------------| Sections
 
-@import 'sections/education';
-@import 'sections/employment';
-@import 'sections/pro_experience';
-@import 'sections/references';
-@import 'sections/skills';
-@import 'sections/summary';
-@import 'sections/tech_experience';
+@import 'sections/**/*.*';
 
 
 //--------------------------| Print styles

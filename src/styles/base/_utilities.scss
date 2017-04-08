@@ -4,7 +4,10 @@
 
 //====================> 1. Floats
 
-.cf { @include cf(); }
+.cf {
+  @include cf();
+}
+
 .fr { float: right !important; }
 .fl { float: left  !important; }
 
@@ -15,7 +18,9 @@
 .hide { display: none  !important; }
 .show { display: block !important; }
 
-.invisible { visibility: hidden; }
+.invisible {
+  visibility: hidden;
+}
 
 .hidden {
   display: none !important;

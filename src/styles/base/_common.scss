@@ -12,7 +12,9 @@
     overflow: hidden;
   }
 
-  .expanded .details { max-height: 1000px; }
+  .expanded .details {
+    max-height: 1000px;
+  }
 
   section {
     padding: 0  3%;
@@ -22,9 +24,13 @@
     text-align: left;
   }
 
-  section.details { margin-bottom: 0; }
+  section.details {
+    margin-bottom: 0;
+  }
 
-  .expanded section.details { margin-bottom: 8%; }
+  .expanded section.details {
+    margin-bottom: 8%;
+  }
 
   h1,
   h2,
@@ -34,7 +40,9 @@
   }
 
   h2,
-  h3 { font-size: 100%; }
+  h3 {
+    font-size: 100%;
+  }
 
   h2 {
     position: relative;
@@ -49,7 +57,9 @@
   p {
     margin: 0;
 
-    &:not(:last-of-type) {margin-bottom: 3.44%; }
+    &:not(:last-of-type) {
+      margin-bottom: 3.44%;
+    }
   }
 
   .meta {
@@ -58,10 +68,14 @@
     cursor: default;
 
     &.light,
-    > .light { color: $gray-999; }
+    > .light {
+      color: $gray-999;
+    }
 
     &.dark,
-    > .dark { color: $gray-666; }
+    > .dark {
+      color: $gray-666;
+    }
   }
 
   .item {
@@ -73,11 +87,15 @@
       background-color: $col-marked;
     }
 
-    &:not(:last-child) { margin-bottom: 1.2%; }
+    &:not(:last-child) {
+      margin-bottom: 1.2%;
+    }
   }
 
   section:not(.expanded) .item {
-    &:nth-of-type(2n+2) header { background-color: $body-bg; }
+    &:nth-of-type(2n+2) header {
+      background-color: $body-bg;
+    }
   }
 
   .mode-switcher {
@@ -86,7 +104,9 @@
     width: 15%;
     cursor: pointer;
 
-    &:not(:last-of-type) { margin-left: 5%; }
+    &:not(:last-of-type) {
+      margin-left: 5%;
+    }
 
     .icon {
       $square-side: 20.812%;
@@ -122,10 +142,14 @@
     }
 
     &:hover  .icon,
-    &:hover  .icon::after { background-color: $col-green; }
+    &:hover  .icon::after {
+      background-color: $col-green;
+    }
 
     &:active .icon,
-    &:active .icon::after { background-color: $col-red;   }
+    &:active .icon::after {
+      background-color: $col-red;
+    }
   }
 
   .expanded .mode-switcher {
@@ -164,7 +188,9 @@
       height: 24px;
       padding-left: 0;
 
-      &:not(:last-of-type) { margin-left: 15px; }
+      &:not(:last-of-type) {
+        margin-left: 15px;
+      }
 
       .icon {
         width: 100%;

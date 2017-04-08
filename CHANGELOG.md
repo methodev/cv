@@ -1,3 +1,15 @@
+<a name="1.3.0"></a>
+# 1.3.0 (2017-04-08)
+
+
+### Features
+
+* **Bundle:** Removed Ruby dependencies ([a0a074d](https://github.com/martinmethod/cv/commit/a0a074d))
+* **Deploy:** GitHub Pages & GitHub Releases ([a4a7ac7](https://github.com/martinmethod/cv/commit/a4a7ac7))
+* **System:** Removed .gitignore ([45ce62c](https://github.com/martinmethod/cv/commit/45ce62c))
+
+
+
 <a name="1.2.0"></a>
 # 1.2.0 (2017-03-27)
 
