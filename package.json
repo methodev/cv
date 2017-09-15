@@ -33,7 +33,7 @@
     "grunt-conventional-changelog": "^6.1.0",
     "grunt-open": "^0.2.3",
     "grunt-puglint": "^1.0.0",
-    "grunt-real-favicon": "^0.2.0",
+    "grunt-real-favicon": "^0.2.2",
     "grunt-sass": "^2.0.0",
     "grunt-sass-lint": "^0.2.2",
     "grunt-shell": "^2.1.0",
