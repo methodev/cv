@@ -5,11 +5,13 @@
 @media print {
 
   body {
-    -webkit-print-color-adjust: exact;
+    &,
+    * {
+      -webkit-print-color-adjust: exact;
+    }
   }
 
   .cv {
-
     .tools,
     .ext-link,
     .mode-switcher {
@@ -17,7 +19,6 @@
     }
 
     a {
-      color: $gray-dark;
       text-decoration: none;
     }
 
@@ -35,11 +36,8 @@
       font-size: 14px;
     }
 
-    section {
-      line-height: 1.4;
-    }
-
     header.title {
+      padding-top: 30px;
 
       h1 {
         margin-bottom: -6px;
@@ -55,12 +53,21 @@
         &.email {
           display: inline;
         }
+
+        &.email {
+          color: $link-normal-color;
+        }
       }
     }
 
-    header.title,
-    section {
-      margin-bottom: 30px;
+    .details {
+      max-height: 0 !important;
+    }
+
+    section .item {
+      &:nth-of-type(2n+2) header {
+        background-color: $body-bg !important;
+      }
     }
 
     .item:not(:last-child),
@@ -69,17 +76,18 @@
       margin-bottom: 5px;
     }
 
-    .section-employment .item:not(:last-child) .details::after,
-    .section-education .item:not(:last-child) .details::after {
-      margin-bottom: 20px;
+    [class='section-tech_experience'] .category,
+    [class='section-pro_experience'] .category {
+      page-break-inside: avoid;
     }
 
-    .section-employment.expanded ~ .section-education,
-    .section-employment.expanded ~ .section-education:not(.expanded) ~ .section-skills,
-    .section-employment:not(.expanded) ~ .section-education.expanded ~ .section-skills,
-    .section-employment.expanded ~ .section-education.expanded ~ [class='section-tech_experience'],
-    .section-employment:not(.expanded) ~ .section-education:not(.expanded) ~ [class='section-tech_experience'] {
+    [class='section-tech_experience'] {
+      padding-top: 30px;
       page-break-before: always;
+
+      ul li .level {
+        background: none;
+      }
     }
 
     .section-references {
@@ -88,21 +96,11 @@
       }
     }
 
-    [class='section-tech_experience'] .category,
-    [class='section-pro_experience'] .category {
-      page-break-inside: avoid;
-    }
-
-    [class='section-tech_experience'] {
-      ul li .level {
-        background: none;
-      }
-    }
-
     footer.page {
-      padding-top: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
       font-size: 12px;
-      color: $gray-999;
     }
 
   }
