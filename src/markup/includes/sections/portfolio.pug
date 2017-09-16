@@ -1,4 +1,6 @@
 mixin portfolio(name, data)
   h2 #{data.label}
-  p
-    a(target='_blank', href=data.content.url) #{data.content.label}
+  .sites
+    each site in data.content
+      p
+        a(target='_blank', href=site.url) #{site.label}

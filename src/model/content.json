@@ -558,9 +558,19 @@
 
   "portfolio": {
     "label": "Portfolio",
-    "content": {
-      "label": "portfolio.martinmetodiev.com",
-      "url": "http://portfolio.martinmetodiev.com"
-    }
+    "content": [
+      {
+        "label": "portfolio.martinmetodiev.com",
+        "url": "http://portfolio.martinmetodiev.com"
+      },
+      {
+        "label": "github.com/martinmethod",
+        "url": "https://github.com/martinmethod"
+      },
+      {
+        "label": "codepen.io/martinmethod",
+        "url": "https://codepen.io/martinmethod/"
+      }
+    ]
   }
 }
