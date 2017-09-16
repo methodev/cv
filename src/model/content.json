@@ -314,7 +314,7 @@
         "label": "Frameworks & libs",
         "list": [
           {
-            "title": "jQuery (UI)",
+            "title": "jQuery",
             "period": "since 2009",
             "level": "Expert"
           },
@@ -375,16 +375,16 @@
           }
         ]
       },
-      "cms_products": {
-        "label": "CMS products",
+      "vcs_packages": {
+        "label": "VCS packages",
         "list": [
           {
-            "title": "WordPress",
-            "period": "since 2008"
+            "title": "Git",
+            "period": "since 2012"
           },
           {
-            "title": "osCommerce",
-            "period": "2008 – 2009"
+            "title": "Subversion",
+            "period": "2008 – 2011"
           }
         ]
       },
@@ -406,24 +406,49 @@
           {
             "title": "Yeoman",
             "period": "since 2014"
-          }
-        ]
-      },
-      "vcs_packages": {
-        "label": "VCS packages",
-        "list": [
-          {
-            "title": "Git",
-            "period": "since 2012"
           },
           {
-            "title": "Subversion",
-            "period": "2008 – 2011"
+            "title": "Webpack",
+            "period": "since 2017"
           }
         ]
       },
-      "dev_environment": {
-        "label": "Dev environment",
+      "docs_tools": {
+        "label": "Docs tools",
+        "list": [
+          {
+            "title": "Hologram",
+            "period": "since 2015"
+          },
+          {
+            "title": "SassDoc",
+            "period": "since 2016"
+          },
+          {
+            "title": "Atomic Docs",
+            "period": "since 2016"
+          },
+          {
+            "title": "Pattern Lab",
+            "period": "since 2017"
+          }
+        ]
+      },
+      "cms_products": {
+        "label": "CMS products",
+        "list": [
+          {
+            "title": "WordPress",
+            "period": "since 2008"
+          },
+          {
+            "title": "osCommerce",
+            "period": "2008 – 2009"
+          }
+        ]
+      },
+      "dev_products": {
+        "label": "Dev products",
         "list": [
           {
             "title": "WebStorm",
@@ -444,32 +469,15 @@
           {
             "title": "Ghostlab",
             "period": "since 2014"
+          },
+          {
+            "title": "Dreamweaver",
+            "period": "2008 – 2011"
           }
         ]
       },
-      "docs_environment": {
-        "label": "Docs environment",
-        "list": [
-          {
-            "title": "Hologram",
-            "period": "since 2015"
-          },
-          {
-            "title": "SassDoc",
-            "period": "since 2016"
-          },
-          {
-            "title": "Atomic Docs",
-            "period": "since 2016"
-          },
-          {
-            "title": "Markdown syntax",
-            "period": "since 2013"
-          }
-        ]
-      },
-      "adobe_software": {
-        "label": "Adobe software",
+      "design_products": {
+        "label": "Design products",
         "list": [
           {
             "title": "Photoshop",
@@ -480,8 +488,12 @@
             "period": "since 2009"
           },
           {
-            "title": "Dreamweaver",
-            "period": "2008 – 2011"
+            "title": "InDesign",
+            "period": "since 2016"
+          },
+          {
+            "title": "Sketch",
+            "period": "since 2017"
           }
         ]
       }
