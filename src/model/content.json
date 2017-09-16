@@ -243,26 +243,45 @@
   "pro_experience": {
     "label": "Professional experience",
     "content": {
-      "development": {
-        "label": "Development",
+      "css_development": {
+        "label": "CSS development",
         "list": [
-          "Building-up advanced UI frameworks",
-          "Writing jQuery plugins",
-          "Handling responsive web designs",
-          "Creating fluid grid systems",
-          "Preparing adaptive images",
-          "Developing for mobile devices",
-          "Optimizing styles for print"
+          "Developing atomic design systems",
+          "Developing complex Sass functionalities",
+          "Developing Smacss architectures",
+          "Developing responsive grid rules",
+          "Developing flexible layouts",
+          "Developing deep typography hierarchy",
+          "Developing print stylesheets"
         ]
       },
-      "quality": {
-        "label": "Quality features",
+      "js_development": {
+        "label": "JS development",
         "list": [
-          "Developing adaptive architectures",
-          "Testing for cross-browser compatibility",
+          "Developing AMD front-end architectures",
+          "Developing jQuery plugins",
+          "Developing Yeoman scaffolding tasks",
+          "Developing Grunt-init scaffolding tasks"
+        ]
+      },
+      "environment_setup": {
+        "label": "Environment setup",
+        "list": [
+          "Setting-up Git branching model",
+          "Setting-up GruntJS environments",
+          "Setting-up Webpack environments",
+          "Setting-up Travis CI tasks"
+        ]
+      },
+      "quality_highlights": {
+        "label": "Quality highlights",
+        "list": [
+          "Writing scalable code",
+          "Performance testing",
+          "Cross-browser testing",
           "Complying with standards",
           "Optimizing for search engines",
-          "Delivering compiled distributions"
+          "Delivering documentation pages"
         ]
       }
     }
