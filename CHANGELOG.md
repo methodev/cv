@@ -1,3 +1,27 @@
+<a name="1.4.0"></a>
+# 1.4.0 (2017-09-16)
+
+
+### Features
+
+* **Content:** Added new portfolio links ([c1fa50c](https://github.com/martinmethod/cv/commit/c1fa50c))
+* **Content:** Changed Komfo position title ([e5815cd](https://github.com/martinmethod/cv/commit/e5815cd))
+* **Content:** Changed Lily Grozeva's position ([2a0d78b](https://github.com/martinmethod/cv/commit/2a0d78b))
+* **Content:** Changed Sia Alexieva's position ([d161a63](https://github.com/martinmethod/cv/commit/d161a63))
+* **Content:** New (short) Summary text with HTML ([fc70613](https://github.com/martinmethod/cv/commit/fc70613))
+* **Content:** Removed link in Summary text ([db18345](https://github.com/martinmethod/cv/commit/db18345))
+* **Content:** Removed personal skills ([148af02](https://github.com/martinmethod/cv/commit/148af02))
+* **Content:** Updated & reordered tech experience ([661dc5a](https://github.com/martinmethod/cv/commit/661dc5a))
+* **Content:** Updated professional experience ([403b904](https://github.com/martinmethod/cv/commit/403b904))
+* **Media Queries:** Small screen improvements ([5caea32](https://github.com/martinmethod/cv/commit/5caea32))
+* **PDF file:** Updated document ([f19ea18](https://github.com/martinmethod/cv/commit/f19ea18))
+* **Print styles:** Updated document layout ([2a82b7d](https://github.com/martinmethod/cv/commit/2a82b7d))
+* **Subheadings:** Added italic font-style ([db81e74](https://github.com/martinmethod/cv/commit/db81e74))
+* **Summary:** Handle HTML text ([22b3c7e](https://github.com/martinmethod/cv/commit/22b3c7e))
+* **Summary:** Removed label ([b849934](https://github.com/martinmethod/cv/commit/b849934))
+
+
+
 <a name="1.3.0"></a>
 # 1.3.0 (2017-04-08)
 
