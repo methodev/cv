@@ -1,0 +1,24 @@
+/* =========================| Portfolio |========================= */
+
+
+
+[class*='section-portfolio'] {
+
+  .sites {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  [class*='section-portfolio'] {
+
+    .sites {
+      display: block;
+    }
+
+  }
+
+}

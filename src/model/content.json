@@ -1,11 +1,7 @@
 {
   "summary": {
-    "label": "Summary",
     "content": [
-      "I was one of those kids who couldn’t tell with confidence what they wanted to become when grow up. My answer hit me in my early teens, when I got finished my first web page, developed for Netscape. I felt mighty. I made something out of my hands that was digital and it had value for me back then.",
-      "Being in the university I had a great time learning all about graphic designs and digital interfaces. I’ve earned extensive knowledge of visual arts and gained an eye for beautiful things.",
-      "More than 8 years now, I’ve been professionally involved in building web user interfaces and using contemporary client-side technologies. And my interest increases with every new released UI technology.",
-      "As said, by connecting the dots now I realize that getting satisfaction from creating beautiful and friendly web UIs wouldn’t be that powerful if it weren’t for all those design things I’ve learned back in the years."
+      "I develop complicated, custom-tailored, fully-functional, UX-focused atomic designs, all served with complete sets of UI docs and dev specs."
     ]
   },
 
@@ -13,7 +9,7 @@
     "label": "Employment",
     "content": [
       {
-        "title": "Senior Front-end Developer",
+        "title": "Senior Web UI Developer",
         "company": {
           "name": "Komfo, INC.",
           "website": "http://komfo.com"
@@ -247,26 +243,45 @@
   "pro_experience": {
     "label": "Professional experience",
     "content": {
-      "development": {
-        "label": "Development",
+      "css_development": {
+        "label": "CSS development",
         "list": [
-          "Building-up advanced UI frameworks",
-          "Writing jQuery plugins",
-          "Handling responsive web designs",
-          "Creating fluid grid systems",
-          "Preparing adaptive images",
-          "Developing for mobile devices",
-          "Optimizing styles for print"
+          "Developing atomic design systems",
+          "Developing complex Sass functionalities",
+          "Developing Smacss architectures",
+          "Developing responsive grid rules",
+          "Developing flexible layouts",
+          "Developing deep typography hierarchy",
+          "Developing print stylesheets"
         ]
       },
-      "quality": {
-        "label": "Quality features",
+      "js_development": {
+        "label": "JS development",
         "list": [
-          "Developing adaptive architectures",
-          "Testing for cross-browser compatibility",
+          "Developing AMD front-end architectures",
+          "Developing jQuery plugins",
+          "Developing Yeoman scaffolding tasks",
+          "Developing Grunt-init scaffolding tasks"
+        ]
+      },
+      "environment_setup": {
+        "label": "Environment setup",
+        "list": [
+          "Setting-up Git branching model",
+          "Setting-up GruntJS environments",
+          "Setting-up Webpack environments",
+          "Setting-up Travis CI tasks"
+        ]
+      },
+      "quality_highlights": {
+        "label": "Quality highlights",
+        "list": [
+          "Writing scalable code",
+          "Performance testing",
+          "Cross-browser testing",
           "Complying with standards",
           "Optimizing for search engines",
-          "Delivering compiled distributions"
+          "Delivering documentation pages"
         ]
       }
     }
@@ -299,7 +314,7 @@
         "label": "Frameworks & libs",
         "list": [
           {
-            "title": "jQuery (UI)",
+            "title": "jQuery",
             "period": "since 2009",
             "level": "Expert"
           },
@@ -360,16 +375,16 @@
           }
         ]
       },
-      "cms_products": {
-        "label": "CMS products",
+      "vcs_packages": {
+        "label": "VCS packages",
         "list": [
           {
-            "title": "WordPress",
-            "period": "since 2008"
+            "title": "Git",
+            "period": "since 2012"
           },
           {
-            "title": "osCommerce",
-            "period": "2008 – 2009"
+            "title": "Subversion",
+            "period": "2008 – 2011"
           }
         ]
       },
@@ -391,24 +406,49 @@
           {
             "title": "Yeoman",
             "period": "since 2014"
-          }
-        ]
-      },
-      "vcs_packages": {
-        "label": "VCS packages",
-        "list": [
-          {
-            "title": "Git",
-            "period": "since 2012"
           },
           {
-            "title": "Subversion",
-            "period": "2008 – 2011"
+            "title": "Webpack",
+            "period": "since 2017"
           }
         ]
       },
-      "dev_environment": {
-        "label": "Dev environment",
+      "docs_tools": {
+        "label": "Docs tools",
+        "list": [
+          {
+            "title": "Hologram",
+            "period": "since 2015"
+          },
+          {
+            "title": "SassDoc",
+            "period": "since 2016"
+          },
+          {
+            "title": "Atomic Docs",
+            "period": "since 2016"
+          },
+          {
+            "title": "Pattern Lab",
+            "period": "since 2017"
+          }
+        ]
+      },
+      "cms_products": {
+        "label": "CMS products",
+        "list": [
+          {
+            "title": "WordPress",
+            "period": "since 2008"
+          },
+          {
+            "title": "osCommerce",
+            "period": "2008 – 2009"
+          }
+        ]
+      },
+      "dev_products": {
+        "label": "Dev products",
         "list": [
           {
             "title": "WebStorm",
@@ -429,32 +469,15 @@
           {
             "title": "Ghostlab",
             "period": "since 2014"
+          },
+          {
+            "title": "Dreamweaver",
+            "period": "2008 – 2011"
           }
         ]
       },
-      "docs_environment": {
-        "label": "Docs environment",
-        "list": [
-          {
-            "title": "Hologram",
-            "period": "since 2015"
-          },
-          {
-            "title": "SassDoc",
-            "period": "since 2016"
-          },
-          {
-            "title": "Atomic Docs",
-            "period": "since 2016"
-          },
-          {
-            "title": "Markdown syntax",
-            "period": "since 2013"
-          }
-        ]
-      },
-      "adobe_software": {
-        "label": "Adobe software",
+      "design_products": {
+        "label": "Design products",
         "list": [
           {
             "title": "Photoshop",
@@ -465,39 +488,16 @@
             "period": "since 2009"
           },
           {
-            "title": "Dreamweaver",
-            "period": "2008 – 2011"
+            "title": "InDesign",
+            "period": "since 2016"
+          },
+          {
+            "title": "Sketch",
+            "period": "since 2017"
           }
         ]
       }
     }
-  },
-
-  "skills": {
-    "label": "Personal skills",
-    "content": [
-      {
-        "skill": "Administrative experience",
-        "meta": "working with colleagues, using administrative software packages"
-      },
-      {
-        "skill": "Teamworking skills",
-        "meta": "following and/or issuing instructions and contributing to everyday tasks"
-      },
-      {
-        "skill": "Communication and interpersonal skills",
-        "meta": "working with new people, understanding my assignment"
-      },
-      {
-        "skill": "Attention to detail through taking accurate messages, researching documents or maintaining records"
-      },
-      {
-        "skill": "Ability to learn quickly and absorb information quickly"
-      },
-      {
-        "skill": "Ability to work under pressure and meet deadlines"
-      }
-    ]
   },
 
   "references": {
@@ -529,23 +529,33 @@
         "url": "https://bg.linkedin.com/in/liligrozeva",
         "phone": "+359 (89) 4871020",
         "relation": "former colleague",
-        "position": "SEO consultant at Allviaweb.com"
+        "position": "Search Marketing Manager at Progress"
       },
       {
         "person": "Sia Alexieva",
         "url": "https://bg.linkedin.com/pub/sia-aleksieva/57/824/604",
         "phone": "+359 (88) 8984200",
         "relation": "former team lead",
-        "position": "HTML department at Mag Studio, LTD."
+        "position": "Senior Front-end Developer at Progress"
       }
     ]
   },
 
   "portfolio": {
     "label": "Portfolio",
-    "content": {
-      "label": "portfolio.martinmetodiev.com",
-      "url": "http://portfolio.martinmetodiev.com"
-    }
+    "content": [
+      {
+        "label": "portfolio.martinmetodiev.com",
+        "url": "http://portfolio.martinmetodiev.com"
+      },
+      {
+        "label": "github.com/martinmethod",
+        "url": "https://github.com/martinmethod"
+      },
+      {
+        "label": "codepen.io/martinmethod",
+        "url": "https://codepen.io/martinmethod/"
+      }
+    ]
   }
 }
