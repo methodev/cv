@@ -488,33 +488,6 @@
     }
   },
 
-  "skills": {
-    "label": "Personal skills",
-    "content": [
-      {
-        "skill": "Administrative experience",
-        "meta": "working with colleagues, using administrative software packages"
-      },
-      {
-        "skill": "Teamworking skills",
-        "meta": "following and/or issuing instructions and contributing to everyday tasks"
-      },
-      {
-        "skill": "Communication and interpersonal skills",
-        "meta": "working with new people, understanding my assignment"
-      },
-      {
-        "skill": "Attention to detail through taking accurate messages, researching documents or maintaining records"
-      },
-      {
-        "skill": "Ability to learn quickly and absorb information quickly"
-      },
-      {
-        "skill": "Ability to work under pressure and meet deadlines"
-      }
-    ]
-  },
-
   "references": {
     "label": "References",
     "content": [
