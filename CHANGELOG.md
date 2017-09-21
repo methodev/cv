@@ -1,3 +1,18 @@
+<a name="1.5.0"></a>
+# 1.5.0 (2017-09-21)
+
+
+### Bug Fixes
+
+* **Header:** Side-padding between links ([cbc04a7](https://github.com/martinmethod/cv/commit/cbc04a7))
+
+
+### Features
+
+* **Header:** Improved mobile offsets & font-sizes ([4f43f1b](https://github.com/martinmethod/cv/commit/4f43f1b))
+
+
+
 <a name="1.4.1"></a>
 ## 1.4.1 (2017-09-20)
 
