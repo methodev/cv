@@ -1,3 +1,13 @@
+<a name="1.6.2"></a>
+## 1.6.2 (2018-05-01)
+
+
+### Bug Fixes
+
+* **Styles:** Broken build ([b4625f3](https://github.com/martinmethod/cv/commit/b4625f3))
+
+
+
 <a name="1.6.1"></a>
 ## 1.6.1 (2018-05-01)
 
