@@ -2,11 +2,6 @@
 ## 1.6.1 (2018-05-01)
 
 
-
-<a name="1.6.0"></a>
-# 1.6.0 (2018-05-01)
-
-
 ### Features
 
 * **Content:** Updated information ([cfaa9b9](https://github.com/martinmethod/cv/commit/cfaa9b9))
