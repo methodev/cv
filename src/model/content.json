@@ -258,6 +258,7 @@
       "js_development": {
         "label": "JS development",
         "list": [
+          "Developing React web apps",
           "Developing AMD front-end architectures",
           "Developing jQuery plugins",
           "Developing Yeoman scaffolding tasks",
@@ -304,9 +305,9 @@
             "level": "Expert"
           },
           {
-            "title": "JavaScript",
-            "period": "since 2009",
-            "level": "Expert"
+            "title": "ES6",
+            "period": "since 2017",
+            "level": "Intermediate"
           }
         ]
       },
@@ -314,14 +315,14 @@
         "label": "Frameworks & libs",
         "list": [
           {
-            "title": "jQuery",
-            "period": "since 2009",
-            "level": "Expert"
+            "title": "React",
+            "period": "since 2017",
+            "level": "Intermediate"
           },
           {
-            "title": "Bootstrap",
-            "period": "since 2013",
-            "level": "Expert"
+            "title": "Lodash",
+            "period": "since 2017",
+            "level": "Intermediate"
           },
           {
             "title": "RequireJS",
@@ -339,25 +340,20 @@
             "level": "Intermediate"
           },
           {
-            "title": "AngularJS",
-            "period": "since 2015",
-            "level": "Beginner"
+            "title": "Bootstrap",
+            "period": "since 2013",
+            "level": "Expert"
           },
           {
-            "title": "ReactJS",
-            "period": "since 2016",
-            "level": "Beginner"
+            "title": "jQuery",
+            "period": "since 2009",
+            "level": "Expert"
           }
         ]
       },
       "preprocess_tools": {
         "label": "Preprocess tools",
         "list": [
-          {
-            "title": "Less",
-            "period": "since 2013",
-            "level": "Expert"
-          },
           {
             "title": "Sass",
             "period": "since 2014",
@@ -366,6 +362,11 @@
           {
             "title": "Compass",
             "period": "since 2014",
+            "level": "Expert"
+          },
+          {
+            "title": "Less",
+            "period": "since 2013",
             "level": "Expert"
           },
           {
@@ -392,11 +393,15 @@
         "label": "Dev packages",
         "list": [
           {
-            "title": "npm",
-            "period": "since 2013"
+            "title": "Webpack",
+            "period": "since 2017"
           },
           {
             "title": "Grunt",
+            "period": "since 2013"
+          },
+          {
+            "title": "npm",
             "period": "since 2013"
           },
           {
@@ -406,10 +411,6 @@
           {
             "title": "Yeoman",
             "period": "since 2014"
-          },
-          {
-            "title": "Webpack",
-            "period": "since 2017"
           }
         ]
       },
