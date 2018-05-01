@@ -1,3 +1,13 @@
+<a name="1.6.4"></a>
+## 1.6.4 (2018-05-01)
+
+
+### Bug Fixes
+
+* **Normalize.css:** Removed ([b90347e](https://github.com/martinmethod/cv/commit/b90347e))
+
+
+
 <a name="1.6.3"></a>
 ## 1.6.3 (2018-05-01)
 
