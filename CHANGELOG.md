@@ -2,51 +2,6 @@
 ## 1.6.6 (2018-05-01)
 
 
-
-<a name="1.5.1"></a>
-## 1.5.1 (2018-05-01)
-
-
-### Bug Fixes
-
-* **Modules:** Reverted versions ([2ecbf45](https://github.com/martinmethod/cv/commit/2ecbf45))
-
-
-
-<a name="1.6.5"></a>
-## 1.6.5 (2018-05-01)
-
-
-
-<a name="1.6.4"></a>
-## 1.6.4 (2018-05-01)
-
-
-### Bug Fixes
-
-* **Normalize.css:** Removed ([b90347e](https://github.com/martinmethod/cv/commit/b90347e))
-
-
-
-<a name="1.6.3"></a>
-## 1.6.3 (2018-05-01)
-
-
-
-<a name="1.6.2"></a>
-## 1.6.2 (2018-05-01)
-
-
-### Bug Fixes
-
-* **Styles:** Broken build ([b4625f3](https://github.com/martinmethod/cv/commit/b4625f3))
-
-
-
-<a name="1.6.1"></a>
-## 1.6.1 (2018-05-01)
-
-
 ### Features
 
 * **Content:** Updated information ([cfaa9b9](https://github.com/martinmethod/cv/commit/cfaa9b9))
