@@ -4,7 +4,7 @@ node_js:
 script:
 - npm install grunt-cli -g
 - npm install
-- grunt build --target='prod'
+- grunt build --target='prod' --force
 - printf '.gitignore\ndeployed*' > dist/.gitignore
 - printf 'cv.martinmetodiev.com' > dist/CNAME
 - cp 'README.md' dist
