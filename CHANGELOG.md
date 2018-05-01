@@ -1,3 +1,13 @@
+<a name="1.5.1"></a>
+## 1.5.1 (2018-05-01)
+
+
+### Bug Fixes
+
+* **Modules:** Reverted versions ([2ecbf45](https://github.com/martinmethod/cv/commit/2ecbf45))
+
+
+
 <a name="1.6.5"></a>
 ## 1.6.5 (2018-05-01)
 
