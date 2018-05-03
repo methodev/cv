@@ -19,19 +19,15 @@
           "end": "present"
         },
         "location": "Sofia, BG",
-        "description": "Take active part in the development and maintenance of the company’s Social Media Management platform by developing in-house UI framework and UI components.",
+        "description": "Take active part in the development and maintenance of the company’s Social Media Management platform by developing internal UI framework and UI components based on the Atomic Design concept.",
         "meta": [
           "HTML5",
           "CSS3",
-          "Less",
+          "ES6",
           "Sass",
           "Compass",
           "Bootstrap",
-          "JavaScript",
           "jQuery",
-          "RequireJS",
-          "Underscore.js",
-          "AngularJS",
           "Grunt",
           "Bower",
           "Git",
@@ -46,7 +42,7 @@
         ]
       },
       {
-        "title": "Lead Front-end Developer",
+        "title": "Front-end Developer",
         "company": {
           "name": "Edamam, LLC",
           "website": "https://www.edamam.com"
@@ -56,13 +52,13 @@
           "end": "11/2013"
         },
         "location": "Sofia, BG",
-        "description": "Taken lead role in the development of the company product’s web UI by building it up completely and by making substantive decisions regarding the front-end architecture.",
+        "description": "Taken major role in the development of the company product’s web UI by building it up completely and by making substantive decisions regarding the front-end architecture.",
         "meta": [
-          "JSP",
           "HTML5",
           "CSS3",
           "JavaScript",
           "jQuery",
+          "JSP",
           "Git",
           "JIRA",
           "Panic Coda",
@@ -295,12 +291,12 @@
         "label": "Major techs",
         "list": [
           {
-            "title": "(X)HTML(5)",
+            "title": "HTML",
             "period": "since 2005",
             "level": "Expert"
           },
           {
-            "title": "CSS(3)",
+            "title": "CSS",
             "period": "since 2005",
             "level": "Expert"
           },
@@ -311,13 +307,18 @@
           }
         ]
       },
-      "frameworks_and_libs": {
-        "label": "Frameworks & libs",
+      "libs_and_frameworks": {
+        "label": "Libs / Frameworks",
         "list": [
           {
             "title": "React",
             "period": "since 2017",
             "level": "Intermediate"
+          },
+          {
+            "title": "Redux",
+            "period": "since 2017",
+            "level": "Beginner"
           },
           {
             "title": "Lodash",
@@ -326,8 +327,13 @@
           },
           {
             "title": "RequireJS",
-            "period": "2014 – 2015",
+            "period": "2014 – 2016",
             "level": "Intermediate"
+          },
+          {
+            "title": "jQuery",
+            "period": "2009 – 2015",
+            "level": "Expert"
           },
           {
             "title": "Handlebars",
@@ -335,25 +341,19 @@
             "level": "Intermediate"
           },
           {
-            "title": "Underscore",
-            "period": "2014 – 2015",
-            "level": "Intermediate"
-          },
-          {
             "title": "Bootstrap",
-            "period": "since 2013",
-            "level": "Expert"
-          },
-          {
-            "title": "jQuery",
-            "period": "since 2009",
+            "period": "2013 – 2015",
             "level": "Expert"
           }
         ]
       },
-      "preprocess_tools": {
-        "label": "Preprocess tools",
+      "compilers": {
+        "label": "Compilers",
         "list": [
+          {
+            "title": "Babel",
+            "period": "since 2017"
+          },
           {
             "title": "Sass",
             "period": "since 2014",
@@ -366,13 +366,56 @@
           },
           {
             "title": "Less",
-            "period": "since 2013",
+            "period": "2013 – 2014",
             "level": "Expert"
           },
           {
-            "title": "Jade / Pug",
-            "period": "since 2015",
-            "level": "Intermediate"
+            "title": "Pug (Jade)",
+            "period": "2015 – 2017",
+            "level": "Expert"
+          }
+        ]
+      },
+      "package_managers": {
+        "label": "Package managers",
+        "list": [
+          {
+            "title": "Yarn",
+            "period": "since 2017"
+          },
+          {
+            "title": "npm",
+            "period": "2013 – 2017"
+          },
+          {
+            "title": "Bower",
+            "period": "2013 – 2016"
+          }
+        ]
+      },
+      "dev_builders": {
+        "label": "Dev builders",
+        "list": [
+          {
+            "title": "Webpack",
+            "period": "since 2017"
+          },
+          {
+            "title": "Grunt",
+            "period": "since 2013"
+          }
+        ]
+      },
+      "scaffolding_tools": {
+        "label": "Scaffolding tools",
+        "list": [
+          {
+            "title": "Yeoman",
+            "period": "since 2015"
+          },
+          {
+            "title": "Grunt-init",
+            "period": "2014 – 2015"
           }
         ]
       },
@@ -389,28 +432,24 @@
           }
         ]
       },
-      "dev_packages": {
-        "label": "Dev packages",
+      "code_linters": {
+        "label": "Code linters",
         "list": [
           {
-            "title": "Webpack",
+            "title": "ESLint",
             "period": "since 2017"
           },
           {
-            "title": "Grunt",
-            "period": "since 2013"
+            "title": "Stylelint",
+            "period": "since 2017"
           },
           {
-            "title": "npm",
-            "period": "since 2013"
+            "title": "JSHint",
+            "period": "2015 – 2017"
           },
           {
-            "title": "Bower",
-            "period": "since 2013"
-          },
-          {
-            "title": "Yeoman",
-            "period": "since 2014"
+            "title": "Sass-lint",
+            "period": "2015 – 2017"
           }
         ]
       },
@@ -418,8 +457,8 @@
         "label": "Docs tools",
         "list": [
           {
-            "title": "Hologram",
-            "period": "since 2015"
+            "title": "Pattern Lab",
+            "period": "since 2017"
           },
           {
             "title": "SassDoc",
@@ -427,11 +466,11 @@
           },
           {
             "title": "Atomic Docs",
-            "period": "since 2016"
+            "period": "2016 – 2017"
           },
           {
-            "title": "Pattern Lab",
-            "period": "since 2017"
+            "title": "Hologram",
+            "period": "2015 – 2016"
           }
         ]
       },
@@ -448,8 +487,8 @@
           }
         ]
       },
-      "dev_products": {
-        "label": "Dev products",
+      "code_editors": {
+        "label": "Code editors",
         "list": [
           {
             "title": "WebStorm",
@@ -464,14 +503,6 @@
             "period": "2012 – 2014"
           },
           {
-            "title": "Tower",
-            "period": "since 2014"
-          },
-          {
-            "title": "Ghostlab",
-            "period": "since 2014"
-          },
-          {
             "title": "Dreamweaver",
             "period": "2008 – 2011"
           }
@@ -481,20 +512,16 @@
         "label": "Design products",
         "list": [
           {
-            "title": "Photoshop",
-            "period": "since 2005"
+            "title": "Sketch",
+            "period": "since 2017"
           },
           {
             "title": "Illustrator",
             "period": "since 2009"
           },
           {
-            "title": "InDesign",
-            "period": "since 2016"
-          },
-          {
-            "title": "Sketch",
-            "period": "since 2017"
+            "title": "Photoshop",
+            "period": "since 2005"
           }
         ]
       }
