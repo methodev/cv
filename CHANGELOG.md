@@ -1,3 +1,13 @@
+<a name="1.7.0"></a>
+# 1.7.0 (2018-05-03)
+
+
+### Features
+
+* **Content:** Updated information ([1ce46db](https://github.com/martinmethod/cv/commit/1ce46db))
+
+
+
 <a name="1.6.6"></a>
 ## 1.6.6 (2018-05-01)
 
