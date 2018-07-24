@@ -16,7 +16,7 @@
         },
         "period": {
           "start": "12/2013",
-          "end": "present"
+          "end": "07/2018"
         },
         "location": "Sofia, BG",
         "description": "Take active part in the development and maintenance of the company’s Social Media Management platform by developing internal UI framework and UI components based on the Atomic Design concept.",
@@ -318,7 +318,7 @@
           {
             "title": "Redux",
             "period": "since 2017",
-            "level": "Beginner"
+            "level": "Intermediate"
           },
           {
             "title": "Lodash",
