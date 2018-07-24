@@ -1,3 +1,13 @@
+<a name="1.8.0"></a>
+# 1.8.0 (2018-07-24)
+
+
+### Features
+
+* **Content:** Updated information ([efab1d4](https://github.com/martinmethod/cv/commit/efab1d4))
+
+
+
 <a name="1.7.0"></a>
 # 1.7.0 (2018-05-03)
 
