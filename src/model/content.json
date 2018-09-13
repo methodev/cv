@@ -355,12 +355,11 @@
             "period": "since 2017"
           },
           {
-            "title": "Sass",
-            "period": "since 2014",
-            "level": "Expert"
+            "title": "PostCSS",
+            "period": "since 2017"
           },
           {
-            "title": "Compass",
+            "title": "Sass",
             "period": "since 2014",
             "level": "Expert"
           },
