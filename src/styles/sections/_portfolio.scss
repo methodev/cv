@@ -7,6 +7,10 @@
   .sites {
     @include display-flex();
     @include justify-content(flex-start);
+
+    > p:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 
 }
@@ -17,6 +21,10 @@
 
     .sites {
       display: block;
+
+      > p:not(:last-child) {
+        margin-right: 0;
+      }
     }
 
   }
