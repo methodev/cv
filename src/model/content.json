@@ -11,7 +11,7 @@
       {
         "title": "Senior Web UI Developer",
         "company": {
-          "name": "Komfo, INC.",
+          "name": "Komfo Inc.",
           "website": "http://komfo.com"
         },
         "period": {
@@ -44,7 +44,7 @@
       {
         "title": "Front-end Developer",
         "company": {
-          "name": "Edamam, LLC",
+          "name": "Edamam LLC",
           "website": "https://www.edamam.com"
         },
         "period": {
@@ -68,7 +68,7 @@
       {
         "title": "Web Technologist",
         "company": {
-          "name": "BSH, LTD.",
+          "name": "BSH Ltd.",
           "website": "http://bsh.bg"
         },
         "period": {
@@ -89,7 +89,7 @@
       {
         "title": "HTML Developer",
         "company": {
-          "name": "Mag Studio, LTD.",
+          "name": "The Mags Ltd.",
           "website": "http://www.themags.com/en"
         },
         "period": {
@@ -108,7 +108,7 @@
       {
         "title": "Web Designer & HTML Developer",
         "company": {
-          "name": "eDynamo, LLC"
+          "name": "eDynamo LLC"
         },
         "period": {
           "start": "02/2008",
@@ -355,12 +355,11 @@
             "period": "since 2017"
           },
           {
-            "title": "Sass",
-            "period": "since 2014",
-            "level": "Expert"
+            "title": "PostCSS",
+            "period": "since 2017"
           },
           {
-            "title": "Compass",
+            "title": "Sass",
             "period": "since 2014",
             "level": "Expert"
           },
@@ -532,6 +531,13 @@
     "label": "References",
     "content": [
       {
+        "person": "Dinko Tanev",
+        "url": "https://www.linkedin.com/in/dinkotanev",
+        "phone": "+359 (88) 5148895",
+        "relation": "former employer",
+        "position": "Co-founder of Komfo Inc."
+      },
+      {
         "person": "Victor Penev",
         "url": "https://www.linkedin.com/in/victorpenev",
         "phone": "+1 (646) 378-8317",
@@ -549,8 +555,8 @@
         "person": "Kalinka Nikiforova",
         "url": "https://bg.linkedin.com/in/kalinkanikiforova",
         "phone": "+359 (88) 9532319",
-        "relation": "present colleague",
-        "position": "UI Designer at Komfo, INC."
+        "relation": "former colleague",
+        "position": "UI Designer at Falcon.io ApS"
       },
       {
         "person": "Lily Grozeva",
@@ -558,13 +564,6 @@
         "phone": "+359 (89) 4871020",
         "relation": "former colleague",
         "position": "Search Marketing Manager at Progress"
-      },
-      {
-        "person": "Sia Alexieva",
-        "url": "https://bg.linkedin.com/pub/sia-aleksieva/57/824/604",
-        "phone": "+359 (88) 8984200",
-        "relation": "former team lead",
-        "position": "Senior Front-end Developer at Progress"
       }
     ]
   },
@@ -579,10 +578,6 @@
       {
         "label": "github.com/martinmethod",
         "url": "https://github.com/martinmethod"
-      },
-      {
-        "label": "codepen.io/martinmethod",
-        "url": "https://codepen.io/martinmethod/"
       }
     ]
   }

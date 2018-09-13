@@ -14,8 +14,9 @@
   }
 
   .categories {
-    display: flex;
-    flex-wrap: wrap;
+    @include display-flex();
+    @include flex-wrap(wrap);
+
     margin-bottom: -#{$inner-offset};
   }
 
