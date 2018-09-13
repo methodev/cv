@@ -1,3 +1,13 @@
+<a name="1.9.1"></a>
+## 1.9.1 (2018-09-13)
+
+
+### Bug Fixes
+
+* **Content:** Properly scaled PDF version ([1df55b4](https://github.com/martinmethod/cv/commit/1df55b4))
+
+
+
 <a name="1.9.0"></a>
 # 1.9.0 (2018-09-13)
 
