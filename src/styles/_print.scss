@@ -97,8 +97,9 @@
     }
 
     footer.page {
-      display: flex;
-      flex-direction: column-reverse;
+      @include display-flex();
+      @include flex-direction(column-reverse);
+
       padding: 0;
       font-size: 12px;
     }

@@ -5,8 +5,8 @@
 [class*='section-portfolio'] {
 
   .sites {
-    display: flex;
-    justify-content: space-between;
+    @include display-flex();
+    @include justify-content(flex-start);
   }
 
 }
