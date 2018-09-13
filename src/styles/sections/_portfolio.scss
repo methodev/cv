@@ -5,8 +5,12 @@
 [class*='section-portfolio'] {
 
   .sites {
-    display: flex;
-    justify-content: space-between;
+    @include display-flex();
+    @include justify-content(flex-start);
+
+    > p:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 
 }
@@ -17,6 +21,10 @@
 
     .sites {
       display: block;
+
+      > p:not(:last-child) {
+        margin-right: 0;
+      }
     }
 
   }
