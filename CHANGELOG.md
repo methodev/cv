@@ -1,3 +1,25 @@
+<a name="1.9.0"></a>
+# 1.9.0 (2018-09-13)
+
+
+### Bug Fixes
+
+* **Flexbox:** Added better support ([bf60ffb](https://github.com/martinmethod/cv/commit/bf60ffb))
+* **Print styles:** Improvements ([4b05b27](https://github.com/martinmethod/cv/commit/4b05b27))
+
+
+### Features
+
+* **Content:** Added Dinko Tanev as a reference ([8419df9](https://github.com/martinmethod/cv/commit/8419df9))
+* **Content:** Improved employers‘ names ([4c28839](https://github.com/martinmethod/cv/commit/4c28839))
+* **Content:** Removed CodePen from Portfolio ([a4cbddf](https://github.com/martinmethod/cv/commit/a4cbddf))
+* **Content:** Removed Sia Alexieva from References ([efd8f30](https://github.com/martinmethod/cv/commit/efd8f30))
+* **Content:** Updated Compilers tech experience ([ed6e806](https://github.com/martinmethod/cv/commit/ed6e806))
+* **Content:** Updated PDF version ([6c44f34](https://github.com/martinmethod/cv/commit/6c44f34))
+* **Content:** Updated References info ([ac4efc6](https://github.com/martinmethod/cv/commit/ac4efc6))
+
+
+
 <a name="1.8.0"></a>
 # 1.8.0 (2018-07-24)
 
