@@ -7,6 +7,7 @@
 // Libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
 import { stringify } from 'flatted/esm';
 
 // App
@@ -42,6 +43,10 @@ import './assets/images/splashscreens/iphonexsmax_splash.png';
     // Store content
     const content = await requestContent();
     localStorage.setItem('cv_content', stringify(content));
+
+    // Google Analytics
+    ReactGA.initialize('UA-4977149-13');
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
     // Render
     ReactDOM.render(
