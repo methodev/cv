@@ -1,27 +1,28 @@
 language: node_js
 node_js:
-- 8
+  - node
 script:
-- npm install grunt-cli -g
-- npm install
-- grunt build --target='prod'
-- printf '.gitignore\ndeployed*' > dist/.gitignore
-- printf 'cv.martinmetodiev.com' > dist/CNAME
-- cp 'README.md' dist
+  - npm install
+  - npm run build
+  - printf '.gitignore\ndeployed*' > client/dist/.gitignore
+  - printf 'cv.martinmetodiev.com' > client/dist/CNAME
+  - cp 'README.md' client/dist
 branches:
   only:
-  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+    - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
 deploy:
-- provider: releases
-  api_key:
-    secure: 5ApvC19ZR7upATdXRhjofjc9DKRlulviljragvOzi8zPCk339FxflQxw1T0swzb4kwkiRW0ziBTEsB7onJOA3PbhqCvjh4Ll1kEbClLRWGYyqzv5d/W5lmhk8AhPe9dekdoS2Ns5RsLIyZdXAVLCN0K5cu1+wYHEqtgBmAsnI2QJy9p0iWveuVf6O3JR03XBp8QF6s3yeitioydS1muqugf22cfHGR2RkfUfv4FCxpsxL/8KvjdrYCZ7i+g+u7u78phTKdND4fsQOkJap+LkrOxUCoQuWDzpTLRVA9c0bDU/fRSGX9cTIeLMC4ixSmWPChETsDqurt1RzayDbIAc/ySGUuikLR/D11w+BS0CtEQolRsz52fkUGcHRfQMCQrMt+0lebEBXUq7mD6r9EI69PDWywn+96MeDryFY0sSyGukVsmaocCo93j69/N7r27qYoURXYN5B4Iq0Tdy/19NPbdKgpwrxuaC4NJvM/WKkRIEyRXADTZiQfRtTTRPerezEVoXVxAI/mEfCP6zuBHjS2LOGMtTU8dFKUjduq3/QVrOSAW+9kUryCLQHodvB6JCXGIJYEk813YDfY48Rruexgt9V17ZCPMBOMVIn232eyCBY5nLXotPVw8aWhw1uZ5uf18UnZC+usvLL4jTQsJZNqFqtcCWzSzsR7cufrEmsrc=
-  skip_cleanup: true
-  on:
-    tags: true
-- provider: pages
-  skip_cleanup: true
-  local_dir: dist
-  github_token:
-    secure: 5ApvC19ZR7upATdXRhjofjc9DKRlulviljragvOzi8zPCk339FxflQxw1T0swzb4kwkiRW0ziBTEsB7onJOA3PbhqCvjh4Ll1kEbClLRWGYyqzv5d/W5lmhk8AhPe9dekdoS2Ns5RsLIyZdXAVLCN0K5cu1+wYHEqtgBmAsnI2QJy9p0iWveuVf6O3JR03XBp8QF6s3yeitioydS1muqugf22cfHGR2RkfUfv4FCxpsxL/8KvjdrYCZ7i+g+u7u78phTKdND4fsQOkJap+LkrOxUCoQuWDzpTLRVA9c0bDU/fRSGX9cTIeLMC4ixSmWPChETsDqurt1RzayDbIAc/ySGUuikLR/D11w+BS0CtEQolRsz52fkUGcHRfQMCQrMt+0lebEBXUq7mD6r9EI69PDWywn+96MeDryFY0sSyGukVsmaocCo93j69/N7r27qYoURXYN5B4Iq0Tdy/19NPbdKgpwrxuaC4NJvM/WKkRIEyRXADTZiQfRtTTRPerezEVoXVxAI/mEfCP6zuBHjS2LOGMtTU8dFKUjduq3/QVrOSAW+9kUryCLQHodvB6JCXGIJYEk813YDfY48Rruexgt9V17ZCPMBOMVIn232eyCBY5nLXotPVw8aWhw1uZ5uf18UnZC+usvLL4jTQsJZNqFqtcCWzSzsR7cufrEmsrc=
-  on:
-    tags: true
+  - provider: releases
+    api_key:
+      secure: 5ApvC19ZR7upATdXRhjofjc9DKRlulviljragvOzi8zPCk339FxflQxw1T0swzb4kwkiRW0ziBTEsB7onJOA3PbhqCvjh4Ll1kEbClLRWGYyqzv5d/W5lmhk8AhPe9dekdoS2Ns5RsLIyZdXAVLCN0K5cu1+wYHEqtgBmAsnI2QJy9p0iWveuVf6O3JR03XBp8QF6s3yeitioydS1muqugf22cfHGR2RkfUfv4FCxpsxL/8KvjdrYCZ7i+g+u7u78phTKdND4fsQOkJap+LkrOxUCoQuWDzpTLRVA9c0bDU/fRSGX9cTIeLMC4ixSmWPChETsDqurt1RzayDbIAc/ySGUuikLR/D11w+BS0CtEQolRsz52fkUGcHRfQMCQrMt+0lebEBXUq7mD6r9EI69PDWywn+96MeDryFY0sSyGukVsmaocCo93j69/N7r27qYoURXYN5B4Iq0Tdy/19NPbdKgpwrxuaC4NJvM/WKkRIEyRXADTZiQfRtTTRPerezEVoXVxAI/mEfCP6zuBHjS2LOGMtTU8dFKUjduq3/QVrOSAW+9kUryCLQHodvB6JCXGIJYEk813YDfY48Rruexgt9V17ZCPMBOMVIn232eyCBY5nLXotPVw8aWhw1uZ5uf18UnZC+usvLL4jTQsJZNqFqtcCWzSzsR7cufrEmsrc=
+    skip_cleanup: true
+    file:
+      - 'production.zip'
+    on:
+      tags: true
+  - provider: pages
+    skip_cleanup: true
+    local_dir: client/dist
+    github_token:
+      secure: 5ApvC19ZR7upATdXRhjofjc9DKRlulviljragvOzi8zPCk339FxflQxw1T0swzb4kwkiRW0ziBTEsB7onJOA3PbhqCvjh4Ll1kEbClLRWGYyqzv5d/W5lmhk8AhPe9dekdoS2Ns5RsLIyZdXAVLCN0K5cu1+wYHEqtgBmAsnI2QJy9p0iWveuVf6O3JR03XBp8QF6s3yeitioydS1muqugf22cfHGR2RkfUfv4FCxpsxL/8KvjdrYCZ7i+g+u7u78phTKdND4fsQOkJap+LkrOxUCoQuWDzpTLRVA9c0bDU/fRSGX9cTIeLMC4ixSmWPChETsDqurt1RzayDbIAc/ySGUuikLR/D11w+BS0CtEQolRsz52fkUGcHRfQMCQrMt+0lebEBXUq7mD6r9EI69PDWywn+96MeDryFY0sSyGukVsmaocCo93j69/N7r27qYoURXYN5B4Iq0Tdy/19NPbdKgpwrxuaC4NJvM/WKkRIEyRXADTZiQfRtTTRPerezEVoXVxAI/mEfCP6zuBHjS2LOGMtTU8dFKUjduq3/QVrOSAW+9kUryCLQHodvB6JCXGIJYEk813YDfY48Rruexgt9V17ZCPMBOMVIn232eyCBY5nLXotPVw8aWhw1uZ5uf18UnZC+usvLL4jTQsJZNqFqtcCWzSzsR7cufrEmsrc=
+    on:
+      tags: true

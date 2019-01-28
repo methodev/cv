@@ -1,0 +1,7 @@
+//====================================================|
+// ROLES: TRANSITIONS
+
+
+$roles-transitions: (
+  'links': map-get($swatch-transitions, '100ms')
+);

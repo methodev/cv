@@ -1,0 +1,33 @@
+//====================================================|
+// ROLES: BORDERS
+
+
+//--------------------------| Dividers
+
+$roles-borders-dividers: (
+  'gray': map-get($swatch-borders, '1px-dashed-gray')
+);
+
+
+//--------------------------| Underlines
+
+$roles-borders-underlines: (
+  'title': map-get($swatch-borders, '3px-double-green-dark')
+);
+
+
+//--------------------------| Wrappers
+
+$roles-borders-wrappers: (
+  'avatar': map-get($swatch-borders, '2px-solid-green-light'),
+  'tag': map-get($swatch-borders, '1px-solid-green-light')
+);
+
+
+//--------------------------| Radiuses
+
+$roles-borders-radiuses: (
+  'avatar': map-get($swatch-border-radiuses, 'circle'),
+  'tag': map-get($swatch-border-radiuses, 'oval3'),
+  'progress': map-get($swatch-border-radiuses, 'oval-round')
+);

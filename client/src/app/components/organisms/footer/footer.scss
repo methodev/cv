@@ -1,0 +1,57 @@
+//====================================================|
+// FOOTER
+
+
+//--------------------------| Root
+
+.root {
+  position: relative;
+  margin-top: 2rem;
+  font-size: map-get($roles-typo-font-sizes, 'footer');
+  color: map-get($roles-col-texts, 'footer');
+  text-align: center;
+  user-select: none;
+}
+
+
+//--------------------------| Services
+
+.services {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  transform: translateY(-50%);
+
+  a {
+    padding: 0 0.5rem;
+    color: map-get($roles-col-links, 'link');
+
+    @media (hover: hover) {
+      &:hover:not(:active) {
+        color: map-get($roles-col-links, 'hover');
+      }
+    }
+
+    &:active {
+      color: map-get($roles-col-links, 'active');
+    }
+  }
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+
+//--------------------------| Print styles
+
+@media print {
+  .root {
+    margin-top: 0;
+  }
+
+  .services {
+    display: none;
+  }
+}

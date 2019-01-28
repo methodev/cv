@@ -1,0 +1,56 @@
+//====================================================|
+// ROLES: TYPOGRAPHY
+
+
+//--------------------------| Font families
+
+$roles-typo-font-families: (
+  'base':     unquote(map-get($swatch-font-families, 'cv–sans'))
+);
+
+
+//--------------------------| Font sizes range
+
+$roles-typo-font-sizes-base: (
+  'min':      $base-html-font-size,
+  'max':      $base-html-font-size * map-get($roles-ratios, 'font')
+);
+
+
+//--------------------------| Font sizes hierarchy
+
+$roles-typo-font-sizes: (
+  'title':    map-get($swatch-typo-font-sizes, '36'),
+  'subtitle': map-get($swatch-typo-font-sizes, '20'),
+  'contact':  map-get($swatch-typo-font-sizes, '11'),
+  'section':  map-get($swatch-typo-font-sizes, '32'),
+  'item':     map-get($swatch-typo-font-sizes, '20'),
+  'info':     map-get($swatch-typo-font-sizes, '15'),
+  'base':     map-get($swatch-typo-font-sizes, '13'),
+  'meta':     map-get($swatch-typo-font-sizes, '10'),
+  'footer':   map-get($swatch-typo-font-sizes, '10')
+);
+
+
+//--------------------------| Line-heights
+
+$roles-typo-line-heights: (
+  'title':    map-get($swatch-line-heights, '100%'),
+  'text':     map-get($swatch-line-heights, 'normal'),
+  'meta':     map-get($swatch-line-heights, '130%')
+);
+
+
+//--------------------------| Font weights
+
+$roles-typo-font-weights: (
+  'base':     map-get($swatch-font-weights, 'regular'),
+  'subtitle': map-get($swatch-font-weights, 'semibold'),
+  'item':     map-get($swatch-font-weights, 'regular'),
+  'info':     map-get($swatch-font-weights, 'semibold'),
+  'meta':     map-get($swatch-font-weights, 'semibold'),
+  'footer':   map-get($swatch-font-weights, 'semibold'),
+  'title':    map-get($swatch-font-weights, 'bold'),
+  'contact':  map-get($swatch-font-weights, 'bold'),
+  'section':  map-get($swatch-font-weights, 'bold')
+);

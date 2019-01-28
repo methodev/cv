@@ -1,0 +1,79 @@
+//====================================================|
+// CONTACT
+
+
+//--------------------------| Root
+
+.root {
+  display: inline-block;
+  align-items: center;
+  font-size: map-get($roles-typo-font-sizes, 'contact');
+  font-weight: map-get($roles-typo-font-weights, 'contact');
+  white-space: nowrap;
+}
+
+
+//--------------------------| Icon
+
+.icon {
+  @include dimensions-square(1rem);
+
+  display: inline-block;
+  margin-right: 0.3rem;
+  transform: translateY(0.2rem);
+}
+
+.email {
+  //
+}
+
+.phone {
+  @media screen {
+    display: none;
+  }
+}
+
+.location {
+  //
+}
+
+.homepage {
+  svg {
+    fill: map-get($roles-col-icons, 'homepage');
+  }
+}
+
+.portfolio {
+  //
+}
+
+.linkedin {
+  svg {
+    fill: map-get($roles-col-icons, 'linkedin');
+  }
+}
+
+.github {
+  svg {
+    fill: map-get($roles-col-icons, 'github');
+  }
+}
+
+
+//--------------------------| Value
+
+.print-value {
+  display: none;
+}
+
+//--------------------------| Print styles
+
+@media print {
+  .print-value + .value {
+    display: none;
+  }
+
+  .print-value {
+    display: inline;
+  }
+}

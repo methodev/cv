@@ -1,0 +1,37 @@
+//====================================================|
+// META
+
+
+//--------------------------| Root
+
+.root {
+  display: flex;
+  align-items: center;
+  font-size: map-get($roles-typo-font-sizes, 'meta');
+  font-weight: map-get($roles-typo-font-weights, 'meta');
+  color: map-get($roles-col-texts, 'meta');
+  cursor: default;
+}
+
+
+//--------------------------| Icons
+
+.icon {
+  @include dimensions-square(0.8rem);
+
+  margin-right: 0.2rem;
+  transform: translateY(-0.1rem);
+
+  svg {
+    fill: map-get($roles-col-icons, 'meta');
+  }
+}
+
+
+//--------------------------| Print styles
+
+@media print {
+  .icon {
+    transform: translateY(0);
+  }
+}

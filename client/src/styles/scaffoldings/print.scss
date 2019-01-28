@@ -1,0 +1,46 @@
+//====================================================|
+// SCAFFOLDINGS: Print styles
+
+
+//--------------------------| Page
+
+@page {
+  size: A4;
+  margin: map-get($roles-spaces-print, 'app') 0 0;
+}
+
+
+//--------------------------| Document
+
+@media print {
+  html, body {
+    width: $roles-size-print-page-width;
+    //height: $roles-size-print-page-height;
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  [id='root'] {
+    width: initial;
+    min-height: initial;
+    background: initial;
+    border: initial;
+    border-radius: initial;
+    box-shadow: initial;
+    page-break-after: always;
+  }
+
+  a {
+    color: map-get($roles-col-texts, 'base') !important;
+  }
+
+  svg {
+    fill: map-get($swatch-colors, 'dusty-gray') !important;
+  }
+}
