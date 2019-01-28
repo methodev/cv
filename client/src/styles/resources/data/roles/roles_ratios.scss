@@ -1,0 +1,9 @@
+//====================================================|
+// ROLES: RATIOS
+
+
+$roles-ratios: (
+  'font': map-get($swatch-ratios, '1.23'),
+  'avatar': map-get($swatch-ratios, '1.0'),
+  'space': map-get($swatch-ratios, '10.0')
+);

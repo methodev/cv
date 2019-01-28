@@ -1,0 +1,28 @@
+//====================================================|
+// TEXT
+
+
+//--------------------------| Root
+
+.root {
+  $indent-value: 0.7rem;
+
+  @include mq-device-holding-type('inpocket') {
+    text-align: left;
+  }
+
+  p {
+    padding-left: $indent-value * 1.5;
+    margin: 0;
+    text-indent: -#{$indent-value};
+
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+
+    &::before {
+      color: map-get($swatch-colors, 'dusty-gray');
+      content: '• ';
+    }
+  }
+}

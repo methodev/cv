@@ -1,9 +1,0 @@
-mixin skills(name, data)
-  h2 #{data.label}
-  ul.skills
-    each item in data.content
-      li.skill
-        | #{item.skill}
-        if item.meta
-          | &nbsp;
-          span.meta.dark (#{item.meta})

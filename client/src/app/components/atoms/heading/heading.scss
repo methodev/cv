@@ -1,0 +1,67 @@
+//====================================================|
+// HEADING
+
+
+//--------------------------| Root
+
+.root {
+  margin: 0 0 1rem;
+}
+
+
+//--------------------------| Types
+
+$heading-types: 'title' 'subtitle' 'section' 'item' 'info';
+
+@each $heading in $heading-types {
+  .#{$heading} {
+    font-size: map-get($roles-typo-font-sizes, $heading);
+    font-weight: map-get($roles-typo-font-weights, $heading);
+  }
+}
+
+.title {
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  margin: 0;
+  color: map-get($roles-col-texts, 'subtitle');
+}
+
+.section {
+  margin-bottom: 1rem;
+  //font-variant: small-caps;
+  color: map-get($roles-col-texts, 'section');
+  white-space: nowrap;
+  cursor: default;
+  border-bottom: map-get($roles-borders-underlines, 'title');
+}
+
+.item {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.info {
+  margin-bottom: 0.5rem;
+  color: map-get($roles-col-texts, 'info');
+}
+
+
+//--------------------------| Print styles
+
+@media print {
+  .root {
+    color: map-get($roles-col-texts, 'base') !important;
+  }
+
+  .section {
+    border-bottom: 1px solid map-get($roles-col-texts, 'base');
+  }
+}

@@ -1,0 +1,25 @@
+//====================================================|
+// TAG
+
+
+//--------------------------| Root
+
+.root {
+  @util truncate;
+
+  display: inline-block;
+  max-width: 100%;
+  padding: 0.1rem 0.3rem;
+  cursor: default;
+  border: map-get($roles-borders-wrappers, 'tag');
+  border-radius: map-get($roles-borders-radiuses, 'tag');
+}
+
+
+//--------------------------| Print styles
+
+@media print {
+  .root {
+    border-color: map-get($swatch-colors, 'alto');
+  }
+}

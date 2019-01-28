@@ -1,0 +1,25 @@
+//====================================================|
+// PROGRESS
+
+
+//--------------------------| Root
+
+.root {
+  display: flex;
+  align-items: center;
+
+  h3 {
+    flex: 1;
+    margin-bottom: 0 !important;
+
+    @include mq-device-holding-type('inpocket') {
+      text-align: left;
+    }
+  }
+
+  div {
+    width: get-rem-unit(160px);
+    height: 1rem;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,33 @@
+//====================================================|
+// AVATAR
+
+
+//--------------------------| Root
+
+.root {
+  @include dimensions-square(get-rem-unit($roles-size-avatar));
+
+  border: map-get($roles-borders-wrappers, 'avatar');
+
+  &,
+  img {
+    display: block;
+    overflow: hidden;
+    border-radius: map-get($roles-borders-radiuses, 'avatar');
+  }
+
+  img {
+    @include dimensions-square(100%);
+
+    border: map-get($swatch-borders, '1px-solid-white');
+  }
+}
+
+
+//--------------------------| Print styles
+
+@media print {
+  .root {
+    border-color: map-get($roles-col-texts, 'base') !important;
+  }
+}

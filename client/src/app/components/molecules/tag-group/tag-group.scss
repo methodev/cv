@@ -1,0 +1,21 @@
+//====================================================|
+// TAG GROUP
+
+
+//--------------------------| Root
+
+.root {
+  $margin: 0.39rem;
+
+  margin-bottom: -$margin;
+  font-size: 0;
+
+  span {
+    margin-bottom: $margin;
+    font-size: map-get($roles-typo-font-sizes, 'base');
+
+    &:not(:last-child) {
+      margin-right: $margin;
+    }
+  }
+}

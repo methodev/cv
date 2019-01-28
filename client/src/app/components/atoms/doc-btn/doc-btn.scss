@@ -1,0 +1,13 @@
+//====================================================|
+// DOCUMENT BUTTON
+
+
+//--------------------------| Root
+
+.root {
+  display: inline-block;
+
+  svg {
+    @include dimensions-square(get-rem-unit($roles-size-doc-icon));
+  }
+}

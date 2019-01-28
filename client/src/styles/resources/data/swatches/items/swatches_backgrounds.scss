@@ -1,0 +1,11 @@
+//====================================================|
+// SWATCHES: BACKGROUNDS
+
+
+$swatch-backgrounds: (
+
+  'white': map-get($swatch-colors, 'white'),
+  'pale':  map-get($swatch-colors, 'pale'),
+  'green-light':  map-get($swatch-colors, 'green-light')
+
+);
