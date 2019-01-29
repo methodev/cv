@@ -37,9 +37,7 @@ const Footer = () => (
       <DocBtn
         icon={<FileSVG />}
         tooltip={downloadTooltip}
-        handler={() => {
-          window.open(getAsset('6Z2VCzTPeo4SA0gcUSCKWm').fields.file.en.url, '_blank');
-        }}
+        link={getAsset('6Z2VCzTPeo4SA0gcUSCKWm').fields.file.en.url}
       />
       {
         navigator.userAgent.toLowerCase().indexOf('chrome') > -1 && (

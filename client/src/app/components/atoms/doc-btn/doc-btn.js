@@ -13,7 +13,12 @@ import styles from './doc-btn.scss';
 
 //--------------------------| Component
 
-const DocBtn = ({ icon, handler, tooltip }) => {
+const DocBtn = ({
+  icon,
+  handler,
+  link,
+  tooltip
+}) => {
   const Icon = () => icon;
 
   return (
@@ -21,6 +26,8 @@ const DocBtn = ({ icon, handler, tooltip }) => {
       className={styles.root}
       onClick={handler}
       title={tooltip}
+      href={link}
+      target={link ? '_blank' : null}
     >
       <Icon />
     </a>
