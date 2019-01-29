@@ -57,11 +57,7 @@ $heading-types: 'title' 'subtitle' 'section' 'item' 'info';
 //--------------------------| Print styles
 
 @media print {
-  .root {
-    color: map-get($roles-col-texts, 'base') !important;
-  }
-
   .section {
-    border-bottom: 1px solid map-get($roles-col-texts, 'base');
+    border-bottom-width: 1px;
   }
 }

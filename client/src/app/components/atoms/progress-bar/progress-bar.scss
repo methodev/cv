@@ -15,14 +15,3 @@
     border-radius: map-get($roles-borders-radiuses, 'progress');
   }
 }
-
-
-//--------------------------| Print styles
-
-@media print {
-  .root {
-    span {
-      background-color: map-get($roles-col-texts, 'base');
-    }
-  }
-}
