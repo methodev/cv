@@ -35,6 +35,7 @@ const Footer = () => (
 
     <div className={styles.services}>
       <DocBtn
+        id={'pdf'}
         icon={<FileSVG />}
         tooltip={downloadTooltip}
         link={getAsset('6Z2VCzTPeo4SA0gcUSCKWm').fields.file.en.url}
@@ -42,6 +43,7 @@ const Footer = () => (
       {
         navigator.userAgent.toLowerCase().indexOf('chrome') > -1 && (
           <DocBtn
+            id={'print'}
             icon={<PrintSVG />}
             tooltip={printTooltip}
             handler={() => {

@@ -12,15 +12,15 @@ $roles-borders-dividers: (
 //--------------------------| Underlines
 
 $roles-borders-underlines: (
-  'title': map-get($swatch-borders, '3px-double-green-dark')
+  'title': map-get($swatch-borders, '3px-double-dusty-gray')
 );
 
 
 //--------------------------| Wrappers
 
 $roles-borders-wrappers: (
-  'avatar': map-get($swatch-borders, '2px-solid-green-light'),
-  'tag': map-get($swatch-borders, '1px-solid-green-light')
+  'avatar': map-get($swatch-borders, '2px-solid-dusty-gray'),
+  'tag': map-get($swatch-borders, '1px-solid-alto')
 );
 
 

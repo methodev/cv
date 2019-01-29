@@ -6,6 +6,7 @@
 
 // Libraries
 import React from 'react';
+import classNames from 'classnames';
 
 // Styles
 import styles from './doc-btn.scss';
@@ -14,6 +15,7 @@ import styles from './doc-btn.scss';
 //--------------------------| Component
 
 const DocBtn = ({
+  id,
   icon,
   handler,
   link,
@@ -23,7 +25,7 @@ const DocBtn = ({
 
   return (
     <a
-      className={styles.root}
+      className={classNames(styles.root, styles[id])}
       onClick={handler}
       title={tooltip}
       href={link}
