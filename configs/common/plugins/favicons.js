@@ -26,7 +26,7 @@ const plugin = new FaviconsWebpackPlugin({
   // favicon background color (see https://github.com/haydenbleasel/favicons#usage)
   background: '#fff',
   // favicon app title (see https://github.com/haydenbleasel/favicons#usage)
-  title: 'My résumé',
+  title: 'Martin’s CV',
   icons: {
     android: true,
     appleIcon: true,
