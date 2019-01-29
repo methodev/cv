@@ -130,9 +130,19 @@
       flex-direction: row;
       justify-content: normal;
 
+      > span {
+        padding: 0;
+      }
+
       > span:not(:last-child) {
         margin-right: 1rem;
       }
+    }
+  }
+
+  > div {
+    > span {
+      padding: 0.5rem 0; // fix for Microsoft Edge
     }
   }
 }
