@@ -14,12 +14,3 @@
   border: map-get($roles-borders-wrappers, 'tag');
   border-radius: map-get($roles-borders-radiuses, 'tag');
 }
-
-
-//--------------------------| Print styles
-
-@media print {
-  .root {
-    border-color: map-get($swatch-colors, 'alto');
-  }
-}

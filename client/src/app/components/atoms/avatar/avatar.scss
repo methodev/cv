@@ -22,12 +22,3 @@
     border: map-get($swatch-borders, '1px-solid-white');
   }
 }
-
-
-//--------------------------| Print styles
-
-@media print {
-  .root {
-    border-color: map-get($roles-col-texts, 'base') !important;
-  }
-}

@@ -11,18 +11,7 @@
   span {
     display: block;
     height: 100%;
-    background-color: map-get($roles-col-backgrounds, 'success');
+    background-color: map-get($roles-col-backgrounds, 'bar');
     border-radius: map-get($roles-borders-radiuses, 'progress');
-  }
-}
-
-
-//--------------------------| Print styles
-
-@media print {
-  .root {
-    span {
-      background-color: map-get($roles-col-texts, 'base');
-    }
   }
 }

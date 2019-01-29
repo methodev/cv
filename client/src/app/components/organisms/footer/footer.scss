@@ -24,18 +24,7 @@
   transform: translateY(-50%);
 
   a {
-    padding: 0 0.5rem;
-    color: map-get($roles-col-links, 'link');
-
-    @media (hover: hover) {
-      &:hover:not(:active) {
-        color: map-get($roles-col-links, 'hover');
-      }
-    }
-
-    &:active {
-      color: map-get($roles-col-links, 'active');
-    }
+    margin: 0 0.5rem;
   }
 
   svg {

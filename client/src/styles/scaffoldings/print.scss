@@ -39,8 +39,4 @@
   a {
     color: map-get($roles-col-texts, 'base') !important;
   }
-
-  svg {
-    fill: map-get($swatch-colors, 'dusty-gray') !important;
-  }
 }
