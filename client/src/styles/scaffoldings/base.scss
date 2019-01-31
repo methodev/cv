@@ -47,6 +47,17 @@ body {
   }
 }
 
+// Print only one page
+@media print {
+  html,
+  body {
+    height: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+  }
+}
+
 
 //--------------------------| Text
 
