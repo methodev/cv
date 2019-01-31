@@ -12,7 +12,7 @@ const { title, homepage, description} = require('../../../package.json');
 
 const plugin = new HtmlWebpackPlugin({
   hash: true,
-  template: './client/src/markup/index.html',
+  template: './client/markup/index.html',
   cover: `${homepage}/images/logo.png`,
   title,
   homepage,

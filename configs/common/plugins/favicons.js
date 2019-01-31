@@ -11,7 +11,7 @@ const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const plugin = new FaviconsWebpackPlugin({
   // Your source logo
-  logo: './client/src/assets/images/logo.png',
+  logo: './client/assets/images/logo.png',
   // The prefix for all image files (might be a folder or a name)
   prefix: 'icons-[hash]/',
   // Emit all stats of the generated icons

@@ -14,7 +14,7 @@ const pkg = require('../package.json');
 //--------------------------| Define
 
 const app = express();
-const publicPath = path.join(__dirname, '..', 'client/dist');
+const publicPath = path.join(__dirname, '..', 'dist');
 const port = pkg.ports.prod;
 const browser = process.platform === 'win32' ? 'Chrome' : '/Applications/Google Chrome.app';
 

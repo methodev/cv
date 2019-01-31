@@ -20,10 +20,10 @@ const config = {
   entry: [
     `webpack-dev-server/client?http://localhost:${ports.dev}`,
     `webpack/hot/only-dev-server`,
-    `./client/src/index.js`
+    `./index.js`
   ],
   output: {
-    path: path.join(__dirname, '../../client/dist'),
+    path: path.join(__dirname, '../../dist'),
     filename: 'app.[hash].js',
     publicPath: '/'
   },

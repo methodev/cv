@@ -29,6 +29,7 @@ const server = new WebpackDevServer(Webpack(webpackConfig), {
   // It suppress everything except error, so it has to be set to false as well to see success build.
   noInfo: false,
   disableHostCheck: true,
+  watchContentBase: true,
   stats: {
     assets: false,
     version: false,
