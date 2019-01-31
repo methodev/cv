@@ -15,7 +15,7 @@ const plugin = new HtmlWebpackPlugin({
   homepage,
   description,
   cover: `${homepage}/images/logo.png`,
-  template: './client/src/markup/index.html',
+  template: './client/markup/index.html',
   minify: {
     minifyCSS: true,
     minifyJS: true,

@@ -1,0 +1,14 @@
+{
+  "bg": {
+    "by": "от",
+    "ongoing": "Текуща",
+    "download": "Отвори PDF копие на документа",
+    "totalExperience": "професионален стаж"
+  },
+  "en": {
+    "by":  "by",
+    "ongoing": "Ongoing",
+    "download": "Get a PDF copy of this document",
+    "totalExperience": "of total experience"
+  }
+}

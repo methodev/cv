@@ -14,7 +14,7 @@ const plugin = new FileManagerPlugin({
   onEnd: {
     archive: [
       {
-        source: path.join(__dirname, '../../../client/dist'),
+        source: path.join(__dirname, '../../../dist'),
         destination: './production.zip'
       }
     ]

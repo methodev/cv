@@ -10,7 +10,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 //--------------------------| Configuration
 
 const plugin = new StyleLintPlugin({
-  files: ['./client/src/app/**/*.scss'],
+  files: ['./client/app/**/*.scss'],
   syntax: 'scss',
   configFile: '.stylelintrc'
 });

@@ -5,11 +5,11 @@
 //--------------------------| Export
 
 module.exports = [
-  './client/src/styles/resources/base.scss',
-  './client/src/styles/resources/functions/**/*.scss',
-  './client/src/styles/resources/data/swatches/core/**/*.scss',
-  './client/src/styles/resources/data/swatches/items/**/*.scss',
-  './client/src/styles/resources/data/roles/**/*.scss',
-  './client/src/styles/resources/mixins/**/*.scss',
-  './client/src/styles/resources/placeholders/**/*.scss'
+  './client/styles/resources/base.scss',
+  './client/styles/resources/functions/**/*.scss',
+  './client/styles/resources/data/swatches/core/**/*.scss',
+  './client/styles/resources/data/swatches/items/**/*.scss',
+  './client/styles/resources/data/roles/**/*.scss',
+  './client/styles/resources/mixins/**/*.scss',
+  './client/styles/resources/placeholders/**/*.scss'
 ];

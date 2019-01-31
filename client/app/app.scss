@@ -1,0 +1,119 @@
+//====================================================|
+// APP
+
+
+//--------------------------| Root
+
+.root {
+  @include scaler(padding-left, map-get($roles-spaces-min, 'app'), map-get($roles-spaces-max, 'app'));
+  @include scaler(padding-right, map-get($roles-spaces-min, 'app'), map-get($roles-spaces-max, 'app'));
+  @include padding-v(3rem);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: map-get($swatch-screens, 'min');
+  max-width: map-get($swatch-screens, 'max');
+  min-height: 100vh;
+  margin: 0 auto;
+  font: map-get($roles-typo-font-weights, 'base') map-get($roles-typo-font-sizes, 'base') map-get($roles-typo-font-families, 'base');
+  background-color: map-get($roles-col-backgrounds, 'app');
+
+  @include mq-device-holding-type('inpocket') {
+    padding-top: calc(#{$roles-size-avatar} + 2rem);
+  }
+
+  header {
+    margin-bottom: get-rem-unit(42px);
+  }
+
+  main {
+    @include scaler(column-gap, map-get($roles-spaces-min, 'app'), map-get($roles-spaces-max, 'app'));
+
+    column-count: 2;
+
+    @include mq-tablet-breakpoint('below') {
+      column-gap: normal;
+      column-count: auto;
+    }
+
+    > section {
+      display: inline-block;
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: get-rem-unit(36px);
+      }
+    }
+  }
+}
+
+
+//--------------------------| Language
+
+.language {
+  @include scaler(right, map-get($roles-spaces-min, 'app'), map-get($roles-spaces-max, 'app'));
+
+  position: absolute;
+  top: 1rem;
+  display: block;
+  font-weight: map-get($swatch-font-weights, 'semibold');
+  text-transform: uppercase;
+
+  a {
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+    user-select: none;
+  }
+}
+
+
+//--------------------------| Links
+
+.language,
+.root main {
+  a {
+    color: map-get($roles-col-links, 'link');
+    transition: all map-get($roles-transitions, 'links') ease-in-out;
+
+    @media (hover: hover) {
+      &:hover:not(:active) {
+        color: map-get($roles-col-texts, 'negative');
+        background-color: map-get($roles-col-links, 'hover');
+        border-radius: 1px;
+        box-shadow: 0 0 0 0.2rem map-get($roles-col-links, 'hover');
+      }
+    }
+
+    &:active {
+      color: map-get($roles-col-texts, 'negative');
+      background-color: map-get($roles-col-links, 'active');
+      border-radius: 1px;
+      box-shadow: 0 0 0 0.2rem map-get($roles-col-links, 'active');
+    }
+  }
+}
+
+
+//--------------------------| Print styles
+
+@media print {
+  $gap: map-get($roles-spaces-print, 'app');
+
+  .root {
+    padding: 0 $gap;
+
+    main {
+      column-gap: $gap;
+
+      > section:not(:last-child) {
+        margin-bottom: get-rem-unit(24px);
+      }
+    }
+  }
+
+  .language {
+    display: none;
+  }
+}

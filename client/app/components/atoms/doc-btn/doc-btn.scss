@@ -1,0 +1,41 @@
+//====================================================|
+// DOCUMENT BUTTON
+
+
+//--------------------------| Root
+
+.root {
+  @include dimensions-square(get-rem-unit($roles-size-doc-icon * 1.8));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: map-get($swatch-border-radiuses, 'circle');
+  transition: all map-get($roles-transitions, 'links') ease-in-out;
+
+  svg {
+    @include dimensions-square(get-rem-unit($roles-size-doc-icon));
+
+    fill: currentColor;
+  }
+}
+
+
+//--------------------------| Root
+
+.pdf {
+  color: map-get($swatch-colors, 'red');
+
+  @media (hover: hover) {
+    &:hover:not(:active) {
+      color: map-get($roles-col-texts, 'negative');
+      background-color: light(map-get($swatch-colors, 'red'), 15%);
+    }
+  }
+
+  &:active {
+    color: map-get($roles-col-texts, 'negative');
+    background-color: light(map-get($swatch-colors, 'red'), 30%);
+  }
+}

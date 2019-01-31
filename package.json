@@ -6,9 +6,9 @@
   "description": "Martin Metodiev's CV",
   "scripts": {
     "start": "yarn install && yarn run serve:dev",
-    "build": "node client/build",
+    "build": "node build",
     "serve:dev": "node server/dev",
-    "serve:prod": "node client/build && node server/prod"
+    "serve:prod": "node build && node server/prod"
   },
   "homepage": "http://cv.martinmetodiev.com",
   "author": {

@@ -16,9 +16,9 @@ const commonPlugins = glob.sync(`${__dirname}/../common/plugins/**/*.js`).map(fi
 
 const config = {
   mode: 'production',
-  entry: './client/src/index.js',
+  entry: './index.js',
   output: {
-    path: path.join(__dirname, '../../client/dist'),
+    path: path.join(__dirname, '../../dist'),
     filename: 'app.[hash].js',
     publicPath: '/'
   },
