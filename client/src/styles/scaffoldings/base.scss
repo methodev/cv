@@ -83,6 +83,13 @@ img {
 }
 
 
+//--------------------------| Graphics
+
+svg {
+  overflow: initial; // fix for Safari where part of the graphics is being cropped in the bottom
+}
+
+
 //--------------------------| Global styles
 
 :global {
