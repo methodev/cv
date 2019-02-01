@@ -10,10 +10,7 @@ import { hot } from 'react-hot-loader/root';
 // Libraries
 import React from 'react';
 import moment from 'moment';
-import { parse, stringify } from 'flatted/esm';
-
-// Services
-import { getEntries } from './services/data';
+import { stringify } from 'flatted/esm';
 
 // Content
 import { bg as bgLabels, en as enLabels } from '../labels.json';
@@ -65,19 +62,16 @@ class App extends React.PureComponent {
   state = { lang: this.props.bilingual ? this.props.lang : 'en' };
 
   render() {
-    const content = parse(localStorage.getItem('cv_content'));
+    const { content } = this.props;
     const labels = this.state.lang === 'en' ? enLabels : bgLabels;
+    const data = content[this.state.lang];
 
-    localStorage.setItem('cv_data', stringify(content[this.state.lang]));
     localStorage.setItem('cv_labels', stringify(labels));
 
     if (this.props.bilingual) {
       moment.locale(this.state.lang);
       window.location.hash = this.state.lang;
     }
-
-    const identity = getEntries('identity')[0].fields;
-    const { cv } = identity;
 
     return (
       <div className={styles.root}>
@@ -95,13 +89,18 @@ class App extends React.PureComponent {
           )
         }
 
-        <Header {...identity} />
+        <Header
+          person={data.fields.person.fields}
+          accounts={data.fields.accounts}
+        />
         <main>
           {
-            cv.map(section => (<SectionRouter key={section.sys.id} data={section} />))
+            data.fields.sections.map(section => (
+              <SectionRouter key={section.sys.id} data={section} />
+            ))
           }
         </main>
-        <Footer />
+        <Footer docs={[data.fields.pdfVersion]} />
       </div>
     );
   }

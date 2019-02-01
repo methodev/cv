@@ -37,7 +37,10 @@ const requestContent = async (contentfulAccessToken, contentfulSpace) => {
     const content = {};
 
     await asyncForEach(locales.items, async (lang) => {
-      content[lang.code] = await client.getEntries({ locale: lang.code });
+      const entries = await client.getEntries({ locale: lang.code });
+      const data = entries.items.filter(item => item.sys.contentType.sys.id === 'cv').filter(cv => cv.fields.active)[0];
+
+      content[lang.code] = data;
     });
 
     return Promise.resolve(content);

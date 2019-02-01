@@ -15,25 +15,6 @@ import _ from 'lodash';
 export const getLabel = name => parse(localStorage.getItem('cv_labels'))[name];
 
 
-//--------------------------| Get entries
-
-export const getEntries = type => parse(localStorage.getItem('cv_data')).items.filter(item => item.sys.contentType.sys.id === type);
-
-
-//--------------------------| Get entry
-
-export const getEntry = (type, id) => {
-  const entries = parse(localStorage.getItem('cv_data')).items.filter(item => item.sys.contentType.sys.id === type);
-
-  return entries.filter(entry => entry.fields.id === id);
-};
-
-
-//--------------------------| Get asset
-
-export const getAsset = title => _.find(parse(localStorage.getItem('cv_data')).includes.Asset, asset => asset.fields.title === title);
-
-
 //--------------------------| Get total experience
 
 export const getTotalExperience = (items) => {
