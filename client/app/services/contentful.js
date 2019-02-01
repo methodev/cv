@@ -24,7 +24,7 @@ async function asyncForEach(array, callback) {
 
 const requestContent = async (contentfulAccessToken, contentfulSpace) => {
   const client = createClient({
-    environment: process.env.NODE_ENV === 'development' ? 'dev' : 'master',
+    environment: process.env.NODE_ENV === 'development' ? 'master' : 'production',
     accessToken: contentfulAccessToken,
     space: contentfulSpace,
     resolveLinks: true
