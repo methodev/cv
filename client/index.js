@@ -63,7 +63,7 @@ const init = async ({
 
     // Render
     ReactDOM.render(
-      <App lang={lang} bilingual={bilingual} />,
+      <App lang={lang} bilingual={bilingual} content={content} />,
       document.getElementById('root')
     );
   }

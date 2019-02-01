@@ -24,7 +24,7 @@ async function asyncForEach(array, callback) {
 
 const requestContent = async (contentfulAccessToken, contentfulSpace) => {
   const client = createClient({
-    environment: process.env.NODE_ENV === 'development' ? 'dev' : 'master',
+    environment: process.env.NODE_ENV === 'development' ? 'master' : 'production',
     accessToken: contentfulAccessToken,
     space: contentfulSpace,
     resolveLinks: true
@@ -37,7 +37,10 @@ const requestContent = async (contentfulAccessToken, contentfulSpace) => {
     const content = {};
 
     await asyncForEach(locales.items, async (lang) => {
-      content[lang.code] = await client.getEntries({ locale: lang.code });
+      const entries = await client.getEntries({ locale: lang.code });
+      const data = entries.items.filter(item => item.sys.contentType.sys.id === 'cv').filter(cv => cv.fields.active)[0];
+
+      content[lang.code] = data;
     });
 
     return Promise.resolve(content);

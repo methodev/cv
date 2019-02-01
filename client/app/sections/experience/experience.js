@@ -58,7 +58,7 @@ const Experience = ({ data }) => (
             <Item
               title={item.fields.name}
               subtitle={item.fields.employer.fields.name}
-              subtitleUrl={item.fields.employer.fields.homepage}
+              subtitleUrl={item.fields.employer.fields.homePage}
               details={details}
               text={duties}
             />

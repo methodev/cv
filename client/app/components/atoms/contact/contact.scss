@@ -47,15 +47,21 @@
   //
 }
 
-.linkedin {
+.behance {
   svg {
-    fill: map-get($roles-col-icons, 'linkedin');
+    fill: map-get($roles-col-icons, 'behance');
   }
 }
 
 .github {
   svg {
     fill: map-get($roles-col-icons, 'github');
+  }
+}
+
+.linkedin {
+  svg {
+    fill: map-get($roles-col-icons, 'linkedin');
   }
 }
 

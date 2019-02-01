@@ -7,9 +7,6 @@
 // Libraries
 import React from 'react';
 
-// Services
-import { getEntry } from '../../../services/data';
-
 // Styles
 import styles from './header.scss';
 
@@ -22,6 +19,7 @@ import ContactGroup from '../../molecules/contact-group';
 
 // Graphics
 import AtSVG from '../../../../assets/graphics/at.svg';
+import BehanceSVG from '../../../../assets/graphics/behance.svg';
 import GitHubSVG from '../../../../assets/graphics/github.svg';
 import HomeSVG from '../../../../assets/graphics/home.svg';
 import LinkedInSVG from '../../../../assets/graphics/linkedin.svg';
@@ -30,22 +28,61 @@ import PinSVG from '../../../../assets/graphics/pin.svg';
 import PortfolioSVG from '../../../../assets/graphics/portfolio.svg';
 
 
+//--------------------------| Supported accounts
+
+const accIcons = {
+  behance: <BehanceSVG />,
+  github: <GitHubSVG />,
+  linkedin: <LinkedInSVG />
+};
+
+
 //--------------------------| Component
 
-const Header = ({
-  firstName,
-  lastName,
-  headline,
-  email,
-  phone,
-  city,
-  country,
-  homePage,
-  portfolio,
-  avatar
-}) => {
-  const linkedin = getEntry('accountProfile', 'linkedin')[0].fields;
-  const github = getEntry('accountProfile', 'github')[0].fields;
+const Header = ({ person, accounts }) => {
+  const {
+    firstName,
+    lastName,
+    headline,
+    email,
+    phone,
+    city,
+    country,
+    homePage,
+    portfolio,
+    avatar
+  } = person;
+
+  const links = {};
+
+  if (homePage) {
+    links.homePage = {
+      id: 'homepage',
+      icon: <HomeSVG />,
+      value: homePage.replace('http://', ''),
+      link: homePage
+    };
+  }
+
+  if (portfolio) {
+    links.portfolio = {
+      id: 'portfolio',
+      icon: <PortfolioSVG />,
+      value: 'portfolio',
+      printValue: `portfolio.${homePage.replace('http://', '')}`,
+      link: portfolio
+    };
+  }
+
+  accounts.forEach((acc) => {
+    links[acc.fields.id] = {
+      id: acc.fields.id,
+      icon: accIcons[acc.fields.id],
+      value: acc.fields.username,
+      printValue: acc.fields.url.replace('https://', ''),
+      link: acc.fields.url
+    };
+  });
 
   return (
     <header className={styles.root}>
@@ -78,35 +115,7 @@ const Header = ({
       </div>
       <div className={styles.cell}>
         <div className={styles.links}>
-          <ContactGroup contacts={{
-            homePage: {
-              id: 'homepage',
-              icon: <HomeSVG />,
-              value: homePage.replace('http://', ''),
-              link: homePage
-            },
-            portfolio: {
-              id: 'portfolio',
-              icon: <PortfolioSVG />,
-              value: 'portfolio',
-              printValue: `portfolio.${homePage.replace('http://', '')}`,
-              link: portfolio
-            },
-            linkedin: {
-              id: linkedin.id,
-              icon: <LinkedInSVG />,
-              value: linkedin.username,
-              printValue: linkedin.url.replace('https://', ''),
-              link: linkedin.url
-            },
-            github: {
-              id: github.id,
-              icon: <GitHubSVG />,
-              value: github.username,
-              printValue: github.url.replace('https://', ''),
-              link: github.url
-            }
-          }} />
+          <ContactGroup contacts={links} />
         </div>
         <Avatar url={avatar} />
       </div>
