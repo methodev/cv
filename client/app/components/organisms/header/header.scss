@@ -112,13 +112,14 @@
 
   @include mq-device-holding-type('inpocket') {
     > div {
+      flex-direction: column !important;
       flex-wrap: wrap;
       justify-content: center !important;
       margin-top: 0.5rem;
       text-align: left;
 
       > span {
-        margin-bottom: 0.5rem;
+        margin: 1rem 0 0 !important;
       }
     }
   }
