@@ -3,12 +3,14 @@
     "by": "от",
     "ongoing": "текуща",
     "download": "Отвори PDF копие на документа",
-    "totalExperience": "професионален стаж"
+    "totalExperience": "професионален стаж",
+    "stack": "Ползвани технологии"
   },
   "en": {
     "by":  "by",
     "ongoing": "Ongoing",
     "download": "Get a PDF copy of this document",
-    "totalExperience": "of total experience"
+    "totalExperience": "of total experience",
+    "stack": "Front-end stack"
   }
 }

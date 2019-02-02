@@ -24,11 +24,19 @@ $heading-types: 'title' 'subtitle' 'section' 'item' 'info';
   margin: 0;
   line-height: 1;
   text-transform: uppercase;
+
+  @include mq-device-holding-type('inpocket') {
+    line-height: map-get($roles-typo-line-heights, 'text');
+  }
 }
 
 .subtitle {
   margin: 0;
   color: map-get($roles-col-texts, 'subtitle');
+
+  @include mq-device-holding-type('inpocket') {
+    line-height: map-get($roles-typo-line-heights, 'title') * 2;
+  }
 }
 
 .section {

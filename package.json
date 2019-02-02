@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "title": "Martin Metodiev's CV",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "license": "UNLICENSED",
   "description": "Martin Metodiev's CV",
   "scripts": {
@@ -39,6 +39,7 @@
     "react-dom": "^16.7.0",
     "react-ga": "^2.5.6",
     "react-hot-loader": "^4.6.3",
+    "react-tooltip": "^3.9.2",
     "yarn": "^1.13.0"
   },
   "devDependencies": {
