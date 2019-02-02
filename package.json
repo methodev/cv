@@ -39,6 +39,7 @@
     "react-dom": "^16.7.0",
     "react-ga": "^2.5.6",
     "react-hot-loader": "^4.6.3",
+    "react-tooltip": "^3.9.2",
     "yarn": "^1.13.0"
   },
   "devDependencies": {

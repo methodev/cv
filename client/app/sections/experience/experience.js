@@ -61,6 +61,7 @@ const Experience = ({ data }) => (
               subtitleUrl={item.fields.employer.fields.homePage}
               details={details}
               text={duties}
+              tooltip={item.fields.stack ? `${getLabel('stack')}: ${item.fields.stack.join(', ')}` : null}
             />
           </SectionItem>
         );
@@ -68,6 +69,7 @@ const Experience = ({ data }) => (
     }
   </Section>
 );
+
 
 //--------------------------| Export
 
