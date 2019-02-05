@@ -105,11 +105,16 @@
     padding: 0 $gap;
 
     main {
+      flex: 1;
       column-gap: $gap;
 
       > section:not(:last-child) {
         margin-bottom: get-rem-unit(24px);
       }
+    }
+
+    footer {
+      padding-bottom: 1.6rem;
     }
   }
 

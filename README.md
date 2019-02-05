@@ -1,4 +1,4 @@
-# Martin Metodiev's CV
+# Martin Metodiev’s CV
 
 [![Travis](https://img.shields.io/travis/martinmethod/cv.svg)](https://travis-ci.org/martinmethod/cv) [![David](https://img.shields.io/david/martinmethod/cv.svg)](https://david-dm.org/martinmethod/cv) [![David](https://img.shields.io/david/dev/martinmethod/cv.svg)](https://david-dm.org/martinmethod/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/martinmethod/cv.svg)](https://github.com/martinmethod/cv/releases/latest)
 
