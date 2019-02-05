@@ -68,4 +68,10 @@ $heading-types: 'title' 'subtitle' 'section' 'item' 'info';
   .section {
     border-bottom-width: 1px;
   }
+
+  .info {
+    a {
+      color: map-get($roles-col-texts, 'info') !important;
+    }
+  }
 }
