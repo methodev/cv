@@ -7,7 +7,9 @@
 // Libraries
 import React from 'react';
 import classNames from 'classnames';
-import ReactTooltip from 'react-tooltip';
+
+// HOC
+import Tooltip from '../../hoc/tooltip';
 
 // Styles
 import styles from './meta.scss';
@@ -31,7 +33,7 @@ const Meta = ({
         }
         {children}
       </span>
-      <ReactTooltip
+      <Tooltip
         id={'period'}
         place={'right'}
         effect={'solid'}
