@@ -6,10 +6,12 @@
 
 // Libraries
 import React from 'react';
-import ReactTooltip from 'react-tooltip';
 
 // Styles
 import styles from './item.scss';
+
+// HOC
+import Tooltip from '../../hoc/tooltip';
 
 // Atoms
 import Heading from '../../atoms/heading';
@@ -67,7 +69,7 @@ const Item = ({
           )
         }
       </div>
-      <ReactTooltip
+      <Tooltip
         place={'top'}
         effect={'solid'}
       />

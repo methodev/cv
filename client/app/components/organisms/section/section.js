@@ -6,10 +6,12 @@
 
 // Libraries
 import React from 'react';
-import ReactTooltip from 'react-tooltip';
 
 // Styles
 import styles from './section.scss';
+
+// HOC
+import Tooltip from '../../hoc/tooltip';
 
 // Atoms
 import Heading from '../../atoms/heading';
@@ -22,7 +24,7 @@ const Section = ({ name, tooltip, children }) => (
     <div data-tip={tooltip}>
       <Heading size={2} type={'section'}>{name}</Heading>
     </div>
-    <ReactTooltip
+    <Tooltip
       place={'top'}
       effect={'solid'}
     />

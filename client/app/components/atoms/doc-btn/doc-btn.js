@@ -7,7 +7,9 @@
 // Libraries
 import React from 'react';
 import classNames from 'classnames';
-import ReactTooltip from 'react-tooltip';
+
+// HOC
+import Tooltip from '../../hoc/tooltip';
 
 // Styles
 import styles from './doc-btn.scss';
@@ -36,7 +38,7 @@ const DocBtn = ({
       >
         <Icon />
       </a>
-      <ReactTooltip
+      <Tooltip
         id={'pdf'}
         place={'left'}
       />
