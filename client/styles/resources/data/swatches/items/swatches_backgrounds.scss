@@ -4,8 +4,9 @@
 
 $swatch-backgrounds: (
 
-  'white': map-get($swatch-colors, 'white'),
-  'pale':  map-get($swatch-colors, 'pale'),
-  'alto':  map-get($swatch-colors, 'alto')
+  'white':      map-get($swatch-colors, 'white'),
+  'pale':       map-get($swatch-colors, 'pale'),
+  'alto':       map-get($swatch-colors, 'alto'),
+  'green-dark': map-get($swatch-colors, 'green-dark')
 
 );

@@ -24,7 +24,7 @@ const Strengths = ({ data }) => (
     className={styles.root}
     name={data.fields.name}
   >
-    <TagGroup tags={data.fields.items.map(item => item.fields.name)} />
+    <TagGroup tags={data.fields.items} />
   </Section>
 );
 
