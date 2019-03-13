@@ -17,10 +17,12 @@ import ProgressBar from '../../atoms/progress-bar';
 
 //--------------------------| Component
 
-const Progress = ({ title, level }) => (
+const Progress = ({ title, level, label }) => (
   <div className={styles.root}>
     <Heading size={3} type={'item'}>{title}</Heading>
-    <ProgressBar level={level} />
+    <div>
+      <ProgressBar level={level} label={label} />
+    </div>
   </div>
 );
 

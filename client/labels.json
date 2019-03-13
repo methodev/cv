@@ -4,13 +4,27 @@
     "ongoing": "текуща",
     "download": "Отвори PDF копие на документа",
     "totalExperience": "професионален стаж",
-    "stack": "Ползвани технологии"
+    "stack": "Ползвани технологии",
+    "junior": "Начинаещ",
+    "midLevel": "Напреднал",
+    "senior": "Експерт",
+    "langNative": "Майчин",
+    "langFluent": "Гладко",
+    "langFair": "Разговорен",
+    "langPoor": "Слабо"
   },
   "en": {
     "by":  "by",
     "ongoing": "Ongoing",
     "download": "Get a PDF copy of this document",
     "totalExperience": "of total experience",
-    "stack": "Front-end stack"
+    "stack": "Front-end stack",
+    "junior": "Junior",
+    "midLevel": "Mid-level",
+    "senior": "Senior",
+    "langNative": "Native",
+    "langFluent": "Fluent",
+    "langFair": "ILR Level 3",
+    "langPoor": "Poor"
   }
 }

@@ -20,7 +20,7 @@ const TagGroup = ({ tags }) => (
   <div className={styles.root}>
     {
       tags.map((tag, i) => (
-        <Tag key={i}>{tag}</Tag>
+        <Tag key={i} data={tag} />
       ))
     }
   </div>

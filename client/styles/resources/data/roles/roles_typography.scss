@@ -35,9 +35,10 @@ $roles-typo-font-sizes: (
 //--------------------------| Line-heights
 
 $roles-typo-line-heights: (
-  'title':    map-get($swatch-line-heights, '100%'),
-  'text':     map-get($swatch-line-heights, 'normal'),
-  'meta':     map-get($swatch-line-heights, '130%')
+  'title':        map-get($swatch-line-heights, '100%'),
+  'text':         map-get($swatch-line-heights, 'normal'),
+  'meta':         map-get($swatch-line-heights, '130%'),
+  'progress-bar': map-get($swatch-line-heights, '170%')
 );
 
 

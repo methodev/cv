@@ -13,9 +13,13 @@ import styles from './progress-bar.scss';
 
 //--------------------------| Component
 
-const ProgressBar = ({ level }) => (
+const ProgressBar = ({ level, label }) => (
   <div className={styles.root}>
-    <span style={{ width: `${level}%` }} />
+    <div>
+      <span style={{ width: `${level}%` }}>
+        {label}
+      </span>
+    </div>
   </div>
 );
 
