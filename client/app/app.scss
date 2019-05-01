@@ -76,6 +76,7 @@
   a {
     color: map-get($roles-col-links, 'link');
     transition: all map-get($roles-transitions, 'links') ease-in-out;
+    transform: translate3d(0, 0, 0); // fix visual glitch in Safari
 
     @media (hover: hover) {
       &:hover:not(:active) {
