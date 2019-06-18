@@ -6,7 +6,7 @@
 
 *Technologies:* **ES6**, **HTML5**, **CSS3**
 
-*Libraries:* **[React](https://reactjs.org)**, **[Lodash](https://lodash.com)**, **[Moment.js](http://momentjs.com)**
+*Libraries:* **[React](https://reactjs.org)**, **[Moment.js](http://momentjs.com)**
 
 *Linters:* **[ESLint](https://eslint.org)**, **[stylelint](https://stylelint.io)**
 

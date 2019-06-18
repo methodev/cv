@@ -7,7 +7,6 @@
 // Libraries
 import { parse } from 'flatted/esm';
 import moment from 'moment';
-import _ from 'lodash';
 
 
 //--------------------------| Get label
