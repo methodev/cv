@@ -22,10 +22,11 @@ module.exports = {
     {
       loader: 'css-loader', // translates CSS into CommonJS
       options: {
-        modules: true,
         sourceMap: true,
-        camelCase: 'dashes',
-        localIdentName: '[name]__[local]__[hash:base64:5]'
+        localsConvention: 'dashes',
+        modules: {
+          localIdentName: '[name]__[local]__[hash:base64:5]'
+        }
       }
     },
     {
