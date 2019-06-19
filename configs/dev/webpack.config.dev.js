@@ -31,7 +31,12 @@ const config = {
     rules: [...loaders, ...commonLoaders]
   },
   plugins: [...plugins, ...commonPlugins],
-  devtool: 'inline-source-map'
+  devtool: 'inline-source-map',
+  resolve: {
+    alias: {
+      'react-dom': '@hot-loader/react-dom'
+    }
+  }
 };
 
 

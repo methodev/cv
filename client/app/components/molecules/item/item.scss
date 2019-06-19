@@ -2,10 +2,32 @@
 // ITEM
 
 
+//--------------------------| Variables
+
+$offset: get-rem-unit(($roles-size-doc-icon * 1.8) + 5);
+
+
 //--------------------------| Root
 
 .root {
-  //
+  position: relative;
+
+  &.document {
+    padding-right: $offset;
+
+    @include mq-device-holding-type('inpocket') {
+      @include padding-h($offset);
+    }
+  }
+}
+
+
+//--------------------------| File
+
+.file {
+  position: absolute;
+  right: 0;
+  transform: translateY(get-rem-unit(-2px));
 }
 
 
@@ -13,4 +35,39 @@
 
 .details {
   margin-top: 0.5rem;
+}
+
+
+//--------------------------| Info
+
+.info {
+  display: none;
+
+  @include mq-device-holding-type('outpocket') {
+    position: absolute;
+    top: get-rem-unit(4px);
+    right: 100%;
+    bottom: 0;
+    width: 25px;
+
+    @media (hover: hover) {
+      .root:hover & {
+        display: block;
+      }
+    }
+
+    span {
+      @include dimensions-square(get-rem-unit(15px));
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-style: normal;
+      font-weight: map-get($roles-typo-font-weights, 'icon');
+      color: map-get($roles-col-texts, 'negative');
+      cursor: help;
+      background-color: map-get($roles-col-backgrounds, 'info');
+      border-radius: get-rem-unit(50%);
+    }
+  }
 }

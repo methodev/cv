@@ -9,10 +9,19 @@ import React from 'react';
 import moment from 'moment';
 
 // Services
-import { formatDate, getTotalExperience, getLabel } from '../../services/data';
+import {
+  formatDate,
+  getTotalExperience,
+  getPeriod,
+  splitPositionsByActuality,
+  getLabel
+} from '../../services/data';
 
 // Styles
 import styles from './experience.scss';
+
+// Atoms
+import Meta from '../../components/atoms/meta';
 
 // Molecules
 import Item from '../../components/molecules/item';
@@ -28,47 +37,77 @@ import PinSVG from '../../../assets/graphics/pin.svg';
 
 //--------------------------| Component
 
-const Experience = ({ data }) => (
-  <Section
-    className={styles.root}
-    name={data.fields.name}
-    tooltip={getTotalExperience(data.fields.items)}
-  >
-    {
-      data.fields.items.map((item) => {
-        const finalDate = item.fields.endDate ? item.fields.endDate : moment();
-        const duties = item.fields.duties.replace(/\n/g, '').split('• ').slice(1);
+class Experience extends React.PureComponent {
+  state = {
+    old: false
+  };
 
-        const details = [
-          {
-            type: 'calendar',
-            value: `${formatDate(item.fields.startDate)} — ${item.fields.endDate ? formatDate(item.fields.endDate) : getLabel('ongoing')}`,
-            icon: <CalSVG />,
-            tooltip: moment(finalDate).to(moment(item.fields.startDate), true)
-          },
-          {
-            type: 'location',
-            value: item.fields.employer.fields.location,
-            icon: <PinSVG />
-          }
-        ];
+  listPositions = positions => positions.map((item) => {
+    const finalDate = item.fields.endDate ? item.fields.endDate : moment();
+    const duties = item.fields.duties.replace(/\n/g, '').split('• ').slice(1);
 
-        return (
-          <SectionItem key={item.sys.id}>
-            <Item
-              title={item.fields.name}
-              subtitle={item.fields.employer.fields.name}
-              subtitleUrl={item.fields.employer.fields.homePage}
-              details={details}
-              text={duties}
-              tooltip={item.fields.stack ? `${getLabel('stack')}: ${item.fields.stack.join(', ')}` : null}
-            />
-          </SectionItem>
-        );
-      })
-    }
-  </Section>
-);
+    const details = [
+      {
+        type: 'calendar',
+        value: `${formatDate(item.fields.startDate)} — ${item.fields.endDate ? formatDate(item.fields.endDate) : getLabel('ongoing')}`,
+        icon: <CalSVG />,
+        tooltip: moment(finalDate).to(moment(item.fields.startDate), true)
+      },
+      {
+        type: 'location',
+        value: item.fields.employer.fields.location,
+        icon: <PinSVG />
+      }
+    ];
+
+    return (
+      <SectionItem key={item.sys.id}>
+        <Item
+          title={item.fields.name}
+          subtitle={item.fields.employer.fields.name}
+          subtitleUrl={item.fields.employer.fields.homePage}
+          details={details}
+          text={duties}
+          tooltip={item.fields.stack ? `${getLabel('stack')}: ${item.fields.stack.join(', ')}` : null}
+        />
+      </SectionItem>
+    );
+  });
+
+  showOldPositions = () => {
+    this.setState(prevState => ({ old: true }));
+  };
+
+  render() {
+    const { data } = this.props;
+    const actualAmount = 3;
+    const positions = splitPositionsByActuality(data.fields.items, actualAmount);
+
+    return (
+      <Section
+        className={styles.root}
+        name={data.fields.name}
+        tooltip={getTotalExperience(data.fields.items)}
+      >
+        {
+          this.listPositions(positions.actual)
+        }
+        {
+          this.state.old && this.listPositions(positions.old)
+        }
+        {
+          !this.state.old && positions.old.length > 0 && (
+            <div className={styles.more}>
+              <Meta>
+                <a onClick={this.showOldPositions}>{`••• ${positions.old.length} ${getLabel('previousPositions')} ${getPeriod(positions.old)} •••`}</a>
+              </Meta>
+            </div>
+          )
+        }
+      </Section>
+    );
+  }
+}
 
 
 //--------------------------| Export

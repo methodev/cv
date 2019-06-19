@@ -23,7 +23,8 @@ $roles-col-texts: (
   'info':        map-get($swatch-colors, 'dove-gray'),
   'meta':        map-get($swatch-colors, 'dove-gray'),
   'footer':      map-get($swatch-colors, 'dusty-gray'),
-  'negative':    map-get($swatch-colors, 'white')
+  'negative':    map-get($swatch-colors, 'white'),
+  'icon':        map-get($swatch-colors, 'yellow')
 );
 
 
@@ -41,5 +42,6 @@ $roles-col-links: (
 $roles-col-backgrounds: (
   'app':         map-get($swatch-backgrounds, 'white'),
   'progress':    map-get($swatch-backgrounds, 'pale'),
+  'info':        map-get($swatch-backgrounds, 'yellow'),
   'bar':         map-get($swatch-backgrounds, 'green-dark')
 );

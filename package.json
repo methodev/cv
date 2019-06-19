@@ -1,7 +1,7 @@
 {
   "name": "cv",
   "title": "Martin Metodiev’s CV",
-  "version": "2.3.2",
+  "version": "2.4.0",
   "license": "UNLICENSED",
   "description": "Martin Metodiev’s CV",
   "scripts": {
@@ -28,8 +28,10 @@
     "stylelint": "^10.1.0"
   },
   "dependencies": {
+    "@hot-loader/react-dom": "^16.8.6",
     "add": "^2.0.6",
     "classnames": "^2.2.6",
+    "clean-webpack-plugin": "^3.0.0",
     "contentful": "^7.7.0",
     "flatted": "^2.0.0",
     "moment": "^2.24.0",
@@ -56,7 +58,6 @@
     "babel-minify-webpack-plugin": "^0.3.1",
     "babel-plugin-inline-react-svg": "^1.1.0",
     "chalk": "^2.4.2",
-    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.0.0",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",

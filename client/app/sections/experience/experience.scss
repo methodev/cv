@@ -7,3 +7,16 @@
 .root {
   //
 }
+
+
+//--------------------------| More
+
+.more {
+  padding-top: 1rem;
+  text-align: center;
+  border-top: map-get($roles-borders-dividers, 'gray');
+
+  > span {
+    display: inline;
+  }
+}

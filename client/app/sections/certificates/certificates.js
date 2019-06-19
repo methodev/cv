@@ -39,7 +39,7 @@ const Certificates = ({ data }) => {
           <SectionItem key={item.sys.id}>
             <Item
               title={item.fields.title}
-              titleUrl={item.fields.document.fields.file.url}
+              file={item.fields.document && item.fields.document.fields.file.url}
               subtitle={`${item.fields.course} ${getLabel('by')} ${item.fields.institution.fields.name}`}
               subtitleUrl={item.fields.institution.fields.homePage}
               details={[

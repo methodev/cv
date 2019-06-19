@@ -21,11 +21,14 @@ import Heading from '../../atoms/heading';
 
 const Section = ({ name, tooltip, children }) => (
   <section className={styles.root}>
-    <div data-tip={tooltip}>
-      <Heading size={2} type={'section'}>{name}</Heading>
+    <div>
+      <Heading size={2} type={'section'}>
+        <span data-tip={tooltip} data-for={'section-tooltip'}>{name}</span>
+      </Heading>
     </div>
     <Tooltip
-      place={'top'}
+      id={'section-tooltip'}
+      place={'right'}
       effect={'solid'}
     />
 

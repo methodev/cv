@@ -7,7 +7,7 @@
 .root {
   @include dimensions-square(get-rem-unit($roles-size-doc-icon * 1.8));
 
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -37,5 +37,14 @@
   &:active {
     color: map-get($roles-col-texts, 'negative');
     background-color: light(map-get($swatch-colors, 'red'), 30%);
+  }
+}
+
+
+//--------------------------| Print styles
+
+@media print {
+  .root {
+    display: none;
   }
 }

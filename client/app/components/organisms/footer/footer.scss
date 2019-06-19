@@ -23,7 +23,7 @@
   display: flex;
   transform: translateY(-50%);
 
-  a {
+  a:not(:only-of-type) {
     margin: 0 0.5rem;
   }
 

@@ -2,7 +2,8 @@
   "bg": {
     "by": "от",
     "ongoing": "текуща",
-    "download": "Отвори PDF копие на документа",
+    "openPDF": "Отворете PDF копие на документа",
+    "download": "Вземете PDF копие на това CV",
     "totalExperience": "професионален стаж",
     "stack": "Ползвани технологии",
     "junior": "Начинаещ",
@@ -11,12 +12,14 @@
     "langNative": "Майчин",
     "langFluent": "Гладко",
     "langFair": "Разговорен",
-    "langPoor": "Слабо"
+    "langPoor": "Слабо",
+    "previousPositions": "стари позиции от периода"
   },
   "en": {
     "by":  "by",
     "ongoing": "Ongoing",
-    "download": "Get a PDF copy of this document",
+    "openPDF": "Open a PDF copy of this document",
+    "download": "Download a PDF copy of this CV",
     "totalExperience": "of total experience",
     "stack": "Front-end stack",
     "junior": "Junior",
@@ -25,6 +28,7 @@
     "langNative": "Native",
     "langFluent": "Fluent",
     "langFair": "ILR Level 3",
-    "langPoor": "Poor"
+    "langPoor": "Poor",
+    "previousPositions": "more jobs in the period"
   }
 }

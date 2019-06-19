@@ -16,9 +16,6 @@ import styles from './footer.scss';
 // Atoms
 import DocBtn from '../../atoms/doc-btn';
 
-// Graphics
-import FileSVG from '../../../../assets/graphics/pdf.svg';
-
 
 //--------------------------| Component
 
@@ -30,9 +27,8 @@ const Footer = ({ docs }) => (
       {
         docs.map(doc => (
           <DocBtn
+            id='pdf'
             key={doc.sys.id}
-            id={'pdf'}
-            icon={<FileSVG />}
             tooltip={getLabel('download')}
             link={doc.fields.file.url}
           />
