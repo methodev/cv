@@ -40,9 +40,9 @@ const Item = ({
 
   return (
     <>
-      <div className={classNames(styles.root, { [styles.document]: file })}>
+      <div className={classNames(styles.root, { [styles.document]: file, [styles.i]: tooltip })}>
         {
-          tooltip && <div className={styles.info}><span data-tip={tooltip} data-for={'item-tooltip'}>i</span></div>
+          tooltip && <div className={styles.info}><span data-tip={tooltip} data-for={'info-tooltip'}>i</span></div>
         }
         {
           file && (
@@ -53,6 +53,7 @@ const Item = ({
         }
         <Heading size={3} type={'item'}>
           <TitleWrapper
+            className={styles.heading}
             href={titleUrl}
             target={titleUrl && (titleUrl.indexOf('//') !== -1 ? '_blank' : null)}
           >
@@ -85,8 +86,8 @@ const Item = ({
         }
       </div>
       <Tooltip
-        id={'item-tooltip'}
-        place={'right'}
+        id={'info-tooltip'}
+        place={'bottom'}
         effect={'solid'}
       />
     </>
