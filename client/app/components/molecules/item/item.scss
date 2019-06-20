@@ -59,18 +59,24 @@ $offset: get-rem-unit(($roles-size-doc-icon * 1.8) + 5);
 //--------------------------| Info
 
 .info {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all map-get($roles-transitions, 'icons') ease-in-out;
+  transform: translateY(-50%) scale(0);
 
   @include mq-device-holding-type('outpocket') {
     position: absolute;
-    top: get-rem-unit(4px);
+    top: get-rem-unit(-20px);
     right: 0;
     bottom: 0;
     width: 25px;
 
     @media (hover: hover) {
       .root:hover & {
-        display: block;
+        top: get-rem-unit(4px);
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0) scale(1);
       }
     }
 
