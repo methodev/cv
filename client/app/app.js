@@ -29,7 +29,7 @@ import TechsAndTools from './sections/techs-and-tools';
 import MostProudOf from './sections/most-proud-of';
 import Strengths from './sections/strengths';
 import Languages from './sections/languages';
-import Certificates from './sections/certificates';
+import Courses from './sections/courses';
 import References from './sections/references';
 
 
@@ -45,7 +45,7 @@ const SectionRouter = ({ data }) => {
       case 'mostProudOf': return MostProudOf;
       case 'strengths': return Strengths;
       case 'languages': return Languages;
-      case 'certificates': return Certificates;
+      case 'courses': return Courses;
       case 'references': return References;
     }
   };

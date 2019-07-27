@@ -1,5 +1,5 @@
 //====================================================|
-// CERTIFICATES
+// COURSES
 
 
 //--------------------------| Import
@@ -8,10 +8,10 @@
 import React from 'react';
 
 // Services
-import { formatDate, getLabel } from '../../services/data';
+import { formatDate } from '../../services/data';
 
 // Styles
-import styles from './certificates.scss';
+import styles from './courses.scss';
 
 // Molecules
 import Item from '../../components/molecules/item';
@@ -26,7 +26,7 @@ import CalSVG from '../../../assets/graphics/calendar.svg';
 
 //--------------------------| Component
 
-const Certificates = ({ data }) => {
+const Courses = ({ data }) => {
   const { items } = data.fields;
 
   return (
@@ -40,7 +40,7 @@ const Certificates = ({ data }) => {
             <Item
               title={item.fields.title}
               file={item.fields.document && item.fields.document.fields.file.url}
-              subtitle={`${item.fields.course} ${getLabel('by')} ${item.fields.institution.fields.name}`}
+              subtitle={`${item.fields.institution.fields.name}`}
               subtitleUrl={item.fields.institution.fields.homePage}
               details={[
                 {
@@ -60,4 +60,4 @@ const Certificates = ({ data }) => {
 
 //--------------------------| Export
 
-export default Certificates;
+export default Courses;

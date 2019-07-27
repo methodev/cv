@@ -1,6 +1,5 @@
 {
   "bg": {
-    "by": "от",
     "ongoing": "текуща",
     "openPDF": "Отворете PDF копие на документа",
     "download": "Вземете PDF копие на това CV",
@@ -16,7 +15,6 @@
     "previousPositions": "стари позиции от периода"
   },
   "en": {
-    "by":  "by",
     "ongoing": "Ongoing",
     "openPDF": "Open a PDF copy of this document",
     "download": "Download a PDF copy of this CV",

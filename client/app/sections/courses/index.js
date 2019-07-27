@@ -1,10 +1,10 @@
 //====================================================|
-// CERTIFICATES
+// COURSES
 
 
 //--------------------------| Import
 
-import Component from './certificates';
+import Component from './courses';
 
 
 //--------------------------| Export
