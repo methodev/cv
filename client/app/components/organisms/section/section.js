@@ -23,7 +23,14 @@ const Section = ({ name, tooltip, children }) => (
   <section className={styles.root}>
     <div>
       <Heading size={2} type={'section'}>
-        <span data-tip={tooltip} data-for={'section-tooltip'}>{name}</span>
+        <span data-tip={tooltip} data-for={'section-tooltip'}>
+          {
+            name
+          }
+          {
+            tooltip && <i>({tooltip})</i>
+          }
+        </span>
       </Heading>
     </div>
     <Tooltip

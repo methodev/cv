@@ -6,6 +6,14 @@
 
 .root {
   margin: 0 0 1rem;
+
+  i {
+    display: none;
+    margin-bottom: 0.5rem;
+    font-size: map-get($roles-typo-font-sizes, 'base');
+    font-weight: map-get($roles-typo-font-weights, 'base');
+    color: map-get($roles-col-texts, 'base');
+  }
 }
 
 
@@ -65,6 +73,12 @@ $heading-types: 'title' 'subtitle' 'section' 'item' 'info';
 //--------------------------| Print styles
 
 @media print {
+  .root {
+    i {
+      display: block;
+    }
+  }
+
   .section {
     border-bottom-width: 1px;
   }

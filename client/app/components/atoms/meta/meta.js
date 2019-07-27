@@ -31,7 +31,12 @@ const Meta = ({
         {
           icon && <Icon className={styles.icon} />
         }
-        {children}
+        {
+          children
+        }
+        {
+          tooltip && <i>({tooltip})</i>
+        }
       </span>
       <Tooltip
         id={'period'}
