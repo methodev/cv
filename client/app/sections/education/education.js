@@ -9,7 +9,11 @@ import React from 'react';
 import moment from 'moment';
 
 // Services
-import { formatDate, getLabel } from '../../services/data';
+import {
+  formatDate,
+  formatDuration,
+  getLabel
+} from '../../services/data';
 
 // Styles
 import styles from './education.scss';
@@ -45,7 +49,7 @@ const Education = ({ data }) => {
               type: 'calendar',
               value: `${formatDate(item.fields.startDate)} — ${item.fields.endDate ? formatDate(item.fields.endDate) : getLabel('ongoing')}`,
               icon: <CalSVG />,
-              tooltip: moment(finalDate).to(moment(item.fields.startDate), true)
+              tooltip: formatDuration(item.fields.startDate, finalDate)
             },
             {
               type: 'location',

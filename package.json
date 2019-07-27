@@ -35,6 +35,7 @@
     "contentful": "^7.7.0",
     "flatted": "^2.0.0",
     "moment": "^2.24.0",
+    "moment-duration-format": "^2.3.2",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-device-detect": "^1.6.2",

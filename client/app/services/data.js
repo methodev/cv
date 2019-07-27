@@ -7,6 +7,12 @@
 // Libraries
 import { parse } from 'flatted/esm';
 import moment from 'moment';
+import momentDurationFormatSetup from 'moment-duration-format';
+
+
+//--------------------------| Duration format
+
+momentDurationFormatSetup(moment);
 
 
 //--------------------------| Get label
@@ -57,3 +63,11 @@ export const splitPositionsByActuality = (positions, amount = 3) => {
 //--------------------------| Format date
 
 export const formatDate = (date, format = 'MMM YYYY') => moment(date).format(format);
+
+
+//--------------------------| Format duration
+
+export const formatDuration = (startDate, finalDate) => moment.duration(
+  moment(finalDate).diff(moment(startDate), 'months'),
+  'months'
+).humanize();

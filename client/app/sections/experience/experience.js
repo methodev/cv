@@ -11,6 +11,7 @@ import moment from 'moment';
 // Services
 import {
   formatDate,
+  formatDuration,
   getTotalExperience,
   getPeriod,
   splitPositionsByActuality,
@@ -51,7 +52,7 @@ class Experience extends React.PureComponent {
         type: 'calendar',
         value: `${formatDate(item.fields.startDate)} — ${item.fields.endDate ? formatDate(item.fields.endDate) : getLabel('ongoing')}`,
         icon: <CalSVG />,
-        tooltip: moment(finalDate).to(moment(item.fields.startDate), true)
+        tooltip: formatDuration(item.fields.startDate, finalDate)
       },
       {
         type: 'location',
