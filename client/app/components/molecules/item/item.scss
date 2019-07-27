@@ -94,3 +94,12 @@ $offset: get-rem-unit(($roles-size-doc-icon * 1.8) + 5);
     }
   }
 }
+
+
+//--------------------------| Print styles
+
+@media print {
+  .info {
+    display: none;
+  }
+}
