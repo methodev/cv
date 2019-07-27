@@ -18,11 +18,11 @@ import {
   getLabel
 } from '../../services/data';
 
+// HOC
+import Tooltip from '../../components/hoc/tooltip';
+
 // Styles
 import styles from './experience.scss';
-
-// Atoms
-import Meta from '../../components/atoms/meta';
 
 // Molecules
 import Item from '../../components/molecules/item';
@@ -83,6 +83,7 @@ class Experience extends React.PureComponent {
     const { data } = this.props;
     const actualAmount = 3;
     const positions = splitPositionsByActuality(data.fields.items, actualAmount);
+    const tooltip = `${positions.old.length} ${getLabel('previousPositions')} ${getPeriod(positions.old)}`;
 
     return (
       <Section
@@ -99,9 +100,17 @@ class Experience extends React.PureComponent {
         {
           !this.state.old && positions.old.length > 0 && (
             <div className={styles.more}>
-              <Meta>
-                <a onClick={this.showOldPositions}>{`••• ${positions.old.length} ${getLabel('previousPositions')} ${getPeriod(positions.old)} •••`}</a>
-              </Meta>
+              <span data-tip={tooltip} data-for='more'>
+                <a onClick={this.showOldPositions}>
+                  <span>{`+${positions.old.length}`}</span>
+                </a>
+                <i>••• {tooltip} •••</i>
+              </span>
+              <Tooltip
+                id={'more'}
+                place={'top'}
+                effect={'solid'}
+              />
             </div>
           )
         }
