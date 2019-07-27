@@ -17,14 +17,13 @@ import styles from './heading.scss';
 const Heading = ({
   size,
   type = 'title',
-  tooltip,
   children
 }) => {
   const H = size ? `h${size}` : 'label';
   const classes = classNames(styles.root, styles[type]);
 
   return (
-    <H className={classes} title={tooltip}>
+    <H className={classes}>
       {children}
     </H>
   );
