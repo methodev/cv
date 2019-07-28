@@ -5,14 +5,14 @@
 //--------------------------| Root
 
 .root {
-  display: inline;
+  display: inline-block;
   max-width: 100%;
   cursor: default;
 
   > * {
     @util truncate;
 
-    display: inline-block;
+    display: block;
     padding: 0.1rem 0.3rem;
     border: map-get($roles-borders-wrappers, 'tag');
     border-radius: map-get($roles-borders-radiuses, 'tag');
