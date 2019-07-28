@@ -46,6 +46,11 @@ const MostProudOf = ({ data }) => (
             <Highlight title={item.fields.title}>
               <Icon />
             </Highlight>
+            {
+              item.fields.description && (
+                <p className={styles.description}>{item.fields.description}</p>
+              )
+            }
           </SectionItem>
         );
       })
