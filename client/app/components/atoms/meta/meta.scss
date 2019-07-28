@@ -13,7 +13,6 @@
   cursor: default;
 
   i {
-    display: none;
     margin-left: 0.2rem;
   }
 }
@@ -36,12 +35,6 @@
 //--------------------------| Print styles
 
 @media print {
-  .root {
-    i {
-      display: inline-block;
-    }
-  }
-
   .icon {
     transform: translateY(0);
   }
