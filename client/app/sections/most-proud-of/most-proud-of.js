@@ -11,7 +11,7 @@ import React from 'react';
 import styles from './most-proud-of.scss';
 
 // Molecules
-import Highlight from '../../components/molecules/highlight';
+import Heading from '../../components/atoms/heading';
 
 // Organisms
 import Section from '../../components/organisms/section';
@@ -43,9 +43,7 @@ const MostProudOf = ({ data }) => (
 
         return (
           <SectionItem key={item.sys.id}>
-            <Highlight title={item.fields.title}>
-              <Icon />
-            </Highlight>
+            <Heading size={3} type={'item'}>{item.fields.title}</Heading>
             {
               item.fields.description && (
                 <p className={styles.description}>{item.fields.description}</p>
