@@ -5,12 +5,31 @@
 //--------------------------| Root
 
 .root {
-  @util truncate;
-
-  display: inline-block;
+  display: inline;
   max-width: 100%;
-  padding: 0.1rem 0.3rem;
   cursor: default;
-  border: map-get($roles-borders-wrappers, 'tag');
-  border-radius: map-get($roles-borders-radiuses, 'tag');
+
+  > * {
+    @util truncate;
+
+    display: inline-block;
+    padding: 0.1rem 0.3rem;
+    border: map-get($roles-borders-wrappers, 'tag');
+    border-radius: map-get($roles-borders-radiuses, 'tag');
+  }
+
+  a {
+    color: map-get($roles-col-texts, 'base');
+    transition: border-color map-get($roles-transitions, 'links') ease-in-out;
+
+    @media (hover: hover) {
+      &:hover:not(:active) {
+        border-color: map-get($roles-col-links, 'hover');
+      }
+    }
+
+    &:active {
+      border-color: map-get($roles-col-links, 'active');
+    }
+  }
 }
