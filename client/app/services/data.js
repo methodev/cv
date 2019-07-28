@@ -71,3 +71,12 @@ export const formatDuration = (startDate, finalDate) => moment.duration(
   moment(finalDate).diff(moment(startDate), 'months'),
   'months'
 ).humanize();
+
+
+//--------------------------| Format period
+
+export const formatPeriod = (startDate, endDate) => {
+  const label = endDate ? `${formatDate(startDate)} — ${formatDate(endDate)}` : `${getLabel('ongoing')}: ${formatDate(startDate)}`;
+
+  return label;
+};

@@ -1,6 +1,6 @@
 {
   "bg": {
-    "ongoing": "текуща",
+    "ongoing": "в действие от",
     "openPDF": "Отворете PDF копие на документа",
     "download": "Вземете PDF копие на това CV",
     "totalExperience": "професионален стаж",
@@ -15,7 +15,7 @@
     "previousPositions": "стари позиции от периода"
   },
   "en": {
-    "ongoing": "Ongoing",
+    "ongoing": "Ongoing since",
     "openPDF": "Open a PDF copy of this document",
     "download": "Download a PDF copy of this CV",
     "totalExperience": "of total experience",
