@@ -35,7 +35,7 @@ const Meta = ({
           children
         }
         {
-          tooltip && <i>({tooltip})</i>
+          tooltip && <i className={styles.addon}>({tooltip})</i>
         }
       </span>
       <Tooltip

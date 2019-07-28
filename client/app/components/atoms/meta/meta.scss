@@ -18,6 +18,13 @@
 }
 
 
+//--------------------------| Addon
+
+.addon {
+  display: none;
+}
+
+
 //--------------------------| Icons
 
 .icon {
@@ -35,6 +42,10 @@
 //--------------------------| Print styles
 
 @media print {
+  .addon {
+    display: inline-block;
+  }
+
   .icon {
     transform: translateY(0);
   }
