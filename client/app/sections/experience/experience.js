@@ -83,7 +83,7 @@ class Experience extends React.PureComponent {
     const { data } = this.props;
     const actualAmount = 3;
     const positions = splitPositionsByActuality(data.fields.items, actualAmount);
-    const tooltip = `${positions.old.length} ${getLabel('previousPositions')} ${getPeriod(positions.old)}`;
+    const tooltip = `+${positions.old.length} ${getLabel('previousPositions')} ${getPeriod(positions.old)}`;
 
     return (
       <Section
@@ -104,7 +104,7 @@ class Experience extends React.PureComponent {
                 <a onClick={this.showOldPositions}>
                   <span>{`+${positions.old.length}`}</span>
                 </a>
-                <i>••• {tooltip} •••</i>
+                <i>{tooltip}</i>
               </span>
               <Tooltip
                 id={'more'}
