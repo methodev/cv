@@ -59,6 +59,7 @@ $offset: get-rem-unit(($roles-size-doc-icon * 1.8) + 5);
 //--------------------------| Info
 
 .info {
+  display: none;
   visibility: hidden;
   opacity: 0;
   transition: all map-get($roles-transitions, 'icons') ease-in-out;
@@ -69,6 +70,7 @@ $offset: get-rem-unit(($roles-size-doc-icon * 1.8) + 5);
     top: get-rem-unit(-20px);
     right: 0;
     bottom: 0;
+    display: block;
     width: 25px;
 
     @media (hover: hover) {
