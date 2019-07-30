@@ -42,13 +42,18 @@ const Item = ({
     <>
       <div className={classNames(styles.root, { [styles.document]: file, [styles.i]: tooltip })}>
         {
-          tooltip && <div className={styles.info}><span data-tip={tooltip} data-for={'info-tooltip'}>i</span></div>
+          tooltip && (
+            <div className={styles.relBox}>
+              <div className={styles.info}><span data-tip={tooltip} data-for={'info-tooltip'}>i</span></div>
+            </div>)
         }
         {
           file && (
-            <span className={styles.file}>
-              <DocBtn id={file} link={file} />
-            </span>
+            <div className={styles.relBox}>
+              <span className={styles.file}>
+                <DocBtn id={file} link={file} />
+              </span>
+            </div>
           )
         }
         <Heading size={3} type={'item'}>

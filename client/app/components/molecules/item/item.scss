@@ -10,14 +10,6 @@ $offset: get-rem-unit(($roles-size-doc-icon * 1.8) + 5);
 //--------------------------| Root
 
 .root {
-  position: relative;
-
-  &,
-  svg,
-  a {
-    transform: translate3d(0, 0, 0) scale(1); // fix cropping in Safari
-  }
-
   &.document {
     padding-right: $offset;
 
@@ -44,7 +36,7 @@ $offset: get-rem-unit(($roles-size-doc-icon * 1.8) + 5);
 
 .file {
   position: absolute;
-  right: 0;
+  right: -#{$offset};
   transform: translateY(get-rem-unit(-2px));
 }
 
@@ -53,6 +45,15 @@ $offset: get-rem-unit(($roles-size-doc-icon * 1.8) + 5);
 
 .details {
   margin-top: 0.5rem;
+}
+
+
+//--------------------------| Relative box
+
+.rel-box {
+  position: relative;
+  width: 100%;
+  height: 0;
 }
 
 
