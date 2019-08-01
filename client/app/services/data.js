@@ -67,10 +67,15 @@ export const formatDate = (date, format = 'MMM YYYY') => moment(date).format(for
 
 //--------------------------| Format duration
 
-export const formatDuration = (startDate, finalDate) => moment.duration(
-  moment(finalDate).diff(moment(startDate), 'months'),
-  'months'
-).humanize();
+export const formatDuration = (startDate, finalDate) => {
+  const diff = moment(finalDate).diff(moment(startDate), 'months');
+
+  if (diff < 1) {
+    return null;
+  }
+
+  return moment.duration(diff, 'months').humanize();
+};
 
 
 //--------------------------| Format period
