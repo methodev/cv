@@ -10,6 +10,7 @@ import moment from 'moment';
 
 // Services
 import {
+  filterItemsTillNow,
   formatPeriod,
   formatDuration
 } from '../../services/data';
@@ -33,6 +34,7 @@ import PinSVG from '../../../assets/graphics/pin.svg';
 
 const Education = ({ data }) => {
   const { items } = data.fields;
+  const itemsTillNow = filterItemsTillNow(items);
 
   return (
     <Section
@@ -40,7 +42,7 @@ const Education = ({ data }) => {
       name={data.fields.name}
     >
       {
-        items.map((item) => {
+        itemsTillNow.map((item) => {
           const finalDate = item.fields.endDate ? item.fields.endDate : moment();
 
           const details = [

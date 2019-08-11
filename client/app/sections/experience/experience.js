@@ -10,6 +10,7 @@ import moment from 'moment';
 
 // Services
 import {
+  filterItemsTillNow,
   formatPeriod,
   formatDuration,
   getTotalExperience,
@@ -81,15 +82,17 @@ class Experience extends React.PureComponent {
 
   render() {
     const { data } = this.props;
+    const { items } = data.fields;
     const actualAmount = 3;
-    const positions = splitPositionsByActuality(data.fields.items, actualAmount);
+    const itemsTillNow = filterItemsTillNow(items);
+    const positions = splitPositionsByActuality(itemsTillNow, actualAmount);
     const tooltip = `+${positions.old.length} ${getLabel('previousPositions')} ${getPeriod(positions.old)}`;
 
     return (
       <Section
         className={styles.root}
         name={data.fields.name}
-        tooltip={getTotalExperience(data.fields.items)}
+        tooltip={getTotalExperience(items)}
       >
         {
           this.listPositions(positions.actual)
