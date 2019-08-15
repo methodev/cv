@@ -87,9 +87,9 @@ export const formatDuration = (startDate, finalDate) => {
 
 export const formatPeriod = (startDate, endDate) => {
   const startDiff = moment().diff(startDate, 'days');
-  const endDiff = moment().diff(endDate, 'days');
+  const endDiff = moment().diff(endDate);
   const isUpcoming = startDiff < 0;
-  const isAboutToEnd = endDiff < 0;
+  const isAboutToEnd = endDiff <= 0;
 
   if (isUpcoming) {
     return `${getLabel('starting')}: ${formatDate(startDate)}`;
