@@ -21,6 +21,7 @@ const Meta = ({
   type,
   icon,
   tooltip,
+  addon,
   children
 }) => {
   const Icon = ({ className }) => <i className={className}>{icon}</i>;
@@ -35,7 +36,7 @@ const Meta = ({
           children
         }
         {
-          tooltip && <i className={styles.addon}>({tooltip})</i>
+          addon && addon === 'finished' && <i className={styles.addon}>({tooltip})</i>
         }
       </span>
       <Tooltip

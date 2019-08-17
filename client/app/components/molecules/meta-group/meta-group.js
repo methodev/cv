@@ -19,18 +19,11 @@ import Meta from '../../atoms/meta';
 const MetaGroup = ({ items }) => (
   <div className={styles.root}>
     {
-      items.map(({
-        type,
-        value,
-        icon,
-        tooltip
-      }, i) => (
+      items.map((item, i) => (
         <Meta
           key={i}
-          icon={icon}
-          tooltip={tooltip}
-          type={type}
-        >{value}</Meta>
+          {...item}
+        >{item.value}</Meta>
       ))
     }
   </div>

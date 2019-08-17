@@ -10,6 +10,7 @@ import moment from 'moment';
 
 // Services
 import {
+  checkPeriod,
   filterItemsTillNow,
   formatPeriod,
   formatDuration,
@@ -53,7 +54,8 @@ class Experience extends React.PureComponent {
         type: 'calendar',
         value: formatPeriod(item.fields.startDate, item.fields.endDate),
         icon: <CalSVG />,
-        tooltip: formatDuration(item.fields.startDate, finalDate)
+        tooltip: formatDuration(item.fields.startDate, finalDate),
+        addon: checkPeriod(item.fields.startDate, item.fields.endDate)
       },
       {
         type: 'location',

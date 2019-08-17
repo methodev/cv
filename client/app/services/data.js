@@ -83,21 +83,42 @@ export const formatDuration = (startDate, finalDate) => {
 };
 
 
-//--------------------------| Format period
+//--------------------------| Check period
 
-export const formatPeriod = (startDate, endDate) => {
+export const checkPeriod = (startDate, endDate) => {
   const startDiff = moment().diff(startDate, 'days');
   const endDiff = moment().diff(endDate);
   const isUpcoming = startDiff < 0;
   const isAboutToEnd = endDiff <= 0;
 
   if (isUpcoming) {
-    return `${getLabel('starting')}: ${formatDate(startDate)}`;
+    return 'starting';
   }
 
   if (!endDate || isAboutToEnd) {
-    return `${getLabel('ongoing')}: ${formatDate(startDate)}`;
+    return 'ongoing';
   }
 
-  return `${formatDate(startDate)} — ${formatDate(endDate)}`;
+  return 'finished';
+};
+
+
+//--------------------------| Format period
+
+export const formatPeriod = (startDate, endDate) => {
+  const periodStatus = checkPeriod(startDate, endDate);
+  let label;
+
+  switch (periodStatus) {
+    case 'starting':
+      label = `${getLabel('starting')}: ${formatDate(startDate)}`;
+      break;
+    case 'ongoing':
+      label = `${getLabel('ongoing')}: ${formatDate(startDate)}`;
+      break;
+    default:
+      label = `${formatDate(startDate)} — ${formatDate(endDate)}`;
+  }
+
+  return label;
 };
