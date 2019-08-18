@@ -49,7 +49,9 @@ export const getPeriod = (items) => {
 
 //--------------------------| Filter items till now
 
-export const filterItemsTillNow = items => items.filter(item => moment().diff(item.fields.startDate, 'days') >= 0);
+export const filterItemsTillNow = items => items.filter(
+  item => moment().diff(item.fields.startDate) >= 0
+);
 
 
 //--------------------------| Split positions by actuality
