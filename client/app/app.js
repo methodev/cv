@@ -12,11 +12,17 @@ import React from 'react';
 import moment from 'moment';
 import { stringify } from 'flatted/esm';
 
+// Services
+import { getLabel } from './services/data';
+
 // Content
 import { bg as bgLabels, en as enLabels } from '../labels.json';
 
 // Styles
 import styles from './app.scss';
+
+// HOC
+import Tooltip from './components/hoc/tooltip';
 
 // Organisms
 import Header from './components/organisms/header';
@@ -79,12 +85,17 @@ class App extends React.PureComponent {
           this.props.bilingual && (
             <span className={styles.language}>
               <a
+                data-tip={getLabel('switchLang')}
                 onClick={() => {
                   this.setState(prevState => ({ lang: prevState.lang === 'en' ? 'bg' : 'en' }));
                 }}
               >
                 {this.state.lang === 'en' ? 'bg' : 'en'}
               </a>
+              <Tooltip
+                place={'left'}
+                effect={'solid'}
+              />
             </span>
           )
         }

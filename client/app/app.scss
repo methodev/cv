@@ -58,12 +58,12 @@
   top: 1rem;
   display: block;
   font-weight: map-get($swatch-font-weights, 'semibold');
-  text-transform: uppercase;
 
   a {
     display: inline-block;
     width: 2rem;
     text-align: center;
+    text-transform: uppercase;
     user-select: none;
   }
 }

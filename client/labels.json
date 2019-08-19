@@ -1,5 +1,6 @@
 {
   "bg": {
+    "switchLang": "Switch to English version",
     "ongoing": "в актуалност от",
     "starting": "в актуалност след",
     "openPDF": "Отворете PDF копие на документа",
@@ -16,6 +17,7 @@
     "previousPositions": "стари позиции от периода"
   },
   "en": {
+    "switchLang": "Превключете на българска версия",
     "ongoing": "Ongoing since",
     "starting": "Starting in",
     "openPDF": "Open a PDF copy of this document",
