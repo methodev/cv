@@ -64,6 +64,8 @@ class Experience extends React.PureComponent {
       }
     ];
 
+    const stack = item.fields.stack ? `${getLabel('stack')}: ${item.fields.stack.map(tech => tech.fields.name).join(', ')}` : null;
+
     return (
       <SectionItem key={item.sys.id}>
         <Item
@@ -72,7 +74,7 @@ class Experience extends React.PureComponent {
           subtitleUrl={item.fields.employer.fields.homePage}
           details={details}
           text={duties}
-          tooltip={item.fields.stack ? `${getLabel('stack')}: ${item.fields.stack.join(', ')}` : null}
+          tooltip={stack}
         />
       </SectionItem>
     );
@@ -88,7 +90,7 @@ class Experience extends React.PureComponent {
     const actualAmount = 3;
     const itemsTillNow = filterItemsTillNow(items);
     const positions = splitPositionsByActuality(itemsTillNow, actualAmount);
-    const tooltip = `+${positions.old.length} ${getLabel('previousPositions')} ${getPeriod(positions.old)}`;
+    const tooltipForMore = positions.old.length > 0 ? `+${positions.old.length} ${getLabel('previousPositions')} ${getPeriod(positions.old)}` : null;
 
     return (
       <Section
@@ -105,11 +107,11 @@ class Experience extends React.PureComponent {
         {
           !this.state.old && positions.old.length > 0 && (
             <div className={styles.more}>
-              <span data-tip={tooltip} data-for='more'>
+              <span data-tip={tooltipForMore} data-for='more'>
                 <a onClick={this.showOldPositions}>
                   <span>{`+${positions.old.length}`}</span>
                 </a>
-                <i>{tooltip}</i>
+                <i>{tooltipForMore}</i>
               </span>
               <Tooltip
                 id={'more'}
