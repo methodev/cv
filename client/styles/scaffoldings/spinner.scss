@@ -13,7 +13,7 @@
 //--------------------------| Object
 
 :global {
-  $spinner: map-get($swatch-colors, 'green-light');
+  $spinner: map-get($swatch-colors, 'theme-light');
   $background: white;
   $size: 3rem;
 

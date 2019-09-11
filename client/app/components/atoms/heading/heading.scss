@@ -12,7 +12,7 @@
     margin-bottom: 0.5rem;
     font-size: map-get($roles-typo-font-sizes, 'base');
     font-weight: map-get($roles-typo-font-weights, 'base');
-    color: map-get($roles-col-texts, 'base');
+    color: map-get($roles-col-texts, 'meta');
   }
 }
 
@@ -32,10 +32,6 @@ $heading-types: 'title' 'subtitle' 'section' 'item' 'info';
   margin: 0;
   line-height: 1;
   text-transform: uppercase;
-
-  @include mq-device-holding-type('inpocket') {
-    line-height: map-get($roles-typo-line-heights, 'text');
-  }
 }
 
 .subtitle {

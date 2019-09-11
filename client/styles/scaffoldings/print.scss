@@ -5,8 +5,10 @@
 //--------------------------| Page
 
 @page {
+  $gutter: map-get($roles-spaces-print, 'app');
+
   size: A4;
-  margin: map-get($roles-spaces-print, 'app') 0 0;
+  margin: $gutter $gutter $gutter/2;
 }
 
 
@@ -15,11 +17,11 @@
 @media print {
   html, body {
     width: $roles-size-print-page-width;
-    //height: $roles-size-print-page-height;
+    height: $roles-size-print-page-height;
   }
 
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   body {

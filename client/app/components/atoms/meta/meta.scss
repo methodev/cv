@@ -22,6 +22,7 @@
 
 .addon {
   display: none;
+  font-weight: map-get($roles-typo-font-weights, 'base');
 }
 
 

@@ -144,6 +144,14 @@
   > div {
     > span {
       padding: 0.5rem 0; // fix for Microsoft Edge
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 }
@@ -172,6 +180,6 @@
 
 @media print {
   .cell {
-    width: ($roles-size-print-page-width - (map-get($roles-spaces-print, 'app') * 3)) / 2;
+    width: ($roles-size-print-page-width - map-get($roles-spaces-print, 'app')) / 2;
   }
 }

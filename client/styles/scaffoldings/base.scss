@@ -40,10 +40,12 @@ body {
   @include font-smoothing();
 
   -webkit-tap-highlight-color: rgba(map-get($swatch-colors, 'black'), 0);
+  line-height: map-get($roles-typo-line-heights, 'base');
   color: map-get($roles-col-texts, 'base');
+  font-feature-settings: 'ss01';
 
   * {
-    @include selection(light(map-get($swatch-colors, 'green-light'), 66%));
+    @include selection(light(map-get($swatch-colors, 'theme-light'), 66%));
   }
 }
 

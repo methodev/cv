@@ -14,7 +14,7 @@ $swatch-font-families: (
 $swatch-typo-font-sizes: (
   '10': get-rem-unit(10),
   '11': get-rem-unit(11), // 11.66
-  '13': get-rem-unit($base-html-font-size), // 13.33
+  '13': get-rem-unit(13), // 13.33
   '15': get-rem-unit(15),
   '20': get-rem-unit(20),
   '32': get-rem-unit(32), // 33.33
@@ -25,9 +25,15 @@ $swatch-typo-font-sizes: (
 //--------------------------| Font weights
 
 $swatch-font-weights: (
-  'regular':  400,
+  'hairline': 100,
+  'thin': 200,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
   'semibold': 600,
-  'bold':     700
+  'bold': 700,
+  'black': 800,
+  'heavy': 900
 );
 
 
