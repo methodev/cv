@@ -53,7 +53,7 @@ body {
 //--------------------------| Text
 
 strong {
-  font-weight: map-get($swatch-font-weights, 'bold');
+  font-weight: map-get($swatch-font-weights, 'semibold');
 }
 
 
