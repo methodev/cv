@@ -6,8 +6,10 @@
 
 .root {
   position: relative;
+  width: 100%;
   margin-top: 2rem;
   font-size: map-get($roles-typo-font-sizes, 'footer');
+  font-weight: map-get($roles-typo-font-weights, 'footer');
   color: map-get($roles-col-texts, 'footer');
   text-align: center;
   user-select: none;

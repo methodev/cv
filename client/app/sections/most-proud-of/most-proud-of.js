@@ -10,8 +10,9 @@ import React from 'react';
 // Styles
 import styles from './most-proud-of.scss';
 
-// Molecules
+// Atoms
 import Heading from '../../components/atoms/heading';
+import Text from '../../components/atoms/text';
 
 // Organisms
 import Section from '../../components/organisms/section';
@@ -31,7 +32,9 @@ const MostProudOf = ({ data }) => (
           <Heading size={3} type={'item'}>{item.fields.title}</Heading>
           {
             item.fields.description && (
-              <p className={styles.description}>{item.fields.description}</p>
+              <Text>
+                <p className={styles.description}>{item.fields.description}</p>
+              </Text>
             )
           }
         </SectionItem>
