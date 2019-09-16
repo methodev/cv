@@ -17,10 +17,3 @@
     }
   }
 }
-
-//--------------------------| Side spacer
-
-@mixin side-spacer($min: map-get($roles-spaces-min, 'page'), $max: map-get($roles-spaces-max, 'page')) {
-  @include scaler(padding-left, $min, $max);
-  @include scaler(padding-right, $min, $max);
-}
