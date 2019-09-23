@@ -40,12 +40,12 @@ const Courses = ({ data }) => {
             <Item
               title={item.fields.title}
               file={item.fields.document && item.fields.document.fields.file.url}
-              subtitle={`${item.fields.institution.fields.name}`}
-              subtitleUrl={item.fields.institution.fields.homePage}
+              subtitle={`${item.fields.host.fields.name}`}
+              subtitleUrl={item.fields.host.fields.homePage}
               details={[
                 {
                   type: 'calendar',
-                  value: formatDate(item.fields.takenDate),
+                  value: formatDate(item.fields.endDate),
                   icon: <CalSVG />
                 }
               ]}

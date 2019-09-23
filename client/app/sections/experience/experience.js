@@ -59,7 +59,7 @@ class Experience extends React.PureComponent {
       },
       {
         type: 'location',
-        value: item.fields.employer.fields.location,
+        value: item.fields.host.fields.location,
         icon: <PinSVG />
       }
     ];
@@ -69,9 +69,9 @@ class Experience extends React.PureComponent {
     return (
       <SectionItem key={item.sys.id}>
         <Item
-          title={item.fields.name}
-          subtitle={item.fields.employer.fields.name}
-          subtitleUrl={item.fields.employer.fields.homePage}
+          title={item.fields.title}
+          subtitle={item.fields.host.fields.name}
+          subtitleUrl={item.fields.host.fields.homePage}
           details={details}
           text={duties}
           tooltip={stack}

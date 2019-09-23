@@ -56,7 +56,7 @@ const Education = ({ data }) => {
             },
             {
               type: 'location',
-              value: item.fields.institution.fields.location,
+              value: item.fields.host.fields.location,
               icon: <PinSVG />
             }
           ];
@@ -66,8 +66,8 @@ const Education = ({ data }) => {
               <Item
                 title={item.fields.title}
                 file={item.fields.document && item.fields.document.fields.file.url}
-                subtitle={item.fields.institution.fields.name}
-                subtitleUrl={item.fields.institution.fields.homePage}
+                subtitle={item.fields.host.fields.name}
+                subtitleUrl={item.fields.host.fields.homePage}
                 details={details}
               />
             </SectionItem>
