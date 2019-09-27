@@ -1,0 +1,40 @@
+//====================================================|
+// Mixins: LINKS
+
+// -------------------------| Header links
+@mixin links-header-styles() {
+  color: map-get($roles-col-texts, 'base');
+
+  @media (hover: hover) {
+    &:hover:not(:active) {
+      color: map-get($roles-col-links, 'hover');
+    }
+  }
+
+  &:active {
+    color: map-get($roles-col-links, 'active');
+  }
+}
+
+// -------------------------| Tag links
+@mixin links-tag-styles() {
+  color: map-get($roles-col-links, 'link');
+  transition: all map-get($roles-transitions, 'link') ease-in-out;
+  transform: translate3d(0, 0, 0); // fix visual glitch in Safari
+
+  @media (hover: hover) {
+    &:hover:not(:active) {
+      color: map-get($roles-col-texts, 'negative');
+      background-color: map-get($roles-col-links, 'hover');
+      border-radius: 1px;
+      box-shadow: 0 0 0 0.2rem map-get($roles-col-links, 'hover');
+    }
+  }
+
+  &:active {
+    color: map-get($roles-col-texts, 'negative');
+    background-color: map-get($roles-col-links, 'active');
+    border-radius: 1px;
+    box-shadow: 0 0 0 0.2rem map-get($roles-col-links, 'active');
+  }
+}

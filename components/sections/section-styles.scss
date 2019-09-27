@@ -1,0 +1,64 @@
+// ===================================================|
+// Sections: STYLES
+
+// -------------------------| Root
+.root {
+  @include mq-device-holding-type('inpocket') {
+    text-align: center;
+  }
+}
+
+// -------------------------| Item
+.item {
+  padding: 1rem 0;
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  + .item {
+    border-top: map-get($roles-borders-dividers, 'gray');
+  }
+}
+
+// -------------------------| More
+.more {
+  padding-top: 1rem;
+  text-align: center;
+  user-select: none;
+  border-top: map-get($roles-borders-dividers, 'gray');
+
+  i {
+    display: none;
+  }
+
+  a {
+    display: inline-block;
+    font-weight: map-get($swatch-font-weights, 'semibold');
+    background-color: currentColor;
+    border-radius: map-get($swatch-border-radiuses, 'circle');
+
+    span {
+      display: block;
+      padding: 0.5rem;
+      color: map-get($roles-col-texts, 'negative');
+    }
+  }
+}
+
+// -------------------------| Print styles
+@media print {
+  .more {
+    i {
+      display: block;
+    }
+
+    a {
+      display: none;
+    }
+  }
+}

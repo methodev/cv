@@ -1,0 +1,64 @@
+// ===================================================|
+// Layouts: DEFAULT
+
+// -------------------------| Root
+.root {
+  @include scaler(
+    padding-left,
+    map-get($roles-spaces-min, 'app'),
+    map-get($roles-spaces-max, 'app')
+  );
+  @include scaler(
+    padding-right,
+    map-get($roles-spaces-min, 'app'),
+    map-get($roles-spaces-max, 'app')
+  );
+  @include padding-v(3rem);
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  //min-width: map-get($swatch-screens, 'min'); // TODO: Make the layout scalable below 320px as in Home page
+  max-width: map-get($swatch-screens, 'max');
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: map-get($roles-col-backgrounds, 'app');
+
+  @include mq-device-holding-type('inpocket') {
+    padding-top: calc(#{rem($roles-size-avatar)} + 2rem);
+  }
+
+  header {
+    margin-bottom: rem(42px);
+  }
+}
+
+// -------------------------| Language
+.language {
+  @include scaler(
+    right,
+    map-get($roles-spaces-min, 'app'),
+    map-get($roles-spaces-max, 'app')
+  );
+
+  position: absolute;
+  top: 1rem;
+
+  @media print {
+    display: none;
+  }
+}
+
+// -------------------------| Print styles
+@media print {
+  .root {
+    padding: 0;
+
+    footer {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

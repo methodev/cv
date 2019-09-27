@@ -1,0 +1,31 @@
+// ===================================================|
+// Atoms: PARAGRAPH
+
+// -------------------------| Root
+.root {
+  $indent-value: 0.7rem;
+
+  line-height: map-get($roles-typo-line-heights, 'text');
+
+  @include mq-device-holding-type('inpocket') {
+    text-align: left;
+  }
+
+  p {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0.4rem;
+    }
+
+    &:not(:only-child) {
+      padding-left: $indent-value * 1.5;
+      text-indent: -#{$indent-value};
+
+      &::before {
+        color: map-get($swatch-colors-mono, 'dusty-gray');
+        content: '• ';
+      }
+    }
+  }
+}

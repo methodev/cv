@@ -1,0 +1,45 @@
+// ===================================================|
+// Roles: COLORS
+
+// -------------------------| Icons
+$roles-col-icons: (
+  'contacts': map-get($swatch-colors-system, 'red'),
+  'meta': map-get($swatch-colors-mono, 'dusty-gray'),
+  'homepage': map-get($swatch-colors-theme, 'primary-dark'),
+  'github': map-get($swatch-colors-mono, 'mine-shaft'),
+  'linkedin': map-get($swatch-colors-social, 'linkedin')
+);
+
+// -------------------------| Text
+$roles-col-texts: map-merge(
+  $roles-col-texts,
+  (
+    'subtitle': map-get($swatch-colors-theme, 'primary-dark'),
+    'section': map-get($swatch-colors-theme, 'primary-dark'),
+    'info': map-get($swatch-colors-mono, 'dove-gray'),
+    'meta': map-get($swatch-colors-mono, 'dove-gray'),
+    'negative': map-get($swatch-colors-mono, 'white'),
+    'icon': map-get($swatch-colors-system, 'yellow')
+  )
+);
+
+// -------------------------| Links
+$roles-col-links: map-merge(
+  $roles-col-links,
+  (
+    'link': map-get($swatch-colors-theme, 'primary'),
+    'hover': light(map-get($swatch-colors-theme, 'primary'), 15%),
+    'active': map-get($swatch-colors-theme, 'secondary')
+  )
+);
+
+// -------------------------| Backgrounds
+$roles-col-backgrounds: map-merge(
+  $roles-col-backgrounds,
+  (
+    'tooltip': map-get($swatch-backgrounds, 'mine-shaft'),
+    'progress': map-get($swatch-backgrounds, 'pale'),
+    'info': map-get($swatch-backgrounds, 'yellow'),
+    'bar': map-get($swatch-backgrounds, 'theme-primary-dark')
+  )
+);

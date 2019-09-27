@@ -1,0 +1,18 @@
+// ===================================================|
+// Atoms: LANGUAGE SWITCHER
+
+// -------------------------| Root
+.root {
+  display: block;
+  font-weight: map-get($roles-typo-font-weights, 'lang');
+
+  a {
+    @include links-tag-styles();
+
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+  }
+}

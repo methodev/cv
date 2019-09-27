@@ -1,0 +1,12 @@
+<span :class="$style.root">
+  <nuxt-link
+    v-for="lang in languages"
+    v-tooltip.left="{
+      content: `${$t('switchLang')} ${tooltipLabel(lang.code)}`
+    }"
+    :key="lang.code"
+    :to="localePath('index', lang.code)"
+  >
+    {{ lang.code }}
+  </nuxt-link>
+</span>

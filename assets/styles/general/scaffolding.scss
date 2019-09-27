@@ -1,0 +1,17 @@
+// ===================================================|
+// General: SCAFFOLDING
+
+// -------------------------| Document
+html {
+  //
+}
+
+body {
+  cursor: default;
+  user-select: none;
+}
+
+// -------------------------| Links
+a {
+  transition: color map-get($roles-transitions, 'link') ease;
+}

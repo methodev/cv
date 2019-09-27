@@ -1,0 +1,10 @@
+<div :class="$style.root">
+  <LangSwitcher
+    v-if="locales.length > 1"
+    :class="$style.language"
+    :languages="languages"
+  />
+  <Header />
+  <nuxt />
+  <Footer />
+</div>
