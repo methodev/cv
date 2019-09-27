@@ -4,7 +4,7 @@
   </div>
   <div v-if="data.file" :class="$style.relBox">
     <span :class="$style.file">
-      <DocBtn :id="data.file" :link="data.file" />
+      <DocBtn :link="data.file" :tooltip="$t('openPDF')" />
     </span>
   </div>
   <Heading :size="3" type="item">

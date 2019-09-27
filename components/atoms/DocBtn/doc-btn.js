@@ -19,15 +19,15 @@ export default {
   },
 
   props: {
-    id: {
-      type: String,
-      required: true
-    },
     type: {
       type: String,
       default: 'pdf'
     },
     link: {
+      type: String,
+      required: true
+    },
+    tooltip: {
       type: String,
       required: true
     }
