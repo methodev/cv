@@ -7,6 +7,10 @@
 
   border: map-get($roles-borders-wrappers, 'avatar');
 
+  @include mq-tablet-breakpoint('below') {
+    @include dimensions-square(rem($roles-size-avatar * 0.75));
+  }
+
   &,
   img {
     display: block;
