@@ -2,21 +2,21 @@
 
 [![Travis](https://img.shields.io/travis/martinmethod/cv.svg)](https://travis-ci.org/martinmethod/cv) [![David](https://img.shields.io/david/martinmethod/cv.svg)](https://david-dm.org/martinmethod/cv) [![David](https://img.shields.io/david/dev/martinmethod/cv.svg)](https://david-dm.org/martinmethod/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/martinmethod/cv.svg)](https://github.com/martinmethod/cv/releases/latest)
 
-#
+## Build Setup
 
-*Technologies:* **ES6**, **HTML5**, **CSS3**
+``` bash
+# install dependencies
+$ yarn install
 
-*Libraries:* **[React](https://reactjs.org)**, **[Moment.js](http://momentjs.com)**
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-*Linters:* **[ESLint](https://eslint.org)**, **[stylelint](https://stylelint.io)**
+# build for production and launch server
+$ yarn build
+$ yarn start
 
-*Compilers:* **[Babel](http://babeljs.io)**, **[PostCSS](https://postcss.org)**, **[Sass](http://sass-lang.com)**
+# generate static project
+$ yarn generate
+```
 
-*Bundler:* **[Webpack](http://webpack.js.org)**
-
-*CI:* **[Travis](https://travis-ci.org)**
-
-*CMS:* **[Contentful](https://www.contentful.com)**
-
-#
-*Production:* **[cv.martinmetodiev.com](http://cv.martinmetodiev.com)**
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

@@ -1,0 +1,23 @@
+// ===================================================|
+// General: APP
+
+// -------------------------| Body
+body {
+  font: map-get($roles-typo-font-weights, 'base')
+    map-get($roles-typo-font-sizes, 'base')
+    map-get($roles-typo-font-families, 'base');
+}
+
+// -------------------------| __nuxt container
+body > div {
+  //
+}
+
+// -------------------------| Global styles
+:global {
+  @media screen {
+    .phone {
+      display: none;
+    }
+  }
+}

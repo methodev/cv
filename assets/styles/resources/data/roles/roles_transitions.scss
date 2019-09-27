@@ -1,0 +1,9 @@
+// ===================================================|
+// Roles: TRANSITIONS
+
+$roles-transitions: map-merge(
+  $roles-transitions,
+  (
+    'icons': map-get($swatch-transitions, '200ms')
+  )
+);

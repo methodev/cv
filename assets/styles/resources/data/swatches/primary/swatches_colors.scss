@@ -1,0 +1,23 @@
+// ===================================================|
+// Swatches: COLORS
+
+// -------------------------| Brand
+$swatch-colors-brand: map-merge($swatch-colors-brand, ());
+
+// -------------------------| Theme
+$swatch-colors-theme: (
+  'primary': map-get($swatch-colors-brand, 'blue'),
+  'primary-dark': dark(map-get($swatch-colors-brand, 'blue'), 33%),
+  'secondary': map-get($swatch-colors-brand, 'orange')
+);
+
+// -------------------------| System
+$swatch-colors-system: (
+  'red': #900,
+  'yellow': #fc0
+);
+
+// -------------------------| Social
+$swatch-colors-social: (
+  'linkedin': #0077b5
+);

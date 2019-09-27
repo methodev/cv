@@ -1,0 +1,13 @@
+// ===================================================|
+// Swatches: BACKGROUNDS
+
+$swatch-backgrounds: map-merge(
+  $swatch-backgrounds,
+  (
+    'yellow': map-get($swatch-colors-system, 'yellow'),
+    'mine-shaft': map-get($swatch-colors-mono, 'mine-shaft'),
+    'pale': map-get($swatch-colors-mono, 'pale'),
+    'alto': map-get($swatch-colors-mono, 'alto'),
+    'theme-primary-dark': map-get($swatch-colors-theme, 'primary-dark')
+  )
+);
