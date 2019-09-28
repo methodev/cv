@@ -18,7 +18,6 @@
 
   a {
     color: map-get($roles-col-texts, 'base');
-    transition: border-color map-get($roles-transitions, 'links') ease-in-out;
 
     @media (hover: hover) {
       &:hover:not(:active) {
