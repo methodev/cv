@@ -67,20 +67,35 @@
 
   @include mq-device-holding-type('inpocket') {
     > div {
-      flex-direction: column !important;
       flex-wrap: wrap;
-      justify-content: center !important;
-      margin-top: 0.5rem;
+      justify-content: center;
+      margin-top: 1.8rem;
       text-align: left;
 
       > span {
-        margin: 1rem 0 0 !important;
+        margin: 0 !important;
+      }
+    }
+
+    a {
+      @include padding-h(1rem);
+
+      font-size: 2rem;
+
+      > i {
+        @include dimensions-square(1em);
+
+        margin: 0;
+      }
+
+      > span {
+        display: none;
       }
     }
   }
 
   @include mq-tablet-breakpoint('below') {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 
     > div {
       flex-direction: row;
