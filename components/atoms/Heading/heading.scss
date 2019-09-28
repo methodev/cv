@@ -4,6 +4,7 @@
 // -------------------------| Root
 .root {
   margin: 0 0 1rem;
+  cursor: auto;
 
   i {
     display: none;
@@ -44,7 +45,6 @@ $heading-types: 'title' 'subtitle' 'section' 'item' 'info';
   //font-variant: small-caps;
   color: map-get($roles-col-texts, 'section');
   white-space: nowrap;
-  cursor: default;
   border-bottom: map-get($roles-borders-underlines, 'title');
 }
 
