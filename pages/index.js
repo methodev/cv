@@ -37,7 +37,6 @@ export default {
 
     if (process.client) {
       const device = isMobile ? 'mobile' : 'desktop';
-      console.log(device);
       document.body.classList.add(device);
     }
   }
