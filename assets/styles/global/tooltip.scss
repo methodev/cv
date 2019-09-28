@@ -4,7 +4,14 @@
 // -------------------------|
 .tooltip {
   z-index: 10000;
-  display: block !important;
+
+  .desktop & {
+    display: block !important;
+  }
+
+  .mobile & {
+    display: none !important;
+  }
 
   .tooltip-inner {
     padding: 8px 21px;
@@ -85,12 +92,14 @@
   }
 
   &[aria-hidden='true'] {
+    position: absolute;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.15s, visibility 0.15s;
   }
 
   &[aria-hidden='false'] {
+    position: static;
     visibility: visible;
     opacity: 1;
     transition: opacity 0.15s;
