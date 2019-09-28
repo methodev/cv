@@ -23,7 +23,10 @@ export default {
   head: {
     title,
     meta: [...meta({ title, description, homepage })],
-    link: [...splashscreens]
+    link: [...splashscreens],
+    bodyAttrs: {
+      ontouchstart: ''
+    }
   },
 
   /*
