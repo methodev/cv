@@ -4,7 +4,14 @@
 // -------------------------|
 .tooltip {
   z-index: 10000;
-  display: block !important;
+
+  .desktop & {
+    display: block !important;
+  }
+
+  .mobile & {
+    display: none !important;
+  }
 
   .tooltip-inner {
     padding: 8px 21px;
