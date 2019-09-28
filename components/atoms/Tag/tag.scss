@@ -34,10 +34,11 @@
 
 // -------------------------| Tooltip label
 .tooltip-label {
-  margin: 0 0 rem(5px);
+  margin: 0;
 }
 
 // -------------------------| Progress bar
 .progress-bar {
+  margin-top: rem(5px);
   font-size: 0.6rem;
 }
