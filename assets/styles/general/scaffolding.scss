@@ -13,5 +13,7 @@ body {
 
 // -------------------------| Links
 a {
-  transition: color map-get($roles-transitions, 'link') ease;
+  .desktop & {
+    transition: all map-get($roles-transitions, 'link') ease-in-out;
+  }
 }
