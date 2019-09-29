@@ -27,7 +27,7 @@
   }
 
   a:not([data-icon]) {
-    @include links-tag-styles();
+    @include link-styles-generator();
   }
 }
 
