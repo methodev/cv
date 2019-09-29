@@ -11,7 +11,7 @@ import { author, description, homepage, title, version } from './package.json';
 import { googleAnalyticsCode } from './site.json';
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
 
   server: {
     port: 9001

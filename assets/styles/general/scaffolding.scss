@@ -9,6 +9,10 @@ html {
 body {
   cursor: auto;
   //user-select: none;
+
+  &:not(.done) {
+    display: none;
+  }
 }
 
 // -------------------------| Links
