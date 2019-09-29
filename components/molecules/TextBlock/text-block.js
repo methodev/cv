@@ -1,7 +1,7 @@
 // ===================================================|
 // Molecules: TEXT BLOCK
 
-import Heading from '@/components/atoms/Heading';
+import Heading from '@/node_modules/mm-atomic-pack/components/atoms/Heading';
 import Paragraph from '@/components/atoms/Paragraph';
 
 export default {

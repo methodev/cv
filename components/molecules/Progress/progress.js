@@ -1,7 +1,7 @@
 // ===================================================|
 // Molecules: PROGRESS
 
-import Heading from '@/components/atoms/Heading';
+import Heading from '@/node_modules/mm-atomic-pack/components/atoms/Heading';
 import ProgressBar from '@/components/atoms/ProgressBar';
 
 export default {

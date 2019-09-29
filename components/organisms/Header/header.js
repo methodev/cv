@@ -4,8 +4,8 @@
 import { mapState } from 'vuex';
 
 // Components
-import Avatar from '@/components/atoms/Avatar';
-import Heading from '@/components/atoms/Heading';
+import Avatar from '@/node_modules/mm-atomic-pack/components/atoms/Avatar';
+import Heading from '@/node_modules/mm-atomic-pack/components/atoms/Heading';
 import ContactGroup from '@/components/molecules/ContactGroup';
 
 // Graphics

@@ -54,6 +54,18 @@
   }
 }
 
+// -------------------------| Subtitle
+.title {
+  line-height: map-get($roles-typo-line-heights, 'title');
+}
+
+// -------------------------| Subtitle
+.subtitle {
+  @include mq-device-holding-type('inpocket') {
+    line-height: map-get($roles-typo-line-heights, 'title') * 2;
+  }
+}
+
 // -------------------------| Main
 .main {
   display: flex;
@@ -162,6 +174,8 @@
   }
 
   @include mq-tablet-breakpoint('below') {
+    @include dimensions-square(rem($roles-size-avatar * 0.75));
+
     position: absolute;
     top: 0;
     right: 0;

@@ -1,8 +1,8 @@
 <header :class="$style.root">
   <div :class="$style.cell">
     <div :class="[$style.cellContent, $style.main]">
-      <Heading :size="1">{{ fullName }}</Heading>
-      <Heading type="subtitle">{{ person.headline }}</Heading>
+      <Heading :size="1" :class="$style.title">{{ fullName }}</Heading>
+      <Heading type="subtitle" :class="$style.subtitle">{{ person.headline }}</Heading>
       <div :class="$style.contacts">
         <ContactGroup :items="meta" />
       </div>
