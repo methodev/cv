@@ -1,0 +1,9 @@
+// ===================================================|
+// Swatches: RATIOS
+
+$swatch-ratios: map-merge(
+  $swatch-ratios,
+  (
+    '10.0': 10
+  )
+);

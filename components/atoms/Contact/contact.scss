@@ -59,11 +59,11 @@
 
 // -------------------------| Icon
 .icon {
-  @include dimensions-square(1rem);
+  @include dimensions-square(rem(13px));
 
   display: inline-block;
-  margin-right: 0.3rem;
-  transform: translateY(0.2rem);
+  margin-right: rem(4px);
+  transform: translateY(rem(2.6px));
 }
 
 // -------------------------| Print value

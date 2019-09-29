@@ -5,7 +5,12 @@
 $roles-typo-font-families: map-merge($roles-typo-font-families, ());
 
 // -------------------------| Font sizes hierarchy
-$roles-typo-font-sizes: map-merge($roles-typo-font-sizes, ());
+$roles-typo-font-sizes: map-merge(
+  $roles-typo-font-sizes,
+  (
+    'body': map-get($swatch-typo-font-sizes, '13')
+  )
+);
 
 // -------------------------| Line-heights
 $roles-typo-line-heights: map-merge(

@@ -3,13 +3,13 @@
 
 // -------------------------| Root
 .root {
-  margin: 0 0 1rem;
+  margin: 0 0 rem(13px);
   cursor: auto;
 
   i {
     display: none;
-    margin-bottom: 0.5rem;
-    font-size: map-get($roles-typo-font-sizes, 'base');
+    margin-bottom: rem(6.5px);
+    font-size: map-get($roles-typo-font-sizes, 'body');
     font-weight: map-get($roles-typo-font-weights, 'info');
     color: map-get($roles-col-texts, 'meta');
   }
@@ -41,7 +41,7 @@ $heading-types: 'title' 'subtitle' 'section' 'item' 'info';
 }
 
 .section {
-  margin-bottom: 1rem;
+  margin-bottom: rem(13px);
   //font-variant: small-caps;
   color: map-get($roles-col-texts, 'section');
   white-space: nowrap;
@@ -52,12 +52,12 @@ $heading-types: 'title' 'subtitle' 'section' 'item' 'info';
   margin: 0;
 
   &:not(:last-child) {
-    margin-bottom: 0.3rem;
+    margin-bottom: rem(4px);
   }
 }
 
 .info {
-  margin-bottom: 0.5rem;
+  margin-bottom: rem(6.5px);
   color: map-get($roles-col-texts, 'info');
 }
 

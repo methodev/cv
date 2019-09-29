@@ -13,7 +13,7 @@
     map-get($roles-spaces-min, 'app'),
     map-get($roles-spaces-max, 'app')
   );
-  @include padding-v(3rem);
+  @include padding-v(rem(40px));
 
   position: relative;
   display: flex;
@@ -25,7 +25,7 @@
   background-color: map-get($roles-col-backgrounds, 'app');
 
   @include mq-device-holding-type('inpocket') {
-    padding-top: calc(#{rem($roles-size-avatar)} + 2rem);
+    padding-top: calc(#{rem($roles-size-avatar)} + #{rem(26px)});
   }
 
   header {
@@ -42,7 +42,7 @@
   );
 
   position: absolute;
-  top: 1rem;
+  top: rem(13px);
 
   @media print {
     display: none;
