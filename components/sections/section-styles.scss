@@ -10,7 +10,7 @@
 
 // -------------------------| Item
 .item {
-  padding: 1rem 0;
+  padding: rem(13px) 0;
 
   &:first-child {
     padding-top: 0;
@@ -27,7 +27,7 @@
 
 // -------------------------| More
 .more {
-  padding-top: 1rem;
+  padding-top: rem(13px);
   text-align: center;
   user-select: none;
   border-top: map-get($roles-borders-dividers, 'gray');
@@ -44,7 +44,7 @@
 
     span {
       display: block;
-      padding: 0.5rem;
+      padding: rem(6.5px);
       color: map-get($roles-col-texts, 'negative');
     }
   }

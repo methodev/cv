@@ -34,7 +34,6 @@ $min-height: 24px;
     display: block;
     height: 100%;
     padding: 0 em(8px);
-    font-size: 0.8em;
     font-weight: map-get($roles-typo-font-weights, 'progress-bar');
     line-height: map-get($roles-typo-line-heights, 'progress-bar');
     color: map-get($roles-col-texts, 'negative');

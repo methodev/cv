@@ -23,7 +23,8 @@
 // -------------------------| Cell
 .cell {
   $width: (
-      map-get($swatch-screens, 'min') - (map-get($roles-spaces-min, 'app') * 3)
+      map-get($swatch-screens, 'min') -
+        (map-get($roles-spaces-min, 'app') * 1.5)
     ) / 2;
 
   display: flex;
@@ -69,7 +70,7 @@
     > div {
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 1.8rem;
+      margin-top: rem(23.4px);
       text-align: left;
 
       > span {
@@ -78,9 +79,9 @@
     }
 
     a {
-      @include padding-h(1rem);
+      @include padding-h(rem(13px));
 
-      font-size: 2rem;
+      font-size: rem(26px);
 
       > i {
         @include dimensions-square(1em);
@@ -95,7 +96,7 @@
   }
 
   @include mq-tablet-breakpoint('below') {
-    margin-top: 0.5rem;
+    margin-top: rem(6.5px);
 
     > div {
       flex-direction: row;
@@ -106,14 +107,14 @@
       }
 
       > span:not(:last-child) {
-        margin-right: 1rem;
+        margin-right: rem(13px);
       }
     }
   }
 
   > div {
     > span {
-      padding: 0.5rem 0; // fix for Microsoft Edge
+      padding: rem(6.5px) 0; // fix for Microsoft Edge
 
       &:first-child {
         padding-top: 0;
@@ -135,7 +136,7 @@
   }
 
   @include mq-tablet-breakpoint('below') {
-    margin-top: 0.5rem;
+    margin-top: rem(6.5px);
   }
 
   svg {
@@ -147,7 +148,7 @@
     justify-content: normal;
 
     > *:not(:first-child) {
-      margin-left: 1rem;
+      margin-left: rem(13px);
     }
   }
 }

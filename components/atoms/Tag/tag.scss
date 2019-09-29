@@ -11,7 +11,7 @@
     @util truncate;
 
     display: block;
-    padding: 0.1rem 0.3rem;
+    padding: rem(1.3px) rem(4px);
     border: map-get($roles-borders-wrappers, 'tag');
     border-radius: map-get($roles-borders-radiuses, 'tag');
   }
@@ -39,5 +39,5 @@
 // -------------------------| Progress bar
 .progress-bar {
   margin-top: rem(5px);
-  font-size: 0.6rem;
+  font-size: rem(6.24px);
 }

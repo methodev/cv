@@ -5,7 +5,7 @@
 .root {
   position: relative;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: rem(26px);
   font-size: map-get($roles-typo-font-sizes, 'footer');
   font-weight: map-get($roles-typo-font-weights, 'footer');
   color: map-get($roles-col-texts, 'footer');
@@ -22,7 +22,7 @@
   transform: translateY(-50%);
 
   a:not(:only-of-type) {
-    margin: 0 0.5rem;
+    margin: 0 rem(6.5px);
   }
 
   svg {

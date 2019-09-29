@@ -3,7 +3,7 @@
 
 // -------------------------| Root
 .root {
-  $indent-value: 0.7rem;
+  $indent-value: 9px;
 
   line-height: map-get($roles-typo-line-heights, 'text');
 
@@ -15,12 +15,12 @@
     margin: 0;
 
     &:not(:last-child) {
-      margin-bottom: 0.4rem;
+      margin-bottom: rem(5.2px);
     }
 
     &:not(:only-child) {
-      padding-left: $indent-value * 1.5;
-      text-indent: -#{$indent-value};
+      padding-left: rem($indent-value * 1.5);
+      text-indent: -#{rem($indent-value)};
 
       &::before {
         color: map-get($swatch-colors-mono, 'dusty-gray');

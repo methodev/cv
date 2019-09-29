@@ -10,7 +10,7 @@
     @include link-styles-generator();
 
     display: inline-block;
-    width: 2rem;
+    width: rem(26px);
     text-align: center;
     text-transform: uppercase;
     user-select: none;
