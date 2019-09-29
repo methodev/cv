@@ -18,20 +18,12 @@ $roles-col-texts: map-merge(
     'section': map-get($swatch-colors-theme, 'primary-dark'),
     'info': map-get($swatch-colors-mono, 'dove-gray'),
     'meta': map-get($swatch-colors-mono, 'dove-gray'),
-    'negative': map-get($swatch-colors-mono, 'white'),
     'icon': map-get($swatch-colors-system, 'yellow')
   )
 );
 
 // -------------------------| Links
-$roles-col-links: map-merge(
-  $roles-col-links,
-  (
-    'link': map-get($swatch-colors-theme, 'primary'),
-    'hover': light(map-get($swatch-colors-theme, 'primary'), 15%),
-    'active': map-get($swatch-colors-theme, 'secondary')
-  )
-);
+$roles-col-links: map-merge($roles-col-links, ());
 
 // -------------------------| Backgrounds
 $roles-col-backgrounds: map-merge(

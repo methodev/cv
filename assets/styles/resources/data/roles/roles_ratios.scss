@@ -4,7 +4,6 @@
 $roles-ratios: map-merge(
   $roles-ratios,
   (
-    'font': map-get($swatch-ratios, '1.15'),
     'progress-bar': map-get($swatch-ratios, '10.0')
   )
 );
