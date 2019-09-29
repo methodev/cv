@@ -2,7 +2,7 @@
 // Organisms: SECTION
 
 // Components
-import Heading from '@/components/atoms/Heading';
+import Heading from '@/node_modules/mm-atomic-pack/components/atoms/Heading';
 
 export default {
   components: {
