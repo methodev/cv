@@ -11,7 +11,7 @@ import { author, description, homepage, title, version } from './package.json';
 import { googleAnalyticsCode } from './site.json';
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
 
   server: {
     port: 9001
@@ -33,6 +33,11 @@ export default {
    ** Customize the progress-bar
    */
   loading: false,
+  loadingIndicator: {
+    name: 'cube-grid',
+    color: '#0d3ea0',
+    background: 'white'
+  },
 
   /*
    ** Style resources
