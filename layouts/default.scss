@@ -33,6 +33,18 @@
   }
 }
 
+// -------------------------| PDF
+.pdf {
+  @include scaler(
+    right,
+    map-get($roles-spaces-min, 'app'),
+    map-get($roles-spaces-max, 'app')
+  );
+
+  position: absolute;
+  top: rem(6px);
+}
+
 // -------------------------| Language
 .language {
   @include scaler(
@@ -43,6 +55,7 @@
 
   position: absolute;
   top: rem(13px);
+  transform: translateX(-120%);
 
   @media print {
     display: none;
