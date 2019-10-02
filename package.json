@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git://github.com/martinmethod/cv.git"
   },
-  "homepage": "http://martinmetodiev.com",
+  "homepage": "http://cv.martinmetodiev.com",
   "author": {
     "name": "Martin Metodiev",
     "email": "metodiev.martin@gmail.com",
@@ -39,7 +39,7 @@
     }
   },
   "devDependencies": {
-    "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v1.9.0"
+    "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v1.10.0"
   },
   "dependencies": {
     "lodash": "^4.17.15",
