@@ -20,15 +20,15 @@ export default {
 
   computed: {
     ...mapState({
-      person: ({ contentful }) => contentful.data.person.fields,
+      identity: ({ contentful }) => contentful.data.identity.fields,
       accounts: ({ contentful }) => contentful.data.accounts
     }),
     fullName() {
-      const { firstName, lastName } = this.person;
+      const { firstName, lastName } = this.identity;
       return `${firstName} ${lastName}`;
     },
     meta() {
-      const { email, phone, city, country } = this.person;
+      const { email, phone, city, country } = this.identity;
 
       return [
         {
@@ -51,7 +51,7 @@ export default {
       ];
     },
     links() {
-      const { homePage, portfolio } = this.person;
+      const { homePage, portfolio } = this.identity;
       const links = [];
 
       if (homePage) {

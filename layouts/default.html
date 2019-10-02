@@ -1,4 +1,5 @@
 <div :class="$style.root">
+  <DocBtn :class="$style.pdf" :link="pdf" :tooltip="$t('download')" />
   <LangSwitcher
     v-if="locales.length > 1"
     :class="$style.language"
