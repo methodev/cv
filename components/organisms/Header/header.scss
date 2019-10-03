@@ -55,11 +55,6 @@
 }
 
 // -------------------------| Subtitle
-.title {
-  line-height: map-get($roles-typo-line-heights, 'title');
-}
-
-// -------------------------| Subtitle
 .subtitle {
   @include mq-device-holding-type('inpocket') {
     line-height: map-get($roles-typo-line-heights, 'title') * 2;
@@ -168,7 +163,7 @@
 // -------------------------| Avatar
 .avatar {
   @include mq-device-holding-type('inpocket') {
-    top: -#{rem($roles-size-avatar)} !important;
+    top: -#{rem($roles-size-avatar - 10)} !important;
     left: 50%;
     transform: translateX(-50%);
   }
