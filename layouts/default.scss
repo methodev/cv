@@ -25,7 +25,7 @@
   background-color: map-get($roles-col-backgrounds, 'app');
 
   @include mq-device-holding-type('inpocket') {
-    padding-top: calc(#{rem($roles-size-avatar)} + #{rem(26px)});
+    padding-top: calc(#{rem($roles-size-avatar)} + #{rem(15px)});
   }
 
   header {
