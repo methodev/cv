@@ -34,7 +34,7 @@ export default {
    */
   loading: false,
   loadingIndicator: {
-    name: 'cube-grid',
+    name: 'fading-circle',
     color: '#0d3ea0',
     background: 'white'
   },
