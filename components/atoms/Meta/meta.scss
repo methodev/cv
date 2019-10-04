@@ -34,6 +34,11 @@
   }
 }
 
+// -------------------------| Types
+.phone {
+  display: none;
+}
+
 // -------------------------| Print styles
 @media print {
   .addon {
@@ -42,5 +47,9 @@
 
   .icon {
     transform: translateY(0);
+  }
+
+  .phone {
+    display: flex;
   }
 }
