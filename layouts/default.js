@@ -6,12 +6,15 @@ import { filterLocales } from '@/services/FilterService';
 
 // Components
 import LangSwitcher from '@/components/atoms/LangSwitcher';
-import DocBtn from '@/components/atoms/DocBtn';
+import CircleButton from '@/components/atoms/CircleButton';
 import Header from '@/components/organisms/Header';
 import Footer from '@/node_modules/mm-atomic-pack/components/organisms/Footer';
 
+// Graphics
+import FileSVG from '@/assets/graphics/pdf.svg';
+
 export default {
-  components: { LangSwitcher, DocBtn, Header, Footer },
+  components: { LangSwitcher, CircleButton, Header, Footer, FileSVG },
 
   computed: {
     ...mapState({

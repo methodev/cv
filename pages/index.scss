@@ -26,7 +26,7 @@
     }
   }
 
-  a:not([data-icon]) {
+  a:not([data-btn]) {
     @include link-styles-generator();
   }
 }

@@ -1,7 +1,14 @@
 // ===================================================|
 // Atoms: LANGUAGE SWITCHER
 
+// Components
+import CircleButton from '@/components/atoms/CircleButton';
+
 export default {
+  components: {
+    CircleButton
+  },
+
   props: {
     languages: {
       type: Array,
@@ -12,6 +19,9 @@ export default {
   methods: {
     tooltipLabel(targetLang) {
       return this.$i18n.locales.find((lang) => lang.code === targetLang).name;
+    },
+    changeLang(code) {
+      this.$router.push({ path: this.localePath('index', code) });
     }
   }
 };

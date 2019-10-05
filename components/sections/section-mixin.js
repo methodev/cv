@@ -1,9 +1,11 @@
 // Components
 import Section from '@/components/organisms/Section';
+import CircleButton from '@/components/atoms/CircleButton';
 
 export default {
   components: {
-    Section
+    Section,
+    CircleButton
   },
 
   data() {
