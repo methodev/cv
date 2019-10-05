@@ -7,9 +7,9 @@
       <component :is="component" :data="item" />
     </div>
     <div :class="$style.more" v-if="!visibleOld && items.old.length > 0">
-      <a @click="showOldItems">
+      <CircleButton @click="showOldItems">
         <span v-tooltip.top="{ content: moreTooltip }">+{{ items.old.length }}</span>
-      </a>
+      </CircleButton>
       <i v-if="moreTooltip">{{ moreTooltip }}</i>
     </div>
   </template>

@@ -1,17 +1,22 @@
 // ===================================================|
 // Molecules: ITEM
 
+// Components
 import Heading from '@/node_modules/mm-atomic-pack/components/atoms/Heading';
 import Paragraph from '@/components/atoms/Paragraph';
-import DocBtn from '@/components/atoms/DocBtn';
+import CircleButton from '@/components/atoms/CircleButton';
 import MetaGroup from '@/components/molecules/MetaGroup';
+
+// Graphics
+import FileSVG from '@/assets/graphics/pdf.svg';
 
 export default {
   components: {
     Heading,
     Paragraph,
-    DocBtn,
-    MetaGroup
+    CircleButton,
+    MetaGroup,
+    FileSVG
   },
 
   methods: {

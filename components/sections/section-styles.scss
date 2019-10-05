@@ -37,15 +37,12 @@
   }
 
   a {
-    display: inline-block;
-    font-weight: map-get($swatch-font-weights, 'semibold');
-    background-color: currentColor;
-    border-radius: map-get($swatch-border-radiuses, 'circle');
+    display: inline-flex;
 
     span {
-      display: block;
-      padding: rem(6.5px);
-      color: map-get($roles-col-texts, 'negative');
+      display: flex;
+      align-items: center;
+      height: 100%;
     }
   }
 }

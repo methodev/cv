@@ -30,6 +30,10 @@ $offset: rem(($roles-size-doc-icon * 1.8) + 5);
   position: absolute;
   right: -#{$offset};
   transform: translateY(rem(-2px));
+
+  @media print {
+    display: none;
+  }
 }
 
 // -------------------------| Details

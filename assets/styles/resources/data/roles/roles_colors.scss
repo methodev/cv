@@ -4,6 +4,7 @@
 // -------------------------| Icons
 $roles-col-icons: (
   'contacts': map-get($swatch-colors-system, 'red'),
+  'document': map-get($swatch-colors-system, 'red'),
   'meta': map-get($swatch-colors-mono, 'dusty-gray'),
   'homepage': map-get($swatch-colors-theme, 'primary-dark'),
   'github': map-get($swatch-colors-mono, 'mine-shaft'),
@@ -24,6 +25,11 @@ $roles-col-texts: map-merge(
 
 // -------------------------| Links
 $roles-col-links: map-merge($roles-col-links, ());
+
+// -------------------------| Buttons
+$roles-col-buttons: (
+  'red': map-get($swatch-colors-system, 'red')
+);
 
 // -------------------------| Backgrounds
 $roles-col-backgrounds: map-merge(
