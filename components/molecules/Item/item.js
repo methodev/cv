@@ -8,7 +8,7 @@ import CircleButton from '@/components/atoms/CircleButton';
 import MetaGroup from '@/components/molecules/MetaGroup';
 
 // Graphics
-import FileSVG from '@/assets/graphics/pdf.svg';
+import FileSVG from '@/node_modules/cv-assets/assets/graphics/pdf.svg';
 
 export default {
   components: {
