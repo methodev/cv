@@ -5,6 +5,7 @@
 $swatch-borders: map-merge(
   $swatch-borders,
   (
+    '1px-solid-current-color': 1px dotted currentColor,
     '1px-solid-alpha': 1px solid transparent,
     '1px-solid-white': 1px solid map-get($swatch-colors-mono, 'white'),
     '1px-dashed-gray': 1px dashed map-get($swatch-colors-mono, 'alto'),

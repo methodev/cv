@@ -12,7 +12,7 @@ $radius: map-get($swatch-border-radiuses, 'circle');
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dotted currentColor;
+  border: map-get($roles-borders-wrappers, 'circle-button');
   border-radius: $radius;
 
   svg {
