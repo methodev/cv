@@ -1,12 +1,13 @@
-import meta from 'mm-atomic-pack/configs/nuxt/meta';
+import meta from 'dev-assets/configs/nuxt/meta';
+import splashscreens from 'dev-assets/configs/nuxt/splashscreens';
+import buildModules from 'dev-assets/configs/nuxt/buildModules';
+import modules from 'dev-assets/configs/nuxt/modules';
+import build from 'dev-assets/configs/nuxt/build';
+import banner from 'dev-assets/configs/nuxt/banner';
+import plugins from 'cv-assets/configs/nuxt/plugins';
+import i18nConfig from 'cv-assets/configs/nuxt/modules/i18n';
 import css from 'mm-atomic-pack/configs/nuxt/css';
 import styleResources from 'mm-atomic-pack/configs/nuxt/styleResources';
-import splashscreens from 'mm-atomic-pack/configs/nuxt/splashscreens';
-import buildModules from 'mm-atomic-pack/configs/nuxt/buildModules';
-import modules from 'mm-atomic-pack/configs/nuxt/modules';
-import build from 'mm-atomic-pack/configs/nuxt/build';
-import banner from 'mm-atomic-pack/configs/nuxt/banner';
-import i18nConfig from './config/nuxt/modules/i18n';
 import { author, description, homepage, title, version } from './package.json';
 import { googleAnalyticsCode } from './site.json';
 
@@ -47,12 +48,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: [...css, '@assets/styles/global/tooltip.scss'],
+  css: [...css, '@node_modules/cv-assets/assets/styles/global/tooltip.scss'],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~plugins/locales', '~plugins/moment', '~plugins/tooltip'],
+  plugins: [...plugins],
 
   /*
    ** Nuxt.js dev-modules
@@ -66,11 +67,21 @@ export default {
     ['nuxt-svg-loader'],
     ['@nuxtjs/dotenv'],
     ['nuxt-i18n', i18nConfig],
-    ...modules({ googleAnalyticsCode, title, author, description })
+    ...modules({
+      googleAnalyticsCode,
+      title,
+      author,
+      description,
+      twitter: '@martinmetodiev'
+    })
   ],
 
   /*
    ** Build configuration
    */
-  build: build({ banner: banner({ title, homepage, author, version }) })
+  build: {
+    ...build({ banner: banner({ title, homepage, author, version }) }),
+
+    vendor: ['tooltip', 'v-popover', 'close-popover']
+  }
 };

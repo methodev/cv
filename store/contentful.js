@@ -1,4 +1,7 @@
-import { getLocales, getContent } from '@/services/ContentfulService';
+import {
+  getLocales,
+  getContent
+} from '@/node_modules/cv-assets/services/ContentfulService';
 import { contentfulLayout } from '~/site.json';
 
 export const state = () => ({

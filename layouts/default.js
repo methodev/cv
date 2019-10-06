@@ -2,7 +2,7 @@
 // Layouts: DEFAULT
 
 import { mapState } from 'vuex';
-import { filterLocales } from '@/services/FilterService';
+import { filterLocales } from '@/node_modules/cv-assets/services/FilterService';
 
 // Components
 import LangSwitcher from '@/components/atoms/LangSwitcher';
