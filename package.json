@@ -39,14 +39,7 @@
     }
   },
   "devDependencies": {
+    "cv-assets": "https://github.com/martinmethod/cv-assets",
     "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v1.11.0"
-  },
-  "dependencies": {
-    "lodash": "^4.17.15",
-    "moment": "^2.24.0",
-    "moment-duration-format": "^2.3.2",
-    "nuxt-i18n": "^6.2.1",
-    "nuxt-svg-loader": "^1.0.1",
-    "v-tooltip": "^2.0.2"
   }
 }

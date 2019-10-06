@@ -2659,6 +2659,19 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
+"cv-assets@https://github.com/martinmethod/cv-assets":
+  version "1.0.0"
+  resolved "https://github.com/martinmethod/cv-assets#499792b8dd0a852707bb23b89f0590f6844c8efb"
+  dependencies:
+    contentful "^7.10.0"
+    lodash "^4.17.15"
+    moment "^2.24.0"
+    moment-duration-format "^2.3.2"
+    nuxt-i18n "^6.2.1"
+    nuxt-svg-loader "^1.0.1"
+    v-tooltip "^2.0.2"
+    vue "^2.6.10"
+
 cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"
