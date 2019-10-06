@@ -79,9 +79,5 @@ export default {
   /*
    ** Build configuration
    */
-  build: {
-    ...build({ banner: banner({ title, homepage, author, version }) }),
-
-    vendor: ['tooltip', 'v-popover', 'close-popover']
-  }
+  build: build({ banner: banner({ title, homepage, author, version }) })
 };
