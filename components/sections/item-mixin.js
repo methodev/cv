@@ -5,8 +5,11 @@ import moment from 'moment';
 import Item from '@/components/molecules/Item';
 
 // Services
-import { formatDate, formatDuration } from '@/services/MomentService';
-import { checkPeriod } from '@/services/PeriodService';
+import {
+  formatDate,
+  formatDuration
+} from '@/node_modules/cv-assets/services/MomentService';
+import { checkPeriod } from '@/node_modules/cv-assets/services/PeriodService';
 
 // Graphics
 import CalSVG from '@/assets/graphics/calendar.svg';

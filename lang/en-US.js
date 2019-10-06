@@ -9,9 +9,5 @@ export default {
   junior: 'Junior',
   midLevel: 'Mid-level',
   senior: 'Senior',
-  langNative: 'Native',
-  langFluent: 'Fluent',
-  langFair: 'ILR Level 3',
-  langPoor: 'Poor',
   previousPositions: 'more jobs in the period'
 };

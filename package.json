@@ -2,7 +2,7 @@
   "name": "cv",
   "title": "Martin Metodiev’s CV",
   "description": "Martin Metodiev’s CV",
-  "version": "3.6.1",
+  "version": "3.7.0",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "postinstall": "cp -r node_modules/mm-atomic-pack/configs/root/. . && cp node_modules/mm-atomic-pack/.prettierrc ."
+    "postinstall": "cp -r node_modules/dev-assets/configs/root/. . && cp -r node_modules/cv-assets/static/. ./static/"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
@@ -39,14 +39,8 @@
     }
   },
   "devDependencies": {
-    "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v1.11.0"
-  },
-  "dependencies": {
-    "lodash": "^4.17.15",
-    "moment": "^2.24.0",
-    "moment-duration-format": "^2.3.2",
-    "nuxt-i18n": "^6.2.1",
-    "nuxt-svg-loader": "^1.0.1",
-    "v-tooltip": "^2.0.2"
+    "cv-assets": "https://github.com/martinmethod/cv-assets#v1.0.1",
+    "dev-assets": "https://github.com/martinmethod/dev-assets#v1.0.2",
+    "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v2.0.0"
   }
 }

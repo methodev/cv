@@ -15,20 +15,6 @@
     border: map-get($roles-borders-wrappers, 'tag');
     border-radius: map-get($roles-borders-radiuses, 'tag');
   }
-
-  a {
-    color: map-get($roles-col-texts, 'base');
-
-    @media (hover: hover) {
-      &:hover:not(:active) {
-        border-color: map-get($roles-col-links, 'hover');
-      }
-    }
-
-    &:active {
-      border-color: map-get($roles-col-links, 'active');
-    }
-  }
 }
 
 // -------------------------| Tooltip label
