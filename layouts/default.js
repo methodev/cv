@@ -11,7 +11,7 @@ import Header from '@/components/organisms/Header';
 import Footer from '@/node_modules/mm-atomic-pack/components/organisms/Footer';
 
 // Graphics
-import FileSVG from '@/assets/graphics/pdf.svg';
+import FileSVG from '@/node_modules/cv-assets/assets/graphics/pdf.svg';
 
 export default {
   components: { LangSwitcher, CircleButton, Header, Footer, FileSVG },

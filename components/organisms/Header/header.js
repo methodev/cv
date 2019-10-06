@@ -9,11 +9,11 @@ import Heading from '@/node_modules/mm-atomic-pack/components/atoms/Heading';
 import ContactGroup from '@/components/molecules/ContactGroup';
 
 // Graphics
-import AtSVG from '@/assets/graphics/at.svg';
-import HomeSVG from '@/assets/graphics/home.svg';
-import PhoneSVG from '@/assets/graphics/phone.svg';
-import PinSVG from '@/assets/graphics/pin.svg';
-import PortfolioSVG from '@/assets/graphics/portfolio.svg';
+import AtSVG from '@/node_modules/cv-assets/assets/graphics/at.svg';
+import HomeSVG from '@/node_modules/cv-assets/assets/graphics/home.svg';
+import PhoneSVG from '@/node_modules/cv-assets/assets/graphics/phone.svg';
+import PinSVG from '@/node_modules/cv-assets/assets/graphics/pin.svg';
+import PortfolioSVG from '@/node_modules/cv-assets/assets/graphics/portfolio.svg';
 
 export default {
   components: { Avatar, Heading, ContactGroup },

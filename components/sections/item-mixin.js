@@ -12,9 +12,9 @@ import {
 import { checkPeriod } from '@/node_modules/cv-assets/services/PeriodService';
 
 // Graphics
-import CalSVG from '@/assets/graphics/calendar.svg';
-import PinSVG from '@/assets/graphics/pin.svg';
-import PhoneSVG from '@/assets/graphics/phone.svg';
+import CalSVG from '@/node_modules/cv-assets/assets/graphics/calendar.svg';
+import PinSVG from '@/node_modules/cv-assets/assets/graphics/pin.svg';
+import PhoneSVG from '@/node_modules/cv-assets/assets/graphics/phone.svg';
 
 export default {
   data() {
