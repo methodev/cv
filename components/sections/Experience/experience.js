@@ -9,8 +9,8 @@ import sectionMixin from '@/components/sections/section-mixin';
 import itemMixin from '@/components/sections/item-mixin';
 
 // Services
-import { getPeriod } from '@/services/PeriodService';
-import { filterItemsTillNow } from '@/services/FilterService';
+import { getPeriod } from '@/node_modules/cv-assets/services/PeriodService';
+import { filterItemsTillNow } from '@/node_modules/cv-assets/services/FilterService';
 
 export default {
   mixins: [sectionMixin, itemMixin],
