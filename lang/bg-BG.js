@@ -9,9 +9,5 @@ export default {
   junior: 'Начинаещ',
   midLevel: 'Напреднал',
   senior: 'Експерт',
-  langNative: 'Майчин',
-  langFluent: 'Гладко',
-  langFair: 'Разговорен',
-  langPoor: 'Слабо',
   previousPositions: 'стари позиции от периода'
 };
