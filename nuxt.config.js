@@ -4,6 +4,7 @@ import buildModules from 'dev-assets/configs/nuxt/buildModules';
 import modules from 'dev-assets/configs/nuxt/modules';
 import build from 'dev-assets/configs/nuxt/build';
 import banner from 'dev-assets/configs/nuxt/banner';
+import dir from 'cv-assets/configs/nuxt/dir';
 import plugins from 'cv-assets/configs/nuxt/plugins';
 import i18nConfig from 'cv-assets/configs/nuxt/modules/i18n';
 import css from 'mm-atomic-pack/configs/nuxt/css';
@@ -17,6 +18,8 @@ export default {
   server: {
     port: 9001
   },
+
+  dir,
 
   /*
    ** Headers of the page
@@ -53,7 +56,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [...plugins],
+  plugins,
 
   /*
    ** Nuxt.js dev-modules
