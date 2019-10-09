@@ -5,9 +5,9 @@ import { mapState } from 'vuex';
 import { filterLocales } from '@/node_modules/cv-assets/services/FilterService';
 
 // Components
-import LangSwitcher from '@/components/atoms/LangSwitcher';
-import CircleButton from '@/components/atoms/CircleButton';
-import Header from '@/components/organisms/Header';
+import LangSwitcher from '@/node_modules/cv-assets/components/atoms/LangSwitcher';
+import CircleButton from '@/node_modules/cv-assets/components/atoms/CircleButton';
+import Header from '@/node_modules/cv-assets/components/organisms/Header';
 import Footer from '@/node_modules/mm-atomic-pack/components/organisms/Footer';
 
 // Graphics
