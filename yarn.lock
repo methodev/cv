@@ -2853,9 +2853,9 @@ detect-libc@^1.0.2, detect-libc@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
 
-"dev-assets@https://github.com/martinmethod/dev-assets#v1.0.4":
-  version "1.0.4"
-  resolved "https://github.com/martinmethod/dev-assets#ab7a725e0ceec18a13e56e34ec14bb276f759a0f"
+"dev-assets@https://github.com/martinmethod/dev-assets#v1.0.5":
+  version "1.0.5"
+  resolved "https://github.com/martinmethod/dev-assets#de78187eb6eb69a82adf2a40b894c0775bc36918"
   dependencies:
     "@nuxtjs/dotenv" "^1.4.1"
     "@nuxtjs/eslint-config" "^1.1.2"
