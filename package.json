@@ -2,7 +2,7 @@
   "name": "cv",
   "title": "Martin Metodiev’s CV",
   "description": "Martin Metodiev’s CV",
-  "version": "3.8.0",
+  "version": "3.8.1",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -28,7 +28,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "postinstall": "cp -r node_modules/dev-assets/configs/root/. ."
+    "postinstall": "cp -r node_modules/dev-assets/config/root/. ."
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
@@ -39,8 +39,8 @@
     }
   },
   "devDependencies": {
-    "cv-assets": "https://github.com/martinmethod/cv-assets#v1.2.0",
-    "dev-assets": "https://github.com/martinmethod/dev-assets#v1.0.3",
-    "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v2.0.1"
+    "cv-assets": "https://github.com/martinmethod/cv-assets#v1.3.0",
+    "dev-assets": "https://github.com/martinmethod/dev-assets#v1.0.4",
+    "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v2.0.2"
   }
 }
