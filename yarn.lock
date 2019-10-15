@@ -2698,9 +2698,9 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-"cv-assets@https://github.com/martinmethod/cv-assets#v1.4.0":
-  version "1.4.0"
-  resolved "https://github.com/martinmethod/cv-assets#40cffe47708515dbc2d60d972789b27cc5e87258"
+"cv-assets@https://github.com/martinmethod/cv-assets#v1.4.1":
+  version "1.4.1"
+  resolved "https://github.com/martinmethod/cv-assets#d617032303d697bc8ec8de1074e6ddb4eac2fb36"
   dependencies:
     contentful "^7.10.0"
     lodash "^4.17.15"
@@ -5504,9 +5504,9 @@ mkdirp@0.5.1, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-"mm-atomic-pack@https://github.com/martinmethod/mm-atomic-pack#v2.1.0":
-  version "2.1.0"
-  resolved "https://github.com/martinmethod/mm-atomic-pack#a0b98863c0c02e9c9b5f9adb1ec711dfb4e6ecf0"
+"mm-atomic-pack@https://github.com/martinmethod/mm-atomic-pack#v2.2.0":
+  version "2.2.0"
+  resolved "https://github.com/martinmethod/mm-atomic-pack#a2e8082c16c1bf8b4b7f307afe9772457c1efa75"
   dependencies:
     "@contentful/rich-text-html-renderer" "^13.4.0"
     contentful "^7.10.0"
