@@ -2698,18 +2698,19 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-"cv-assets@https://github.com/martinmethod/cv-assets#v1.6.0":
-  version "1.6.0"
-  resolved "https://github.com/martinmethod/cv-assets#19de3bd588f4aaa60baf25654147507f859e7c86"
+"cv-assets@https://github.com/martinmethod/cv-assets#v1.7.0":
+  version "1.7.0"
+  resolved "https://github.com/martinmethod/cv-assets#163b4be4be3ea903ea7b05c111b6682e3042c2f9"
   dependencies:
     contentful "^7.10.0"
     lodash "^4.17.15"
     moment "^2.24.0"
     moment-duration-format "^2.3.2"
-    nuxt-i18n "^6.2.1"
+    nuxt-i18n "^6.3.1"
     nuxt-svg-loader "^1.0.1"
     v-tooltip "^2.0.2"
     vue "^2.6.10"
+    vue-js-modal "^1.3.31"
 
 cyclist@^1.0.1:
   version "1.0.1"
@@ -5814,9 +5815,10 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-i18n@^6.2.1:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.3.0.tgz#b2af4a36f5dad1442a1b165d254a5b0f5137626f"
+nuxt-i18n@^6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/nuxt-i18n/-/nuxt-i18n-6.3.1.tgz#7209f7f76e63f33c848df32feeef6966c76971ae"
+  integrity sha512-RDj2kWseEgab+2sC1fi+6h/Gh7+a5ynyZCNfbJMMzhql2ophyAMmNoVumREbFsu7IwVR9sDBb59sy1uC9V+YCw==
   dependencies:
     "@babel/parser" "^7.5.5"
     "@babel/traverse" "^7.5.5"
@@ -8892,6 +8894,11 @@ vue-i18n-extensions@^0.2.1:
 vue-i18n@^8.12.0:
   version "8.14.1"
   resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.14.1.tgz#0ca0a2742c14e0144481655157fffcc7cc313e50"
+
+vue-js-modal@^1.3.31:
+  version "1.3.31"
+  resolved "https://registry.yarnpkg.com/vue-js-modal/-/vue-js-modal-1.3.31.tgz#fdece823d4f2816c8b1075c1fd8f667df11f5a42"
+  integrity sha512-gwt2904sWbMUuUcHwKQ510IEs4G7S3bqVWLYeTOc2eEyWMmmnT9UmojDsXIexFnPVM7cZTua37z3Jm/h0i0y8Q==
 
 vue-loader@^15.7.1:
   version "15.7.1"

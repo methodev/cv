@@ -16,4 +16,8 @@ a {
   .desktop & {
     transition: all map-get($roles-transitions, 'link') ease-in-out;
   }
+
+  &:not([data-btn]) {
+    @include link-styles-generator();
+  }
 }
