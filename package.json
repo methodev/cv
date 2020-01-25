@@ -2,17 +2,17 @@
   "name": "cv",
   "title": "Martin Metodiev’s CV",
   "description": "Martin Metodiev’s CV",
-  "version": "3.11.14",
+  "version": "3.11.15",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "git://github.com/martinmethod/cv.git"
   },
-  "homepage": "http://cv.martinmetodiev.com",
+  "homepage": "https://cv.metodiev.dev",
   "author": {
     "name": "Martin Metodiev",
     "email": "metodiev.martin@gmail.com",
-    "url": "http://martinmetodiev.com"
+    "url": "https://metodiev.dev"
   },
   "private": true,
   "keywords": [
@@ -40,6 +40,6 @@
   },
   "devDependencies": {
     "cv-assets": "https://github.com/martinmethod/cv-assets#v1.7.14",
-    "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v2.2.7"
+    "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v2.2.9"
   }
 }
