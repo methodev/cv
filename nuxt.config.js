@@ -4,6 +4,7 @@ import buildModules from 'dev-assets/config/nuxt/buildModules';
 import modules from 'dev-assets/config/nuxt/modules';
 import build from 'dev-assets/config/nuxt/build';
 import banner from 'dev-assets/config/nuxt/banner';
+import loading from 'cv-assets/config/nuxt/loading';
 import dir from 'cv-assets/config/nuxt/dir';
 import plugins from 'cv-assets/config/nuxt/plugins';
 import i18nConfig from 'cv-assets/config/nuxt/modules/i18n';
@@ -39,7 +40,7 @@ export default {
   /*
    ** Customize the progress-bar
    */
-  loading: false,
+  loading,
   loadingIndicator: {
     name: 'fading-circle',
     color: '#0d3ea0',
