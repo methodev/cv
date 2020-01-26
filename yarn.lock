@@ -2706,9 +2706,9 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-"cv-assets@https://github.com/martinmethod/cv-assets#v1.8.1":
-  version "1.8.1"
-  resolved "https://github.com/martinmethod/cv-assets#d49af89810dd898901766c8790cf7b46fc7084c6"
+"cv-assets@https://github.com/martinmethod/cv-assets#v1.8.2":
+  version "1.8.2"
+  resolved "https://github.com/martinmethod/cv-assets#4f59d2deef6906dbb5bbd1e8533707531633f60c"
   dependencies:
     contentful "^7.11.4"
     lodash "^4.17.15"
@@ -2722,6 +2722,7 @@ currently-unhandled@^0.4.1:
     vue "^2.6.11"
     vue-div-100vh "^0.1.2"
     vue-js-modal "^1.3.31"
+    vue-spinner "^1.0.3"
 
 cyclist@^1.0.1:
   version "1.0.1"
@@ -8922,6 +8923,11 @@ vue-server-renderer@^2.6.11:
     resolve "^1.2.0"
     serialize-javascript "^2.1.2"
     source-map "0.5.6"
+
+vue-spinner@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-spinner/-/vue-spinner-1.0.3.tgz#eecd3f79f63a815b690e9d54b199ab65be695499"
+  integrity sha512-Phh6QC/Bh80ZE/0SH9ADw4irbRGwFK6VZsTksPHpPm16xga2OXwNC2nI7SEPnndUZP+Lgu1wu+pbH6i6+5siBQ==
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
