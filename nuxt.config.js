@@ -42,7 +42,7 @@ export default {
    */
   loading,
   loadingIndicator: {
-    name: 'fading-circle',
+    name: 'pulse',
     color: '#0d3ea0',
     background: 'white'
   },
