@@ -2706,9 +2706,9 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-"cv-assets@https://github.com/martinmethod/cv-assets#v1.8.2":
-  version "1.8.2"
-  resolved "https://github.com/martinmethod/cv-assets#4f59d2deef6906dbb5bbd1e8533707531633f60c"
+"cv-assets@https://github.com/martinmethod/cv-assets#v1.8.3":
+  version "1.8.3"
+  resolved "https://github.com/martinmethod/cv-assets#0d093c0d7691be1c730d79cf517aa95dec682890"
   dependencies:
     contentful "^7.11.4"
     lodash "^4.17.15"
