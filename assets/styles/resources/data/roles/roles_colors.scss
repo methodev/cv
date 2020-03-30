@@ -19,7 +19,7 @@ $roles-col-texts: map-merge(
     'section': map-get($swatch-colors-theme, 'primary-dark'),
     'info': map-get($swatch-colors-mono, 'dove-gray'),
     'meta': map-get($swatch-colors-mono, 'dove-gray'),
-    'icon': map-get($swatch-colors-system, 'yellow')
+    'icon': map-get($swatch-colors-theme, 'primary-dark')
   )
 );
 
