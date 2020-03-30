@@ -39,7 +39,7 @@
     }
   },
   "devDependencies": {
-    "cv-assets": "https://github.com/martinmethod/cv-assets#v1.8.8",
+    "cv-assets": "https://github.com/martinmethod/cv-assets#v1.8.9",
     "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v2.2.10"
   }
 }
