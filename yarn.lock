@@ -2706,9 +2706,9 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-"cv-assets@https://github.com/martinmethod/cv-assets#v1.8.12":
+"cv-assets@https://github.com/methodev/cv-assets#v1.8.12":
   version "1.8.12"
-  resolved "https://github.com/martinmethod/cv-assets#7111c5abba48e441dbefae8f95d23ddd8290f53d"
+  resolved "https://github.com/methodev/cv-assets#7111c5abba48e441dbefae8f95d23ddd8290f53d"
   dependencies:
     contentful "^7.11.4"
     lodash "^4.17.15"
@@ -2864,9 +2864,9 @@ detect-libc@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.3.tgz#fa137c4bd698edf55cd5cd02ac559f91a4c4ba9b"
 
-"dev-assets@https://github.com/martinmethod/dev-assets#v1.1.2":
+"dev-assets@https://github.com/methodev/dev-assets#v1.1.2":
   version "1.1.2"
-  resolved "https://github.com/martinmethod/dev-assets#e85edb8c62340b5218f30996cd8ef4b8de268456"
+  resolved "https://github.com/methodev/dev-assets#e85edb8c62340b5218f30996cd8ef4b8de268456"
   dependencies:
     "@nuxtjs/dotenv" "^1.4.1"
     "@nuxtjs/eslint-config" "^2.0.0"
@@ -5504,13 +5504,13 @@ mkdirp@0.5.1, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-"mm-atomic-pack@https://github.com/martinmethod/mm-atomic-pack#v2.2.10":
+"mm-atomic-pack@https://github.com/methodev/mm-atomic-pack#v2.2.10":
   version "2.2.10"
-  resolved "https://github.com/martinmethod/mm-atomic-pack#737582edbd0c83576bb1cfabb0b694c34236764c"
+  resolved "https://github.com/methodev/mm-atomic-pack#737582edbd0c83576bb1cfabb0b694c34236764c"
   dependencies:
     "@contentful/rich-text-html-renderer" "^13.4.0"
     contentful "^7.11.4"
-    dev-assets "https://github.com/martinmethod/dev-assets#v1.1.2"
+    dev-assets "https://github.com/methodev/dev-assets#v1.1.2"
 
 mobile-device-detect@^0.3.3:
   version "0.3.3"

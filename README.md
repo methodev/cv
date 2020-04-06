@@ -1,6 +1,6 @@
 # Martin Metodiev’s CV
 
-[![Travis](https://img.shields.io/travis/martinmethod/cv.svg)](https://travis-ci.org/martinmethod/cv) [![David](https://img.shields.io/david/martinmethod/cv.svg)](https://david-dm.org/martinmethod/cv) [![David](https://img.shields.io/david/dev/martinmethod/cv.svg)](https://david-dm.org/martinmethod/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/martinmethod/cv.svg)](https://github.com/martinmethod/cv/releases/latest)
+[![Travis](https://img.shields.io/travis/methodev/cv.svg)](https://travis-ci.org/methodev/cv) [![David](https://img.shields.io/david/methodev/cv.svg)](https://david-dm.org/methodev/cv) [![David](https://img.shields.io/david/dev/methodev/cv.svg)](https://david-dm.org/methodev/cv?type=dev) [![GitHub release](https://img.shields.io/github/release/methodev/cv.svg)](https://github.com/methodev/cv/releases/latest)
 
 ## Build Setup
 

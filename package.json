@@ -2,11 +2,11 @@
   "name": "cv",
   "title": "Martin Metodiev’s CV",
   "description": "Martin Metodiev’s CV",
-  "version": "3.12.12",
+  "version": "3.12.13",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git://github.com/martinmethod/cv.git"
+    "url": "git://github.com/methodev/cv.git"
   },
   "homepage": "https://cv.metodiev.dev",
   "author": {
@@ -39,7 +39,7 @@
     }
   },
   "devDependencies": {
-    "cv-assets": "https://github.com/martinmethod/cv-assets#v1.8.12",
-    "mm-atomic-pack": "https://github.com/martinmethod/mm-atomic-pack#v2.2.10"
+    "cv-assets": "https://github.com/methodev/cv-assets#v1.8.12",
+    "mm-atomic-pack": "https://github.com/methodev/mm-atomic-pack#v2.2.10"
   }
 }
