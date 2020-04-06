@@ -79,7 +79,7 @@ export default {
       title,
       author,
       description,
-      twitter: '@martinmetodiev'
+      twitter: '@methodev'
     })
   ],
 
