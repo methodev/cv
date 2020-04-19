@@ -11,4 +11,8 @@
   html {
     font-size: 9px;
   }
+
+  [class*='ps__rail'] {
+    display: none !important;
+  }
 }
