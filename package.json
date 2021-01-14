@@ -39,7 +39,7 @@
     }
   },
   "devDependencies": {
-    "cv-assets": "https://github.com/methodev/cv-assets#v1.9.2",
+    "cv-assets": "https://github.com/methodev/cv-assets#v1.9.3",
     "mm-atomic-pack": "https://github.com/methodev/mm-atomic-pack#v2.6.1"
   }
 }
