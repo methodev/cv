@@ -6392,9 +6392,9 @@ mixin-object@^2.0.1:
   dependencies:
     minimist "^1.2.5"
 
-"mm-atomic-pack@https://github.com/methodev/mm-atomic-pack#v2.5.1":
-  version "2.5.1"
-  resolved "https://github.com/methodev/mm-atomic-pack#7d6df632b236031795db6e3d0b8fef0bd79081a4"
+"mm-atomic-pack@https://github.com/methodev/mm-atomic-pack#v2.6.0":
+  version "2.6.0"
+  resolved "https://github.com/methodev/mm-atomic-pack#adc318cff8763af6badada005b07bdfcb6973a81"
   dependencies:
     "@contentful/rich-text-html-renderer" "^13.4.0"
     contentful "^7.14.2"
