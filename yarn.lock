@@ -3189,9 +3189,9 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
-"cv-assets@https://github.com/methodev/cv-assets#v1.9.4":
-  version "1.9.4"
-  resolved "https://github.com/methodev/cv-assets#c572efcfc89ecea6334c8501da837c4c2d2ec447"
+"cv-assets@https://github.com/methodev/cv-assets#v1.9.6":
+  version "1.9.6"
+  resolved "https://github.com/methodev/cv-assets#1dac242e309969bd21f61419e49fcc905588358d"
   dependencies:
     contentful "^7.14.2"
     lodash "^4.17.15"
