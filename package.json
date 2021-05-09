@@ -2,7 +2,7 @@
   "name": "cv",
   "title": "Martin Metodiev’s CV",
   "description": "Martin Metodiev’s CV",
-  "version": "3.13.10",
+  "version": "3.13.11",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
     }
   },
   "devDependencies": {
-    "cv-assets": "https://github.com/methodev/cv-assets#v1.9.10",
+    "cv-assets": "https://github.com/methodev/cv-assets#v1.9.11",
     "mm-atomic-pack": "https://github.com/methodev/mm-atomic-pack#v2.6.1"
   }
 }
