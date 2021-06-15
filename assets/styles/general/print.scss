@@ -12,7 +12,9 @@
     font-size: 9px;
   }
 
+  [role='tooltip'],
   [class*='ps__rail'] {
     display: none !important;
+    opacity: 0 !important;
   }
 }
