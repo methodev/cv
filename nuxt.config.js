@@ -80,6 +80,7 @@ export default {
       title,
       author,
       description,
+      homepage,
       twitter: '@methodev'
     })
   ],
