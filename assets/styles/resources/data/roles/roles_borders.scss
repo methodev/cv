@@ -24,7 +24,7 @@ $roles-borders-wrappers: map-merge(
     'avatar': map-get($swatch-borders, '2px-solid-dusty-gray'),
     'tag': map-get($swatch-borders, '1px-solid-current-color'),
     'dot-button': map-get($swatch-borders, '1px-solid-current-color'),
-    'progress-bar': map-get($swatch-borders, '1px-solid-alto'),
+    'progress-bar': map-get($swatch-borders, '1px-solid-current-color'),
     'negative': map-get($swatch-borders, '1px-solid-white')
   )
 );
@@ -35,6 +35,6 @@ $roles-borders-radiuses: map-merge(
   (
     'avatar': map-get($swatch-border-radiuses, 'circle'),
     'tag': map-get($swatch-border-radiuses, 'oval3'),
-    'progress': map-get($swatch-border-radiuses, 'oval-round')
+    'progress': map-get($swatch-border-radiuses, 'oval3')
   )
 );
