@@ -1,8 +1,8 @@
 {
   "name": "cv",
   "title": "Martin Metodiev’s CV",
-  "description": "Martin Metodiev’s CV",
-  "version": "3.13.17",
+  "description": "An interactive copy of my résumé",
+  "version": "3.13.18",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
