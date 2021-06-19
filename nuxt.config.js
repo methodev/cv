@@ -22,7 +22,9 @@ export default {
   },
 
   dir: {
-    ...dir,
+    ...dir({
+      static: 'static',
+    }),
     layouts: 'layouts'
   },
 
