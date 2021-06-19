@@ -83,6 +83,11 @@ export default {
       author,
       description,
       homepage,
+      pwa: {
+        icon: {
+          source: `./static/icon.png`
+        }
+      },
       twitter: '@methodev'
     })
   ],
