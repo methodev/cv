@@ -23,7 +23,7 @@ export default {
 
   dir: {
     ...dir({
-      static: `${__dirname}/static`,
+      static: 'static',
     }),
     layouts: 'layouts'
   },
@@ -85,7 +85,7 @@ export default {
       homepage,
       pwa: {
         icon: {
-          source: `./static/icon.png`
+          source: `${__dirname}/static/icon.png`
         }
       },
       twitter: '@methodev'
