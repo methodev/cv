@@ -2,6 +2,7 @@ language: node_js
 node_js:
 - 12
 script:
+- rm -rf node_modules/.cache/pwa
 - yarn generate
 - printf 'cv.metodiev.dev' > dist/CNAME
 - cp 'README.md' dist
