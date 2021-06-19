@@ -85,7 +85,7 @@ export default {
       homepage,
       pwa: {
         icon: {
-          source: `${__dirname}/static/icon.png`
+          source: './static/icon.png'
         }
       },
       twitter: '@methodev'
