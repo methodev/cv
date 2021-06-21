@@ -10,7 +10,7 @@ import plugins from 'cv-assets/config/nuxt/plugins';
 import i18nConfig from 'cv-assets/config/nuxt/modules/i18n';
 import css from 'mm-atomic-pack/config/nuxt/css';
 import styleResources from 'mm-atomic-pack/config/nuxt/styleResources';
-import { author, description, homepage, title, version } from './package.json';
+import { author, description, homepage, title, short_title, version } from './package.json';
 import { googleAnalyticsCode } from './site.json';
 
 export default {
@@ -80,13 +80,12 @@ export default {
     ...modules({
       googleAnalyticsCode,
       title,
+      short_name: short_title,
       author,
       description,
       homepage,
-      pwa: {
-        icon: {
-          source: './static/icon.png'
-        }
+      icon: {
+        source: './static/icon.png'
       },
       twitter: '@methodev'
     })
