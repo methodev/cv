@@ -84,6 +84,7 @@ export default {
       author,
       description,
       homepage,
+      theme_color: '#001f55',
       icon: {
         source: './static/icon.png'
       },
