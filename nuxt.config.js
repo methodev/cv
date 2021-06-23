@@ -1,3 +1,4 @@
+import 'dev-assets/config/dotenv';
 import meta from 'dev-assets/config/nuxt/meta';
 import splashscreens from 'dev-assets/config/nuxt/splashscreens';
 import buildModules from 'dev-assets/config/nuxt/buildModules';
@@ -8,6 +9,7 @@ import loading from 'cv-assets/config/nuxt/loading';
 import dir from 'cv-assets/config/nuxt/dir';
 import plugins from 'cv-assets/config/nuxt/plugins';
 import i18nConfig from 'cv-assets/config/nuxt/modules/i18n';
+import apiClient from 'cv-assets/config/api/contentful';
 import css from 'mm-atomic-pack/config/nuxt/css';
 import styleResources from 'mm-atomic-pack/config/nuxt/styleResources';
 import { author, description, homepage, title, short_title, version } from './package.json';
@@ -95,5 +97,19 @@ export default {
   /*
    ** Build configuration
    */
-  build: build({ banner: banner({ title, homepage, author, version }) })
+  build: build({ banner: banner({ title, homepage, author, version }) }),
+
+  hooks: {
+    build: {
+      async before(nuxt) {
+        const { items } = await apiClient.getEntries();
+        nuxt.options.head.link.push({
+          rel: 'preload',
+          as: 'image',
+          href: items
+            .find((item) => item.sys.contentType.sys.id === 'cv').fields.identity.fields.avatar
+        });
+      }
+    }
+  }
 };
